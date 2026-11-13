@@ -38,7 +38,7 @@
       pm:elementDestination='{"type":"taskList","value":null}'
       pm:assignment="requester"
       pm:assignedUsers="" pm:assignedGroups=""
-      pm:config="{"web_entry":null}">
+      pm:config='{"web_entry":null}'>
       <bpmn:outgoing>node_11</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:task id="node_4" name="Submit Investor Confirmation Form"
@@ -49,7 +49,7 @@
       pm:assignment="requester"
       pm:assignedUsers="" pm:assignedGroups=""
       pm:assignmentLock="false" pm:allowReassignment="false"
-      pm:config="{"edit_comments":false,"email_notifications":{"notifications":[]},"reactions":false,"remove_comments":false,"voting":false,"web_entry":null}">
+      pm:config='{"edit_comments":false,"email_notifications":{"notifications":[]},"reactions":false,"remove_comments":false,"voting":false,"web_entry":null}'>
       <bpmn:incoming>node_11</bpmn:incoming>
       <bpmn:incoming>node_9</bpmn:incoming>
       <bpmn:outgoing>node_10</bpmn:outgoing>
@@ -62,7 +62,7 @@
       pm:assignment="user"
       pm:assignedUsers="" pm:assignedGroups=""
       pm:assignmentLock="false" pm:allowReassignment="false"
-      pm:config="{"edit_comments":false,"email_notifications":{"notifications":[]},"reactions":false,"remove_comments":false,"voting":false,"web_entry":null}">
+      pm:config='{"edit_comments":false,"email_notifications":{"notifications":[]},"reactions":false,"remove_comments":false,"voting":false,"web_entry":null}'>
       <bpmn:incoming>node_14</bpmn:incoming>
       <bpmn:outgoing>node_12</bpmn:outgoing>
     </bpmn:task>
@@ -74,7 +74,7 @@
       pm:assignment="user_group"
       pm:assignedUsers="" pm:assignedGroups=""
       pm:assignmentLock="false" pm:allowReassignment="false"
-      pm:config="{"edit_comments":false,"email_notifications":{"notifications":[{"bccRecipients":[],"ccRecipients":[],"expression":"","screenRef":null,"sendAt":"task-end","subject":"[HITL: RETURN notification subject]","textBody":"[HITL: RETURN notification body]","toRecipients":[{"type":"userId","value":"{{SLFI_FLAG_CANCEL_CASE}}"},{"type":"userId","value":"{{SLFI_TAX_USER}}"}],"type":"text"},{"bccRecipients":[],"ccRecipients":[],"expression":"","screenRef":null,"sendAt":"task-end","subject":"[HITL: CANCEL notification subject]","textBody":"[HITL: CANCEL notification body]","toRecipients":[{"type":"userId","value":"{{SLFI_FLAG_CANCEL_CASE}}"},{"type":"userId","value":"{{SLFI_TAX_USER}}"}],"type":"text"},{"bccRecipients":[],"ccRecipients":[],"expression":"","screenRef":null,"sendAt":"task-end","subject":"[HITL: SUBMIT notification subject]","textBody":"[HITL: SUBMIT notification body]","toRecipients":[{"type":"userId","value":"{{SLFI_FLAG_CANCEL_CASE}}"},{"type":"userId","value":"{{SLFI_TAX_USER}}"}],"type":"text"},{"bccRecipients":[],"ccRecipients":[],"expression":"","screenRef":null,"sendAt":"task-end","subject":"[HITL: INVESTORS notification subject]","textBody":"[HITL: INVESTORS notification body]","toRecipients":[{"type":"userId","value":"{{SLFI_FLAG_CANCEL_CASE}}"},{"type":"userId","value":"{{SLFI_TAX_USER}}"}],"type":"text"}]},"reactions":false,"remove_comments":false,"selfService":true,"voting":false,"web_entry":null}">
+      pm:config='{\"edit_comments\":false,\"email_notifications\":{\"notifications\":[]},\"selfService\":true,\"web_entry\":null}'>
       <bpmn:incoming>node_10</bpmn:incoming>
       <bpmn:outgoing>node_8</bpmn:outgoing>
     </bpmn:task>
@@ -99,18 +99,17 @@
       <bpmn:incoming>node_14</bpmn:incoming>
       <bpmn:outgoing>node_14a</bpmn:outgoing>
     </bpmn:scriptTask>
-    <bpmn:sequenceFlow id="node_14" name="SLFI_FLAG_CANCEL_CASE empty" sourceRef="node_7" targetRef="slfi_script_track">
-      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">SLFI_FLAG_CANCEL_CASE == ""</bpmn:conditionExpression>
+    <bpmn:sequenceFlow id="node_14" name="To tracking" sourceRef="node_7" targetRef="slfi_script_track">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">SLFI_FLAG_CANCEL_CASE = ""</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
     <bpmn:sequenceFlow id="node_14a" sourceRef="slfi_script_track" targetRef="node_5"/>
-    <bpmn:sequenceFlow id="node_13" name="SLFI_FLAG_CANCEL_CASE != "" and SLFI_FLAG_CANCEL_CASE != "RETURN"" sourceRef="node_7" targetRef="node_1">
+    <bpmn:sequenceFlow id="node_13" name="Cancel or submit end" sourceRef="node_7" targetRef="node_1">
       <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">SLFI_FLAG_CANCEL_CASE != "" and SLFI_FLAG_CANCEL_CASE != "RETURN"</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
-    <bpmn:sequenceFlow id="node_9" name="SLFI_FLAG_CANCEL_CASE == "RETURN"" sourceRef="node_7" targetRef="node_4">
-      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">SLFI_FLAG_CANCEL_CASE == "RETURN"</bpmn:conditionExpression>
+    <bpmn:sequenceFlow id="node_9" name="Return to upload" sourceRef="node_7" targetRef="node_4">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">SLFI_FLAG_CANCEL_CASE = "RETURN"</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
   </bpmn:process>
-  <!-- PM3 message start LEAD: configure in PM4 or restore message catch -->
   <bpmn:collaboration id="collaboration_0">
     <bpmn:participant id="node_participant" name="SLFI" processRef="ProcessId"/>
   </bpmn:collaboration>

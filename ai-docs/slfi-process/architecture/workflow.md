@@ -30,4 +30,14 @@ PM3 task notifications + `Send Notifications` trigger used `psSLFIFunctions` tem
 
 ## Deploy order
 
-Scripts → screens → `slfi-process-main` BPMN. Record IDs here after upsert (do not commit numeric refs into BPMN).
+Scripts → screens → `slfi-process-main` BPMN. Instance IDs (pm4.local:8089, 2026-11-13):
+
+| Asset | ID |
+| --- | ---: |
+| Process `slfi-process-main` | 2 |
+| Screen `slfi-process-upload-investors-confirmation` | 7 |
+| Screen `slfi-process-show-investors-confirmation` | 5 |
+| Screen `slfi-process-review-investors-list` | 4 |
+| Screen `slfi-process-tracking-form` | 6 |
+| Script `slfi-process-initialize-upload-task` | 5 |
+| Script `slfi-process-load-tracking-grid` | 7 |
