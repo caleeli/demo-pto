@@ -1,0 +1,45 @@
+{
+  "title": "slfi-process-tracking-form",
+  "description": "SLFI \u2014 slfi-process-tracking-form",
+  "type": "FORM",
+  "config": [
+    {
+      "name": "Page 1",
+      "order": 1,
+      "items": [
+        {
+          "uuid": "7b9a9395-13f2-45ca-90c3-3cc1798e1772",
+          "component": "VueComponentRenderTemplate",
+          "editor-component": "VueComponentEditor",
+          "editor-control": "VueComponentEditor",
+          "label": "Vue component Editor",
+          "inspector": [],
+          "config": {
+            "icon": "fas fa-pencil-ruler",
+            "interactive": true,
+            "componentName": "SlfiProcessTrackingForm",
+            "contentVue": "<SlfiProcessTrackingForm v-model=\"data\" :submit=\"submit\" />",
+            "handlerVue": "return {\n  created() {\n    if (!this.data) {\n      return;\n    }\n  },\n};",
+            "components": [
+              {
+                "name": "SlfiProcessTrackingForm",
+                "key": "@/projects/slfiProcess/trackingForm/SlfiProcessTrackingForm.vue",
+                "components": [
+                  {
+                    "name": "SlfiInvestorsRecordList",
+                    "key": "@/projects/slfiProcess/shared/SlfiInvestorsRecordList.vue"
+                  }
+                ]
+              }
+            ],
+            "renderVarHtml": null,
+            "ignoreMustache": true
+          }
+        }
+      ]
+    }
+  ],
+  "computed": [],
+  "watchers": [],
+  "custom_css": null
+}

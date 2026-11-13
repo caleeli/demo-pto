@@ -1,0 +1,8 @@
+<?php
+// Calculate total with tax and persist to case variables.
+// Attach as AFTER_DYNAFORM trigger on the dynaform that sets AMOUNT.
+
+@@TAX_AMOUNT = round(floatval(@@AMOUNT) * 0.15, 2);
+@@TOTAL_AMOUNT = round(floatval(@@AMOUNT) + @@TAX_AMOUNT, 2);
+
+PMFSaveCurrentData();

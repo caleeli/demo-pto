@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd" id="Definitions_SignalCollection" targetNamespace="http://bpmn.io/schema/bpmn" exporter="ProcessMaker Modeler" exporterVersion="1.0">
+  <bpmn:process id="ProcessId" name="On New Customer Record" isExecutable="true">
+    <bpmn:startEvent id="node_1" name="Customer record created" pm:config="record">
+      <bpmn:outgoing>node_1-node_2</bpmn:outgoing>
+      <bpmn:signalEventDefinition signalRef="collection_COLLECTION_ID_create" />
+    </bpmn:startEvent>
+    <bpmn:endEvent id="node_2" name="End">
+      <bpmn:incoming>node_1-node_2</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="node_1-node_2" sourceRef="node_1" targetRef="node_2" />
+  </bpmn:process>
+  <bpmn:signal id="collection_COLLECTION_ID_create" name="Customers create" />
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="ProcessId">
+      <bpmndi:BPMNShape id="node_1_di" bpmnElement="node_1">
+        <dc:Bounds x="150" y="150" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="node_2_di" bpmnElement="node_2">
+        <dc:Bounds x="290" y="150" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="node_1-node_2_di" bpmnElement="node_1-node_2">
+        <di:waypoint x="186" y="168" />
+        <di:waypoint x="290" y="168" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

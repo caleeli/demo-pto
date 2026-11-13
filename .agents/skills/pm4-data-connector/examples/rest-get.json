@@ -1,0 +1,29 @@
+{
+  "name": "List Universities",
+  "description": "Public university search",
+  "type": "REST",
+  "authtype": "NONE",
+  "status": "ACTIVE",
+  "data_source_category_id": "CATEGORY_ID",
+  "endpoints": {
+    "listUniversities": {
+      "purpose": "listUniversities",
+      "method": "GET",
+      "url": "http://universities.hipolabs.com/search",
+      "description": "Universities by country",
+      "params": [
+        {
+          "key": "country",
+          "value": "{{country}}",
+          "required": true
+        }
+      ],
+      "headers": [],
+      "body": "",
+      "body_type": "json",
+      "timeout": 0,
+      "retry_attempts": 0,
+      "retry_wait_time": 5
+    }
+  }
+}

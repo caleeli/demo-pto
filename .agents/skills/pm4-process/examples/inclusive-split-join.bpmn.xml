@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd" id="Definitions_Inclusive" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="InclusiveProcess" name="InclusiveReviews" isExecutable="true">
+    <bpmn:startEvent id="inclusive_start" name="Reviews requested"><bpmn:outgoing>inclusive_enter</bpmn:outgoing></bpmn:startEvent>
+    <bpmn:inclusiveGateway id="inclusive_split" name="Required reviews" gatewayDirection="Diverging" default="inclusive_none">
+      <bpmn:incoming>inclusive_enter</bpmn:incoming><bpmn:outgoing>inclusive_to_finance</bpmn:outgoing><bpmn:outgoing>inclusive_to_legal</bpmn:outgoing><bpmn:outgoing>inclusive_none</bpmn:outgoing>
+    </bpmn:inclusiveGateway>
+    <bpmn:task id="inclusive_finance" name="Finance review" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester"><bpmn:incoming>inclusive_to_finance</bpmn:incoming><bpmn:outgoing>inclusive_finance_done</bpmn:outgoing></bpmn:task>
+    <bpmn:task id="inclusive_legal" name="Legal review" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester"><bpmn:incoming>inclusive_to_legal</bpmn:incoming><bpmn:outgoing>inclusive_legal_done</bpmn:outgoing></bpmn:task>
+    <bpmn:inclusiveGateway id="inclusive_join" name="Selected reviews complete" gatewayDirection="Converging">
+      <bpmn:incoming>inclusive_finance_done</bpmn:incoming><bpmn:incoming>inclusive_legal_done</bpmn:incoming><bpmn:outgoing>inclusive_finish</bpmn:outgoing>
+    </bpmn:inclusiveGateway>
+    <bpmn:endEvent id="inclusive_end" name="Reviewed"><bpmn:incoming>inclusive_finish</bpmn:incoming></bpmn:endEvent>
+    <bpmn:endEvent id="inclusive_skipped" name="No review required"><bpmn:incoming>inclusive_none</bpmn:incoming></bpmn:endEvent>
+    <bpmn:sequenceFlow id="inclusive_enter" sourceRef="inclusive_start" targetRef="inclusive_split" />
+    <bpmn:sequenceFlow id="inclusive_to_finance" name="Finance needed" sourceRef="inclusive_split" targetRef="inclusive_finance"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">needsFinance === true</bpmn:conditionExpression></bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="inclusive_to_legal" name="Legal needed" sourceRef="inclusive_split" targetRef="inclusive_legal"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">needsLegal === true</bpmn:conditionExpression></bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="inclusive_none" name="None selected" sourceRef="inclusive_split" targetRef="inclusive_skipped" />
+    <bpmn:sequenceFlow id="inclusive_finance_done" sourceRef="inclusive_finance" targetRef="inclusive_join" />
+    <bpmn:sequenceFlow id="inclusive_legal_done" sourceRef="inclusive_legal" targetRef="inclusive_join" />
+    <bpmn:sequenceFlow id="inclusive_finish" sourceRef="inclusive_join" targetRef="inclusive_end" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_Inclusive"><bpmndi:BPMNPlane id="Plane_Inclusive" bpmnElement="InclusiveProcess">
+    <bpmndi:BPMNShape id="inclusive_start_di" bpmnElement="inclusive_start"><dc:Bounds x="80" y="160" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="inclusive_split_di" bpmnElement="inclusive_split"><dc:Bounds x="200" y="160" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="inclusive_finance_di" bpmnElement="inclusive_finance"><dc:Bounds x="330" y="60" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="inclusive_legal_di" bpmnElement="inclusive_legal"><dc:Bounds x="330" y="240" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="inclusive_join_di" bpmnElement="inclusive_join"><dc:Bounds x="540" y="160" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="inclusive_end_di" bpmnElement="inclusive_end"><dc:Bounds x="680" y="160" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="inclusive_skipped_di" bpmnElement="inclusive_skipped"><dc:Bounds x="200" y="370" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNEdge id="inclusive_enter_di" bpmnElement="inclusive_enter"><di:waypoint x="116" y="178" /><di:waypoint x="200" y="178" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="inclusive_to_finance_di" bpmnElement="inclusive_to_finance"><di:waypoint x="218" y="160" /><di:waypoint x="218" y="98" /><di:waypoint x="330" y="98" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="inclusive_to_legal_di" bpmnElement="inclusive_to_legal"><di:waypoint x="236" y="178" /><di:waypoint x="275" y="178" /><di:waypoint x="275" y="278" /><di:waypoint x="330" y="278" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="inclusive_none_di" bpmnElement="inclusive_none"><di:waypoint x="218" y="196" /><di:waypoint x="218" y="370" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="inclusive_finance_done_di" bpmnElement="inclusive_finance_done"><di:waypoint x="446" y="98" /><di:waypoint x="558" y="98" /><di:waypoint x="558" y="160" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="inclusive_legal_done_di" bpmnElement="inclusive_legal_done"><di:waypoint x="446" y="278" /><di:waypoint x="558" y="278" /><di:waypoint x="558" y="196" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="inclusive_finish_di" bpmnElement="inclusive_finish"><di:waypoint x="576" y="178" /><di:waypoint x="680" y="178" /></bpmndi:BPMNEdge>
+  </bpmndi:BPMNPlane></bpmndi:BPMNDiagram>
+</bpmn:definitions>

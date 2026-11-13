@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd" id="Definitions_Ending" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="EndingProcess" name="NormalOrTerminate" isExecutable="true">
+    <bpmn:startEvent id="ending_start" name="Start both branches"><bpmn:outgoing>ending_enter</bpmn:outgoing></bpmn:startEvent>
+    <bpmn:parallelGateway id="ending_fork" name="Concurrent work" gatewayDirection="Diverging"><bpmn:incoming>ending_enter</bpmn:incoming><bpmn:outgoing>ending_to_finish</bpmn:outgoing><bpmn:outgoing>ending_to_pending</bpmn:outgoing></bpmn:parallelGateway>
+    <bpmn:task id="ending_finish_task" name="Finish this branch first" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester"><bpmn:incoming>ending_to_finish</bpmn:incoming><bpmn:outgoing>ending_choose</bpmn:outgoing></bpmn:task>
+    <bpmn:task id="ending_pending_task" name="Keep this work pending" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester"><bpmn:incoming>ending_to_pending</bpmn:incoming><bpmn:outgoing>ending_pending_done</bpmn:outgoing></bpmn:task>
+    <bpmn:exclusiveGateway id="ending_choice" name="Terminate remaining work?" default="ending_to_normal"><bpmn:incoming>ending_choose</bpmn:incoming><bpmn:outgoing>ending_to_terminate</bpmn:outgoing><bpmn:outgoing>ending_to_normal</bpmn:outgoing></bpmn:exclusiveGateway>
+    <bpmn:endEvent id="ending_normal" name="Only this branch ends"><bpmn:incoming>ending_to_normal</bpmn:incoming></bpmn:endEvent>
+    <bpmn:endEvent id="ending_terminate" name="Terminate pending work"><bpmn:incoming>ending_to_terminate</bpmn:incoming><bpmn:terminateEventDefinition id="ending_terminate_definition" /></bpmn:endEvent>
+    <bpmn:endEvent id="ending_pending_end" name="Other work completed"><bpmn:incoming>ending_pending_done</bpmn:incoming></bpmn:endEvent>
+    <bpmn:sequenceFlow id="ending_enter" sourceRef="ending_start" targetRef="ending_fork" />
+    <bpmn:sequenceFlow id="ending_to_finish" sourceRef="ending_fork" targetRef="ending_finish_task" />
+    <bpmn:sequenceFlow id="ending_to_pending" sourceRef="ending_fork" targetRef="ending_pending_task" />
+    <bpmn:sequenceFlow id="ending_choose" sourceRef="ending_finish_task" targetRef="ending_choice" />
+    <bpmn:sequenceFlow id="ending_to_terminate" sourceRef="ending_choice" targetRef="ending_terminate"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">terminateRemaining === true</bpmn:conditionExpression></bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="ending_to_normal" sourceRef="ending_choice" targetRef="ending_normal" />
+    <bpmn:sequenceFlow id="ending_pending_done" sourceRef="ending_pending_task" targetRef="ending_pending_end" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_Ending"><bpmndi:BPMNPlane id="Plane_Ending" bpmnElement="EndingProcess">
+    <bpmndi:BPMNShape id="ending_start_di" bpmnElement="ending_start"><dc:Bounds x="80" y="180" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="ending_fork_di" bpmnElement="ending_fork"><dc:Bounds x="200" y="180" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="ending_finish_task_di" bpmnElement="ending_finish_task"><dc:Bounds x="330" y="60" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="ending_pending_task_di" bpmnElement="ending_pending_task"><dc:Bounds x="330" y="300" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="ending_choice_di" bpmnElement="ending_choice" isMarkerVisible="true"><dc:Bounds x="540" y="80" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="ending_normal_di" bpmnElement="ending_normal"><dc:Bounds x="700" y="160" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="ending_terminate_di" bpmnElement="ending_terminate"><dc:Bounds x="700" y="40" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="ending_pending_end_di" bpmnElement="ending_pending_end"><dc:Bounds x="700" y="320" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNEdge id="ending_enter_di" bpmnElement="ending_enter"><di:waypoint x="116" y="198" /><di:waypoint x="200" y="198" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="ending_to_finish_di" bpmnElement="ending_to_finish"><di:waypoint x="218" y="180" /><di:waypoint x="218" y="98" /><di:waypoint x="330" y="98" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="ending_to_pending_di" bpmnElement="ending_to_pending"><di:waypoint x="218" y="216" /><di:waypoint x="218" y="338" /><di:waypoint x="330" y="338" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="ending_choose_di" bpmnElement="ending_choose"><di:waypoint x="446" y="98" /><di:waypoint x="540" y="98" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="ending_to_terminate_di" bpmnElement="ending_to_terminate"><di:waypoint x="558" y="80" /><di:waypoint x="558" y="58" /><di:waypoint x="700" y="58" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="ending_to_normal_di" bpmnElement="ending_to_normal"><di:waypoint x="558" y="116" /><di:waypoint x="558" y="178" /><di:waypoint x="700" y="178" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="ending_pending_done_di" bpmnElement="ending_pending_done"><di:waypoint x="446" y="338" /><di:waypoint x="700" y="338" /></bpmndi:BPMNEdge>
+  </bpmndi:BPMNPlane></bpmndi:BPMNDiagram>
+</bpmn:definitions>

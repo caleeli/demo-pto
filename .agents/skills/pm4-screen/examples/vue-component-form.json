@@ -1,0 +1,40 @@
+{
+  "title": "Pet Registration Form",
+  "description": "Owner registers a pet; the form is a Vue component",
+  "type": "FORM",
+  "screen_category_id": "SCREEN_CATEGORY_ID",
+  "config": [
+    {
+      "name": "Page 1",
+      "order": 1,
+      "items": [
+        {
+          "uuid": "00000000-0000-4000-8000-000000000001",
+          "component": "VueComponentRenderTemplate",
+          "editor-component": "VueComponentEditor",
+          "editor-control": "VueComponentEditor",
+          "label": "Vue component Editor",
+          "inspector": [],
+          "config": {
+            "icon": "fas fa-pencil-ruler",
+            "interactive": true,
+            "componentName": "PetRegistrationForm",
+            "contentVue": "<PetRegistrationForm v-model=\"data\" :submit=\"submit\" :species-collection-id=\"SPECIES_COLLECTION_ID\" />",
+            "handlerVue": "return {\n  created() {\n    if (this.data && this.data.petName === undefined) {\n      this.$set(this.data, 'petName', '');\n    }\n  },\n};",
+            "components": [
+              {
+                "name": "PetRegistrationForm",
+                "key": "COMPONENT_KEY_FROM_CATALOG"
+              }
+            ],
+            "renderVarHtml": null,
+            "ignoreMustache": true
+          }
+        }
+      ]
+    }
+  ],
+  "computed": [],
+  "watchers": [],
+  "custom_css": null
+}

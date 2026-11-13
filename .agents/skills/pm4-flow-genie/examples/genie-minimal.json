@@ -1,0 +1,5 @@
+{
+  "name": "Summarize Invoice",
+  "description": "Extracts key fields from invoice text",
+  "flow_genie_category_id": "CATEGORY_ID"
+}

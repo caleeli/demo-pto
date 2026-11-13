@@ -1,0 +1,38 @@
+{
+  "id": 42,
+  "name": "Summarize Invoice",
+  "description": "Extracts key fields from invoice text",
+  "flow_genie_category_id": "CATEGORY_ID",
+  "config": {
+    "agent_name": "Summarize Invoice",
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "instructions": "You summarize invoice text. Return concise bullet points.",
+    "history": [
+      {
+        "role": "user",
+        "content": [
+          { "type": "text", "text": "Summarize this invoice:\n\n{{invoice_text}}" }
+        ]
+      }
+    ],
+    "output_type": "JSON",
+    "test_data": "{\"invoice_text\":\"Invoice #123 for $500 from Acme Corp\"}",
+    "collections": [],
+    "limit": 15,
+    "match_threshold": 0.15,
+    "max_turns": 30,
+    "tools": [],
+    "dynamic_tools": [],
+    "mcp_servers": [],
+    "subagents": [],
+    "guardrails": { "enabled": false, "policies": [] },
+    "model_settings": {
+      "temperature": 0.2,
+      "top_p": 1,
+      "max_tokens": 2048,
+      "tool_choice": "auto",
+      "parallel_tool_calls": false
+    }
+  }
+}

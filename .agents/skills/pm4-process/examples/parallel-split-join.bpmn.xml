@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd" id="Definitions_Parallel" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="ParallelProcess" name="ParallelChecks" isExecutable="true">
+    <bpmn:startEvent id="parallel_start" name="Checks requested"><bpmn:outgoing>parallel_enter</bpmn:outgoing></bpmn:startEvent>
+    <bpmn:parallelGateway id="parallel_split" name="Run both checks" gatewayDirection="Diverging"><bpmn:incoming>parallel_enter</bpmn:incoming><bpmn:outgoing>parallel_to_a</bpmn:outgoing><bpmn:outgoing>parallel_to_b</bpmn:outgoing></bpmn:parallelGateway>
+    <bpmn:task id="parallel_a" name="Check A" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester"><bpmn:incoming>parallel_to_a</bpmn:incoming><bpmn:outgoing>parallel_a_done</bpmn:outgoing></bpmn:task>
+    <bpmn:task id="parallel_b" name="Check B" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester"><bpmn:incoming>parallel_to_b</bpmn:incoming><bpmn:outgoing>parallel_b_done</bpmn:outgoing></bpmn:task>
+    <bpmn:parallelGateway id="parallel_join" name="Both checks complete" gatewayDirection="Converging"><bpmn:incoming>parallel_a_done</bpmn:incoming><bpmn:incoming>parallel_b_done</bpmn:incoming><bpmn:outgoing>parallel_finish</bpmn:outgoing></bpmn:parallelGateway>
+    <bpmn:endEvent id="parallel_end" name="Checked"><bpmn:incoming>parallel_finish</bpmn:incoming></bpmn:endEvent>
+    <bpmn:sequenceFlow id="parallel_enter" sourceRef="parallel_start" targetRef="parallel_split" />
+    <bpmn:sequenceFlow id="parallel_to_a" sourceRef="parallel_split" targetRef="parallel_a" />
+    <bpmn:sequenceFlow id="parallel_to_b" sourceRef="parallel_split" targetRef="parallel_b" />
+    <bpmn:sequenceFlow id="parallel_a_done" sourceRef="parallel_a" targetRef="parallel_join" />
+    <bpmn:sequenceFlow id="parallel_b_done" sourceRef="parallel_b" targetRef="parallel_join" />
+    <bpmn:sequenceFlow id="parallel_finish" sourceRef="parallel_join" targetRef="parallel_end" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_Parallel"><bpmndi:BPMNPlane id="Plane_Parallel" bpmnElement="ParallelProcess">
+    <bpmndi:BPMNShape id="parallel_start_di" bpmnElement="parallel_start"><dc:Bounds x="80" y="160" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="parallel_split_di" bpmnElement="parallel_split"><dc:Bounds x="200" y="160" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="parallel_a_di" bpmnElement="parallel_a"><dc:Bounds x="330" y="60" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="parallel_b_di" bpmnElement="parallel_b"><dc:Bounds x="330" y="240" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="parallel_join_di" bpmnElement="parallel_join"><dc:Bounds x="540" y="160" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="parallel_end_di" bpmnElement="parallel_end"><dc:Bounds x="680" y="160" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNEdge id="parallel_enter_di" bpmnElement="parallel_enter"><di:waypoint x="116" y="178" /><di:waypoint x="200" y="178" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="parallel_to_a_di" bpmnElement="parallel_to_a"><di:waypoint x="218" y="160" /><di:waypoint x="218" y="98" /><di:waypoint x="330" y="98" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="parallel_to_b_di" bpmnElement="parallel_to_b"><di:waypoint x="218" y="196" /><di:waypoint x="218" y="278" /><di:waypoint x="330" y="278" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="parallel_a_done_di" bpmnElement="parallel_a_done"><di:waypoint x="446" y="98" /><di:waypoint x="558" y="98" /><di:waypoint x="558" y="160" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="parallel_b_done_di" bpmnElement="parallel_b_done"><di:waypoint x="446" y="278" /><di:waypoint x="558" y="278" /><di:waypoint x="558" y="196" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="parallel_finish_di" bpmnElement="parallel_finish"><di:waypoint x="576" y="178" /><di:waypoint x="680" y="178" /></bpmndi:BPMNEdge>
+  </bpmndi:BPMNPlane></bpmndi:BPMNDiagram>
+</bpmn:definitions>

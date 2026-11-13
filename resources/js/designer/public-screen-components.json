@@ -1,0 +1,40 @@
+[
+  {
+    "name": "SlfiInvestorsRecordList",
+    "key": "@/projects/slfiProcess/shared/SlfiInvestorsRecordList.vue"
+  },
+  {
+    "name": "SlfiProcessUploadInvestorsConfirmation",
+    "key": "@/projects/slfiProcess/uploadInvestorsConfirmation/SlfiProcessUploadInvestorsConfirmation.vue"
+  },
+  {
+    "name": "SlfiProcessShowInvestorsConfirmation",
+    "key": "@/projects/slfiProcess/showInvestorsConfirmation/SlfiProcessShowInvestorsConfirmation.vue",
+    "components": [
+      {
+        "name": "SlfiInvestorsRecordList",
+        "key": "@/projects/slfiProcess/shared/SlfiInvestorsRecordList.vue"
+      }
+    ]
+  },
+  {
+    "name": "SlfiProcessReviewInvestorsList",
+    "key": "@/projects/slfiProcess/reviewInvestorsList/SlfiProcessReviewInvestorsList.vue",
+    "components": [
+      {
+        "name": "SlfiInvestorsRecordList",
+        "key": "@/projects/slfiProcess/shared/SlfiInvestorsRecordList.vue"
+      }
+    ]
+  },
+  {
+    "name": "SlfiProcessTrackingForm",
+    "key": "@/projects/slfiProcess/trackingForm/SlfiProcessTrackingForm.vue",
+    "components": [
+      {
+        "name": "SlfiInvestorsRecordList",
+        "key": "@/projects/slfiProcess/shared/SlfiInvestorsRecordList.vue"
+      }
+    ]
+  }
+]

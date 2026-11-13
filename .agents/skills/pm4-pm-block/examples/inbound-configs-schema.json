@@ -1,0 +1,4 @@
+{
+  "customerId": "Customer identifier from parent request",
+  "orderTotal": "Order amount from parent request"
+}

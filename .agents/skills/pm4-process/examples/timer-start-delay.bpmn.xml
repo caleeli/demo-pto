@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd" id="Definitions_Timer" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="TimerProcess" name="ScheduledDelay" isExecutable="true">
+    <bpmn:startEvent id="timer_start" name="Daily at 09 UTC">
+      <bpmn:outgoing>timer_to_delay</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="timer_start_definition"><bpmn:timeCycle>R/2030-01-15T09:00:00Z/P1D</bpmn:timeCycle></bpmn:timerEventDefinition>
+    </bpmn:startEvent>
+    <bpmn:intermediateCatchEvent id="timer_delay" name="Wait thirty minutes">
+      <bpmn:incoming>timer_to_delay</bpmn:incoming><bpmn:outgoing>timer_finish</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="timer_delay_definition"><bpmn:timeDuration>PT30M</bpmn:timeDuration></bpmn:timerEventDefinition>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:endEvent id="timer_end" name="Delay completed"><bpmn:incoming>timer_finish</bpmn:incoming></bpmn:endEvent>
+    <bpmn:sequenceFlow id="timer_to_delay" sourceRef="timer_start" targetRef="timer_delay" />
+    <bpmn:sequenceFlow id="timer_finish" sourceRef="timer_delay" targetRef="timer_end" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_Timer"><bpmndi:BPMNPlane id="Plane_Timer" bpmnElement="TimerProcess">
+    <bpmndi:BPMNShape id="timer_start_di" bpmnElement="timer_start"><dc:Bounds x="100" y="140" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="timer_delay_di" bpmnElement="timer_delay"><dc:Bounds x="280" y="140" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="timer_end_di" bpmnElement="timer_end"><dc:Bounds x="460" y="140" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNEdge id="timer_to_delay_di" bpmnElement="timer_to_delay"><di:waypoint x="136" y="158" /><di:waypoint x="280" y="158" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="timer_finish_di" bpmnElement="timer_finish"><di:waypoint x="316" y="158" /><di:waypoint x="460" y="158" /></bpmndi:BPMNEdge>
+  </bpmndi:BPMNPlane></bpmndi:BPMNDiagram>
+</bpmn:definitions>

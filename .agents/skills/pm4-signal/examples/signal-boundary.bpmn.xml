@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd" id="Definitions_SignalBoundary" targetNamespace="http://bpmn.io/schema/bpmn" exporter="ProcessMaker Modeler" exporterVersion="1.0">
+  <bpmn:process id="ProcessId" name="Prepare Order" isExecutable="true">
+    <bpmn:startEvent id="node_1" name="Start">
+      <bpmn:outgoing>node_1-node_2</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="node_2" name="Prepare order" pm:screenRef="SCREEN_ID" pm:allowInterstitial="false" pm:assignment="requester" pm:assignmentLock="false" pm:allowReassignment="false">
+      <bpmn:incoming>node_1-node_2</bpmn:incoming>
+      <bpmn:outgoing>node_2-node_3</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="node_3" name="Prepared">
+      <bpmn:incoming>node_2-node_3</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:boundaryEvent id="node_4" name="Order cancelled" attachedToRef="node_2" cancelActivity="true" pm:config="cancellation">
+      <bpmn:outgoing>node_4-node_5</bpmn:outgoing>
+      <bpmn:signalEventDefinition signalRef="order_cancelled" />
+    </bpmn:boundaryEvent>
+    <bpmn:endEvent id="node_5" name="Cancelled">
+      <bpmn:incoming>node_4-node_5</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="node_1-node_2" sourceRef="node_1" targetRef="node_2" />
+    <bpmn:sequenceFlow id="node_2-node_3" sourceRef="node_2" targetRef="node_3" />
+    <bpmn:sequenceFlow id="node_4-node_5" sourceRef="node_4" targetRef="node_5" />
+  </bpmn:process>
+  <bpmn:signal id="order_cancelled" name="Order cancelled" />
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="ProcessId">
+      <bpmndi:BPMNShape id="node_1_di" bpmnElement="node_1">
+        <dc:Bounds x="150" y="150" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="node_2_di" bpmnElement="node_2">
+        <dc:Bounds x="250" y="130" width="116" height="76" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="node_3_di" bpmnElement="node_3">
+        <dc:Bounds x="430" y="150" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="node_4_di" bpmnElement="node_4">
+        <dc:Bounds x="310" y="188" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="node_5_di" bpmnElement="node_5">
+        <dc:Bounds x="430" y="270" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="node_1-node_2_di" bpmnElement="node_1-node_2">
+        <di:waypoint x="186" y="168" />
+        <di:waypoint x="250" y="168" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="node_2-node_3_di" bpmnElement="node_2-node_3">
+        <di:waypoint x="366" y="168" />
+        <di:waypoint x="430" y="168" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="node_4-node_5_di" bpmnElement="node_4-node_5">
+        <di:waypoint x="328" y="224" />
+        <di:waypoint x="328" y="288" />
+        <di:waypoint x="430" y="288" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

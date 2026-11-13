@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd" id="Definitions_ManualTask" targetNamespace="http://bpmn.io/schema/bpmn" exporter="ProcessMaker Modeler" exporterVersion="1.0">
+  <bpmn:process id="ManualTaskProcess" name="Warehouse Work Process" isExecutable="true">
+    <bpmn:startEvent id="manual_start" name="Start">
+      <bpmn:outgoing>flow_manual_start_task</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:manualTask id="manual_task" name="Move merchandise" pm:screenRef="DISPLAY_SCREEN_ID" pm:assignment="requester" pm:dueIn="48" pm:allowReassignment="false" pm:assignmentLock="false" pm:allowInterstitial="false">
+      <bpmn:incoming>flow_manual_start_task</bpmn:incoming>
+      <bpmn:outgoing>flow_manual_task_end</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:endEvent id="manual_end" name="End">
+      <bpmn:incoming>flow_manual_task_end</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="flow_manual_start_task" sourceRef="manual_start" targetRef="manual_task" />
+    <bpmn:sequenceFlow id="flow_manual_task_end" sourceRef="manual_task" targetRef="manual_end" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="ManualTaskDiagram">
+    <bpmndi:BPMNPlane id="ManualTaskPlane" bpmnElement="ManualTaskProcess">
+      <bpmndi:BPMNShape id="manual_start_di" bpmnElement="manual_start">
+        <dc:Bounds x="150" y="150" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="manual_task_di" bpmnElement="manual_task">
+        <dc:Bounds x="250" y="128" width="116" height="76" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="manual_end_di" bpmnElement="manual_end">
+        <dc:Bounds x="430" y="150" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="flow_manual_start_task_di" bpmnElement="flow_manual_start_task">
+        <di:waypoint x="186" y="168" />
+        <di:waypoint x="250" y="166" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="flow_manual_task_end_di" bpmnElement="flow_manual_task_end">
+        <di:waypoint x="366" y="166" />
+        <di:waypoint x="430" y="168" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

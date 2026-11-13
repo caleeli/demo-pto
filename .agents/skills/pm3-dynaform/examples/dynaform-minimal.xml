@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dynaForm type="xmlform" name="request_form" width="100%" enableTemplate="0">
+  <APPLICANT_NAME type="text" size="40" maxlength="255" required="1">
+    <en><![CDATA[Applicant Name]]></en>
+  </APPLICANT_NAME>
+  <AMOUNT type="text" size="15" maxlength="15" validate="Real" required="1">
+    <en><![CDATA[Amount]]></en>
+  </AMOUNT>
+  <DEPARTMENT type="dropdown" required="1">
+    <en><![CDATA[Department]]>
+      <option name="HR"><![CDATA[Human Resources]]></option>
+      <option name="IT"><![CDATA[Information Technology]]></option>
+      <option name="FIN"><![CDATA[Finance]]></option>
+    </en>
+  </DEPARTMENT>
+  <NOTES type="textarea" rows="4" cols="60">
+    <en><![CDATA[Notes]]></en>
+  </NOTES>
+  <SUBMIT type="submit">
+    <en><![CDATA[Submit]]></en>
+  </SUBMIT>
+</dynaForm>

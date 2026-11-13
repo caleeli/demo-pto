@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd" id="Definitions_ErrorParent" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="ErrorParent" name="HandleChildError" isExecutable="true">
+    <bpmn:startEvent id="error_parent_start" name="Call validation"><bpmn:outgoing>error_parent_enter</bpmn:outgoing></bpmn:startEvent>
+    <bpmn:callActivity id="error_parent_call" name="ErrorEndingChild" calledElement="ErrorChild-CHILD_PROCESS_ID" pm:config="{&quot;calledElement&quot;:&quot;ErrorChild-CHILD_PROCESS_ID&quot;,&quot;processId&quot;:CHILD_PROCESS_ID,&quot;startEvent&quot;:&quot;error_child_start&quot;,&quot;name&quot;:&quot;ErrorEndingChild&quot;}">
+      <bpmn:incoming>error_parent_enter</bpmn:incoming><bpmn:outgoing>error_parent_normal</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:boundaryEvent id="error_parent_catch" name="Catch child error" attachedToRef="error_parent_call" cancelActivity="true"><bpmn:outgoing>error_parent_recover</bpmn:outgoing><bpmn:errorEventDefinition id="error_parent_catch_definition" /></bpmn:boundaryEvent>
+    <bpmn:task id="error_parent_handle" name="Handle rejected outcome" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester"><bpmn:incoming>error_parent_recover</bpmn:incoming><bpmn:outgoing>error_parent_handled</bpmn:outgoing></bpmn:task>
+    <bpmn:endEvent id="error_parent_success" name="Child completed normally"><bpmn:incoming>error_parent_normal</bpmn:incoming></bpmn:endEvent>
+    <bpmn:endEvent id="error_parent_end" name="Rejection handled"><bpmn:incoming>error_parent_handled</bpmn:incoming></bpmn:endEvent>
+    <bpmn:sequenceFlow id="error_parent_enter" sourceRef="error_parent_start" targetRef="error_parent_call" />
+    <bpmn:sequenceFlow id="error_parent_normal" sourceRef="error_parent_call" targetRef="error_parent_success" />
+    <bpmn:sequenceFlow id="error_parent_recover" sourceRef="error_parent_catch" targetRef="error_parent_handle" />
+    <bpmn:sequenceFlow id="error_parent_handled" sourceRef="error_parent_handle" targetRef="error_parent_end" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_ErrorParent"><bpmndi:BPMNPlane id="Plane_ErrorParent" bpmnElement="ErrorParent">
+    <bpmndi:BPMNShape id="error_parent_start_di" bpmnElement="error_parent_start"><dc:Bounds x="100" y="120" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="error_parent_call_di" bpmnElement="error_parent_call" isExpanded="false"><dc:Bounds x="240" y="100" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="error_parent_catch_di" bpmnElement="error_parent_catch"><dc:Bounds x="280" y="158" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="error_parent_handle_di" bpmnElement="error_parent_handle"><dc:Bounds x="400" y="260" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="error_parent_success_di" bpmnElement="error_parent_success"><dc:Bounds x="600" y="120" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="error_parent_end_di" bpmnElement="error_parent_end"><dc:Bounds x="600" y="280" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNEdge id="error_parent_enter_di" bpmnElement="error_parent_enter"><di:waypoint x="136" y="138" /><di:waypoint x="240" y="138" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="error_parent_normal_di" bpmnElement="error_parent_normal"><di:waypoint x="356" y="138" /><di:waypoint x="600" y="138" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="error_parent_recover_di" bpmnElement="error_parent_recover"><di:waypoint x="298" y="194" /><di:waypoint x="298" y="298" /><di:waypoint x="400" y="298" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="error_parent_handled_di" bpmnElement="error_parent_handled"><di:waypoint x="516" y="298" /><di:waypoint x="600" y="298" /></bpmndi:BPMNEdge>
+  </bpmndi:BPMNPlane></bpmndi:BPMNDiagram>
+</bpmn:definitions>

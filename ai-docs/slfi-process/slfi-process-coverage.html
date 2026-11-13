@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SLFI Process coverage: PM3 to PM4</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; color: #1a1a1a; }
+    h1 { font-size: 1.5rem; }
+    .kpi { display: flex; gap: 2rem; margin: 1.5rem 0; }
+    .kpi div { background: #f4f6f8; padding: 1rem 1.5rem; border-radius: 8px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border: 1px solid #ddd; padding: 0.5rem 0.75rem; text-align: left; }
+    th { background: #eee; }
+    .bar { height: 12px; background: #711426; border-radius: 4px; }
+    .note { font-size: 0.9rem; color: #444; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>SLFI Process coverage: PM3 to PM4</h1>
+  <p>Source: <code>pm3-original/SLFI_Process-9.pmx</code> · Package assets in <code>projects/slfi-process/</code></p>
+  <div class="kpi">
+    <div><strong>58%</strong><br>Asset coverage (implemented + dropped)</div>
+    <div><strong>11</strong><br>Implemented</div>
+    <div><strong>3</strong><br>Dropped (intentional)</div>
+    <div><strong>8</strong><br>Open</div>
+  </div>
+  <div style="max-width: 480px">
+    <div class="bar" style="width: 58%"></div>
+  </div>
+  <p class="note">Process variables are excluded from the denominator (PM4 request data, not a separate catalog).</p>
+  <table>
+    <thead>
+      <tr><th>Family</th><th>PM3</th><th>Status</th><th>PM4 artifact</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>User tasks / dynaforms</td><td>4</td><td>Implemented</td><td>4 YAML + Vue screens</td></tr>
+      <tr><td>BPMN structure</td><td>1</td><td>Implemented</td><td><code>slfi-process-main.xml</code></td></tr>
+      <tr><td>Grids</td><td>3</td><td>Partial</td><td><code>SlfiInvestorsRecordList</code> (no PM3 plugin JS)</td></tr>
+      <tr><td>Triggers</td><td>19</td><td>Partial</td><td>8 scripts / use cases; 11 open</td></tr>
+      <tr><td>Email template</td><td>1</td><td>Implemented</td><td><code>resources/email/SLFIEmailTemplate.html</code></td></tr>
+      <tr><td>Input document</td><td>1</td><td>Open</td><td>Virtual upload — FileUpload in Vue partial</td></tr>
+      <tr><td>Output document</td><td>1</td><td>Open</td><td>External HTML form</td></tr>
+      <tr><td>Message start LEAD</td><td>1</td><td>Open</td><td>Plain start in git BPMN</td></tr>
+      <tr><td>Assignments</td><td>3</td><td>Partial</td><td>Review self-service + <code>SLFI_TAX_USER</code> manual</td></tr>
+      <tr><td>Object permissions</td><td>1</td><td>Open</td><td>Tax group VIEW</td></tr>
+      <tr><td>Plugin psSLFIFunctions</td><td>1</td><td>Open</td><td>Not in export; parser/notifications stubbed</td></tr>
+      <tr><td>Remove Assign Screen</td><td>1</td><td>Dropped</td><td>PM4 task list UX</td></tr>
+      <tr><td>PM Tables</td><td>5+</td><td>Partial</td><td><code>slfi_*</code> schema documented; adapters need migration</td></tr>
+      <tr><td>Report tables</td><td>0</td><td>Dropped</td><td>n/a</td></tr>
+      <tr><td>Web entry</td><td>0</td><td>Dropped</td><td>n/a</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Next: publish scripts → screens → BPMN when <code>PM_BASE_URL</code> and <code>PM_SYNC_TOKEN</code> are set; import PM Table data; wire remaining triggers and Send Email tasks.</p>
+</body>
+</html>

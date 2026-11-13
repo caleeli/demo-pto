@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd" id="Definitions_ChildStartEnd" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="ProcessId" name="Background Check" isExecutable="true">
+    <bpmn:startEvent id="node_1" name="Start">
+      <bpmn:outgoing>flow_1</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="node_2" name="End">
+      <bpmn:incoming>flow_1</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="flow_1" sourceRef="node_1" targetRef="node_2" />
+  </bpmn:process>
+</bpmn:definitions>

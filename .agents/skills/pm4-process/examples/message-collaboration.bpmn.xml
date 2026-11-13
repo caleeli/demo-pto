@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd" id="Definitions_Messages" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:message id="Message_OpenPayment" name="Open payment receiver" />
+  <bpmn:message id="Message_DeliverPayment" name="Payment delivered" />
+  <bpmn:collaboration id="PaymentCollaboration">
+    <bpmn:participant id="payment_sender_pool" name="Payment sender" processRef="PaymentSender" />
+    <bpmn:participant id="payment_receiver_pool" name="Payment receiver" processRef="PaymentReceiver" />
+    <bpmn:messageFlow id="payment_open_message_flow" sourceRef="payment_open" targetRef="payment_receiver_start" />
+    <bpmn:messageFlow id="payment_deliver_message_flow" sourceRef="payment_sender_end" targetRef="payment_receive" />
+  </bpmn:collaboration>
+  <bpmn:process id="PaymentSender" name="PaymentSender" isExecutable="true">
+    <bpmn:startEvent id="payment_sender_start" name="Start sender"><bpmn:outgoing>payment_begin</bpmn:outgoing></bpmn:startEvent>
+    <bpmn:intermediateThrowEvent id="payment_open" name="Open receiver request">
+      <bpmn:incoming>payment_begin</bpmn:incoming><bpmn:outgoing>payment_prepare</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="payment_open_definition" messageRef="Message_OpenPayment" />
+    </bpmn:intermediateThrowEvent>
+    <bpmn:task id="payment_send_gate" name="Confirm receiver is waiting" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester"><bpmn:incoming>payment_prepare</bpmn:incoming><bpmn:outgoing>payment_send</bpmn:outgoing></bpmn:task>
+    <bpmn:endEvent id="payment_sender_end" name="Deliver payment and end">
+      <bpmn:incoming>payment_send</bpmn:incoming>
+      <bpmn:dataInput id="payment_payload" name="paymentPayload" />
+      <bpmn:inputSet id="payment_input_set"><bpmn:dataInputRefs>payment_payload</bpmn:dataInputRefs></bpmn:inputSet>
+      <bpmn:dataInputAssociation id="payment_mapping">
+        <bpmn:targetRef>payment_payload</bpmn:targetRef>
+        <bpmn:assignment id="payment_assignment"><bpmn:from>paymentId</bpmn:from><bpmn:to>payment_id</bpmn:to></bpmn:assignment>
+      </bpmn:dataInputAssociation>
+      <bpmn:messageEventDefinition id="payment_deliver_definition" messageRef="Message_DeliverPayment" />
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="payment_begin" sourceRef="payment_sender_start" targetRef="payment_open" />
+    <bpmn:sequenceFlow id="payment_prepare" sourceRef="payment_open" targetRef="payment_send_gate" />
+    <bpmn:sequenceFlow id="payment_send" sourceRef="payment_send_gate" targetRef="payment_sender_end" />
+  </bpmn:process>
+  <bpmn:process id="PaymentReceiver" name="PaymentReceiver" isExecutable="true">
+    <bpmn:startEvent id="payment_receiver_start" name="Receiver opened by message">
+      <bpmn:outgoing>payment_wait</bpmn:outgoing><bpmn:messageEventDefinition id="payment_receiver_start_definition" messageRef="Message_OpenPayment" />
+    </bpmn:startEvent>
+    <bpmn:intermediateCatchEvent id="payment_receive" name="Wait for payment payload">
+      <bpmn:incoming>payment_wait</bpmn:incoming><bpmn:outgoing>payment_review</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="payment_receive_definition" messageRef="Message_DeliverPayment" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:task id="payment_check" name="Inspect received payment_id" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester"><bpmn:incoming>payment_review</bpmn:incoming><bpmn:outgoing>payment_received_done</bpmn:outgoing></bpmn:task>
+    <bpmn:endEvent id="payment_receiver_end" name="Payment reviewed"><bpmn:incoming>payment_received_done</bpmn:incoming></bpmn:endEvent>
+    <bpmn:sequenceFlow id="payment_wait" sourceRef="payment_receiver_start" targetRef="payment_receive" />
+    <bpmn:sequenceFlow id="payment_review" sourceRef="payment_receive" targetRef="payment_check" />
+    <bpmn:sequenceFlow id="payment_received_done" sourceRef="payment_check" targetRef="payment_receiver_end" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_Payment"><bpmndi:BPMNPlane id="Plane_Payment" bpmnElement="PaymentCollaboration">
+    <bpmndi:BPMNShape id="payment_sender_pool_di" bpmnElement="payment_sender_pool" isHorizontal="true"><dc:Bounds x="60" y="60" width="820" height="200" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="payment_receiver_pool_di" bpmnElement="payment_receiver_pool" isHorizontal="true"><dc:Bounds x="60" y="340" width="820" height="200" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="payment_sender_start_di" bpmnElement="payment_sender_start"><dc:Bounds x="130" y="140" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="payment_open_di" bpmnElement="payment_open"><dc:Bounds x="290" y="140" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="payment_send_gate_di" bpmnElement="payment_send_gate"><dc:Bounds x="440" y="120" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="payment_sender_end_di" bpmnElement="payment_sender_end"><dc:Bounds x="700" y="140" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="payment_receiver_start_di" bpmnElement="payment_receiver_start"><dc:Bounds x="290" y="420" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="payment_receive_di" bpmnElement="payment_receive"><dc:Bounds x="420" y="420" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="payment_check_di" bpmnElement="payment_check"><dc:Bounds x="550" y="400" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="payment_receiver_end_di" bpmnElement="payment_receiver_end"><dc:Bounds x="760" y="420" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNEdge id="payment_begin_di" bpmnElement="payment_begin"><di:waypoint x="166" y="158" /><di:waypoint x="290" y="158" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="payment_prepare_di" bpmnElement="payment_prepare"><di:waypoint x="326" y="158" /><di:waypoint x="440" y="158" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="payment_send_di" bpmnElement="payment_send"><di:waypoint x="556" y="158" /><di:waypoint x="700" y="158" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="payment_wait_di" bpmnElement="payment_wait"><di:waypoint x="326" y="438" /><di:waypoint x="420" y="438" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="payment_review_di" bpmnElement="payment_review"><di:waypoint x="456" y="438" /><di:waypoint x="550" y="438" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="payment_received_done_di" bpmnElement="payment_received_done"><di:waypoint x="666" y="438" /><di:waypoint x="760" y="438" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="payment_open_message_flow_di" bpmnElement="payment_open_message_flow"><di:waypoint x="308" y="176" /><di:waypoint x="308" y="420" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="payment_deliver_message_flow_di" bpmnElement="payment_deliver_message_flow"><di:waypoint x="718" y="176" /><di:waypoint x="718" y="300" /><di:waypoint x="438" y="300" /><di:waypoint x="438" y="420" /></bpmndi:BPMNEdge>
+  </bpmndi:BPMNPlane></bpmndi:BPMNDiagram>
+</bpmn:definitions>

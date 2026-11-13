@@ -1,0 +1,13 @@
+{
+  "emailServer": "",
+  "type": "screen",
+  "subject": "Invoice {{invoice_id}} approved",
+  "textBody": "",
+  "screenRef": "EMAIL_SCREEN_ID",
+  "toRecipients": [
+    { "type": "requester" }
+  ],
+  "ccRecipients": [],
+  "bccRecipients": [],
+  "attachments": []
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Default",
+    "items": [
+      {
+        "component": "FormInput",
+        "config": {
+          "dataFormat": "string",
+          "helper": "Enter the name of this element",
+          "icon": "far fa-square",
+          "label": "Name",
+          "name": "name",
+          "placeholder": "",
+          "type": "text",
+          "validation": "required"
+        },
+        "editor-component": "FormInput",
+        "editor-control": "FormInput",
+        "inspector": [],
+        "label": "Line Input",
+        "value": null
+      }
+    ]
+  }
+]

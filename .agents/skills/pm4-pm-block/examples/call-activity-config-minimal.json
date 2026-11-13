@@ -1,0 +1,14 @@
+{
+  "processKey": "processmaker-pm-block-65f3a1b2c4d5e-call-activity",
+  "processId": 42,
+  "startEvent": "node_1",
+  "name": "Verify Customer",
+  "inboundConfig": [
+    { "key": "customerId", "value": "applicantId" },
+    { "key": "orderTotal", "value": "amount" }
+  ],
+  "dataMapping": [
+    { "key": "verificationResult", "value": "status", "format": "dotNotation" },
+    { "key": "fullResponse", "value": "", "format": "dotNotation" }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "FormScreenShell",
+  "description": "Empty FORM shell; add the requested controls and a Submit button before using it to complete a task.",
+  "type": "FORM",
+  "status": "ACTIVE",
+  "screen_category_id": "SCREEN_CATEGORY_ID",
+  "computed": [],
+  "custom_css": null,
+  "watchers": [],
+  "config": [
+    {
+      "name": "Page 1",
+      "order": 1,
+      "items": []
+    }
+  ]
+}

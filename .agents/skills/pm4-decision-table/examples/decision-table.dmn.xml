@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" id="definitions" name="Calculation1" namespace="http://www.processmaker.com">
+  <inputData id="amount" name="amount" label="Amount" typeRef="number">
+    <variable id="amount_Var" name="amount" typeRef="number"/>
+  </inputData>
+  <inputData id="customer_tier" name="customer_tier" label="Customer Tier" typeRef="string">
+    <variable id="customer_tier_Var" name="customer_tier" typeRef="string"/>
+  </inputData>
+  <decision id="default" name="default">
+    <informationRequirement>
+      <requiredInput href="#amount"/>
+    </informationRequirement>
+    <informationRequirement>
+      <requiredInput href="#customer_tier"/>
+    </informationRequirement>
+    <variable id="risk" name="risk" typeRef="string"/>
+    <decisionTable id="decisionTable" hitPolicy="FIRST" outputLabel="Calculation 1">
+      <input id="amount" name="amount" label="Amount">
+        <inputExpression typeRef="number">
+          <text>amount</text>
+        </inputExpression>
+      </input>
+      <input id="customer_tier" name="customer_tier" label="Customer Tier">
+        <inputExpression typeRef="string">
+          <text>customer_tier</text>
+        </inputExpression>
+      </input>
+      <output id="risk" name="risk" label="Risk" typeRef="string"/>
+      <rule id="rule_0">
+        <description>Large amount, gold customer</description>
+        <inputEntry id="input_0_0">
+          <text>&gt; 1000</text>
+        </inputEntry>
+        <inputEntry id="input_0_1">
+          <text>"gold"</text>
+        </inputEntry>
+        <outputEntry id="output_0_2">
+          <text>"medium"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_1">
+        <description>Large amount</description>
+        <inputEntry id="input_1_0">
+          <text>&gt; 1000</text>
+        </inputEntry>
+        <inputEntry id="input_1_1">
+          <text>-</text>
+        </inputEntry>
+        <outputEntry id="output_1_2">
+          <text>"high"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_2">
+        <description>Default</description>
+        <inputEntry id="input_2_0">
+          <text>-</text>
+        </inputEntry>
+        <inputEntry id="input_2_1">
+          <text>-</text>
+        </inputEntry>
+        <outputEntry id="output_2_2">
+          <text>"low"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

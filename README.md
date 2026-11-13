@@ -1,0 +1,53 @@
+# Processmaker Demo Pto
+This package provides the necessary base code to start the developing a package in ProcessMaker 4.
+
+## Create project (recommended)
+
+```bash
+composer create-project --stability=dev processmaker/demo-pto:dev-feature/FOUR-34328 my-package
+```
+
+The post-install wizard asks for **Migration** or **PM4 only**, then **ProcessMaker URL**, **API token** (optional), writes `.mcp.json` (processes + screens), `.env.example`, and installs skills.
+
+Asset publish (PM4 core deploy APIs; set `PM_BASE_URL` / `PM_SYNC_TOKEN`), in order:
+
+```bash
+php .agents/skills/upsert-script-php/scripts/upsert-script.php projects/{slug}/scripts/my-script.php
+php .agents/skills/upsert-screen-yaml/scripts/upsert-screen.php projects/{slug}/screens/my-screen.yaml
+php .agents/skills/upsert-process-bpmn/scripts/sync-process.php upsert projects/{slug}/bpmn/my-process.xml
+```
+
+Non-interactive:
+
+```bash
+PM_SKILLS_PROFILE=migration NAYRA_SERVER=https://pm.example.com PM_SYNC_TOKEN=… \
+  composer create-project --stability=dev processmaker/demo-pto:dev-feature/FOUR-34328 my-package
+```
+
+## Development
+Prefer `composer create-project` above. To rename a local clone:
+
+```
+git clone https://github.com/ProcessMaker/demo-pto.git my-package
+cd my-package
+php rename-project.php my-package
+composer install
+npm install
+npm run prod
+```
+
+For Screen Builder screens (YAML + `VueComponentRenderTemplate`), place Vue SFCs under `resources/js/projects/demoPto/`, register them in `resources/js/designer/public-screen-components.json`, then `npm run prod` and publish assets on ProcessMaker. See [ai-docs/screen-builder.md](ai-docs/screen-builder.md).
+
+`rename-project.php` also renames `demoPto` → camelCase slug (e.g. `demoLeave`).
+
+## Installation
+* Use `composer require processmaker/demo-pto` to install the package.
+* Use `php artisan demo-pto:install` to install generate the dependencies.
+
+## Navigation and testing
+* Navigate to administration tab in your ProcessMaker 4
+* Select `Skeleton Package` from the administrative sidebar
+
+## Uninstall
+* Use `php artisan demo-pto:uninstall` to uninstall the package
+* Use `composer remove processmaker/demo-pto` to remove the package completely

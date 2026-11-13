@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd" id="Definitions_Race" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:message id="Message_PaymentReceived" name="Payment Received" />
+  <bpmn:process id="RaceProcess" name="PaymentTimeoutRace" isExecutable="true">
+    <bpmn:startEvent id="race_start" name="Await payment"><bpmn:outgoing>race_enter</bpmn:outgoing></bpmn:startEvent>
+    <bpmn:eventBasedGateway id="race_choice" name="Payment or timeout"><bpmn:incoming>race_enter</bpmn:incoming><bpmn:outgoing>race_to_message</bpmn:outgoing><bpmn:outgoing>race_to_timer</bpmn:outgoing></bpmn:eventBasedGateway>
+    <bpmn:intermediateCatchEvent id="race_message" name="Payment received">
+      <bpmn:incoming>race_to_message</bpmn:incoming><bpmn:outgoing>race_paid</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="race_message_definition" messageRef="Message_PaymentReceived" pm:variableName="payment" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:intermediateCatchEvent id="race_timer" name="Payment overdue">
+      <bpmn:incoming>race_to_timer</bpmn:incoming><bpmn:outgoing>race_timed_out</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="race_timer_definition"><bpmn:timeDuration>PT24H</bpmn:timeDuration></bpmn:timerEventDefinition>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:task id="race_receipt" name="Record payment" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester"><bpmn:incoming>race_paid</bpmn:incoming><bpmn:outgoing>race_receipt_done</bpmn:outgoing></bpmn:task>
+    <bpmn:task id="race_followup" name="Follow up unpaid invoice" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester"><bpmn:incoming>race_timed_out</bpmn:incoming><bpmn:outgoing>race_followup_done</bpmn:outgoing></bpmn:task>
+    <bpmn:endEvent id="race_end" name="Outcome handled"><bpmn:incoming>race_receipt_done</bpmn:incoming><bpmn:incoming>race_followup_done</bpmn:incoming></bpmn:endEvent>
+    <bpmn:sequenceFlow id="race_enter" sourceRef="race_start" targetRef="race_choice" />
+    <bpmn:sequenceFlow id="race_to_message" sourceRef="race_choice" targetRef="race_message" />
+    <bpmn:sequenceFlow id="race_to_timer" sourceRef="race_choice" targetRef="race_timer" />
+    <bpmn:sequenceFlow id="race_paid" sourceRef="race_message" targetRef="race_receipt" />
+    <bpmn:sequenceFlow id="race_timed_out" sourceRef="race_timer" targetRef="race_followup" />
+    <bpmn:sequenceFlow id="race_receipt_done" sourceRef="race_receipt" targetRef="race_end" />
+    <bpmn:sequenceFlow id="race_followup_done" sourceRef="race_followup" targetRef="race_end" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_Race"><bpmndi:BPMNPlane id="Plane_Race" bpmnElement="RaceProcess">
+    <bpmndi:BPMNShape id="race_start_di" bpmnElement="race_start"><dc:Bounds x="80" y="160" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="race_choice_di" bpmnElement="race_choice"><dc:Bounds x="200" y="160" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="race_message_di" bpmnElement="race_message"><dc:Bounds x="330" y="80" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="race_timer_di" bpmnElement="race_timer"><dc:Bounds x="330" y="260" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="race_receipt_di" bpmnElement="race_receipt"><dc:Bounds x="460" y="60" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="race_followup_di" bpmnElement="race_followup"><dc:Bounds x="460" y="240" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="race_end_di" bpmnElement="race_end"><dc:Bounds x="700" y="160" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNEdge id="race_enter_di" bpmnElement="race_enter"><di:waypoint x="116" y="178" /><di:waypoint x="200" y="178" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="race_to_message_di" bpmnElement="race_to_message"><di:waypoint x="218" y="160" /><di:waypoint x="218" y="98" /><di:waypoint x="330" y="98" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="race_to_timer_di" bpmnElement="race_to_timer"><di:waypoint x="218" y="196" /><di:waypoint x="218" y="278" /><di:waypoint x="330" y="278" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="race_paid_di" bpmnElement="race_paid"><di:waypoint x="366" y="98" /><di:waypoint x="460" y="98" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="race_timed_out_di" bpmnElement="race_timed_out"><di:waypoint x="366" y="278" /><di:waypoint x="460" y="278" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="race_receipt_done_di" bpmnElement="race_receipt_done"><di:waypoint x="576" y="98" /><di:waypoint x="718" y="98" /><di:waypoint x="718" y="160" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="race_followup_done_di" bpmnElement="race_followup_done"><di:waypoint x="576" y="278" /><di:waypoint x="718" y="278" /><di:waypoint x="718" y="196" /></bpmndi:BPMNEdge>
+  </bpmndi:BPMNPlane></bpmndi:BPMNDiagram>
+</bpmn:definitions>

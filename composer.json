@@ -1,0 +1,47 @@
+{
+    "name": "processmaker/demo-pto",
+    "friendly_name": "Demo Pto",
+    "description": "Package skeleton to develop a package for ProcessMaker 4",
+    "license": "AGPL-3.0-or-later",
+    "version": "2026.1.0",
+    "type": "project",
+    "authors": [
+        {
+            "name": "DevOps",
+            "email": "devops@processmaker.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ProcessMaker\\Package\\DemoPto\\": "src",
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ProcessMaker\\Package\\DemoPto\\PackageServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "cs": [
+            "@php vendor/bin/php-cs-fixer fix --show-progress=dots --ansi --diff -vv 2>&1 | php php-cs-fixer-post.php",
+            "@php vendor/bin/phpcbf",
+            "@php vendor/bin/phpcs --report-emacs"
+        ],
+        "post-install-cmd": [
+            "git config core.hooksPath ./.git-hooks"
+        ],
+        "post-create-project-cmd": [
+            "@php rename-project.php"
+        ]
+    },
+    "require": {
+        "swaggest/json-schema": "^0.12"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.9",
+        "friendsofphp/php-cs-fixer": "^3.50"
+    }
+}

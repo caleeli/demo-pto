@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd" id="Definitions_Noninterrupting" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="NoninterruptingProcess" name="NoninterruptingReminder" isExecutable="true">
+    <bpmn:startEvent id="reminder_start" name="Review requested"><bpmn:outgoing>reminder_enter</bpmn:outgoing></bpmn:startEvent>
+    <bpmn:task id="reminder_review" name="Review application" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester"><bpmn:incoming>reminder_enter</bpmn:incoming><bpmn:outgoing>reminder_normal</bpmn:outgoing></bpmn:task>
+    <bpmn:boundaryEvent id="reminder_deadline" name="Reminder due" attachedToRef="reminder_review" cancelActivity="false">
+      <bpmn:outgoing>reminder_timeout</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="reminder_deadline_timer_event_definition"><bpmn:timeDuration>PT30M</bpmn:timeDuration></bpmn:timerEventDefinition>
+    </bpmn:boundaryEvent>
+    <bpmn:task id="reminder_followup" name="Contact reviewer" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester"><bpmn:incoming>reminder_timeout</bpmn:incoming><bpmn:outgoing>reminder_followup_done</bpmn:outgoing></bpmn:task>
+    <bpmn:endEvent id="reminder_reviewed" name="Review complete"><bpmn:incoming>reminder_normal</bpmn:incoming></bpmn:endEvent>
+    <bpmn:endEvent id="reminder_contacted" name="Reviewer contacted"><bpmn:incoming>reminder_followup_done</bpmn:incoming></bpmn:endEvent>
+    <bpmn:sequenceFlow id="reminder_enter" sourceRef="reminder_start" targetRef="reminder_review" />
+    <bpmn:sequenceFlow id="reminder_normal" sourceRef="reminder_review" targetRef="reminder_reviewed" />
+    <bpmn:sequenceFlow id="reminder_timeout" sourceRef="reminder_deadline" targetRef="reminder_followup" />
+    <bpmn:sequenceFlow id="reminder_followup_done" sourceRef="reminder_followup" targetRef="reminder_contacted" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_Noninterrupting"><bpmndi:BPMNPlane id="Plane_Noninterrupting" bpmnElement="NoninterruptingProcess">
+    <bpmndi:BPMNShape id="reminder_start_di" bpmnElement="reminder_start"><dc:Bounds x="100" y="120" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="reminder_review_di" bpmnElement="reminder_review"><dc:Bounds x="240" y="100" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="reminder_deadline_di" bpmnElement="reminder_deadline"><dc:Bounds x="280" y="158" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="reminder_followup_di" bpmnElement="reminder_followup"><dc:Bounds x="400" y="260" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="reminder_reviewed_di" bpmnElement="reminder_reviewed"><dc:Bounds x="600" y="120" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="reminder_contacted_di" bpmnElement="reminder_contacted"><dc:Bounds x="600" y="280" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNEdge id="reminder_enter_di" bpmnElement="reminder_enter"><di:waypoint x="136" y="138" /><di:waypoint x="240" y="138" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="reminder_normal_di" bpmnElement="reminder_normal"><di:waypoint x="356" y="138" /><di:waypoint x="600" y="138" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="reminder_timeout_di" bpmnElement="reminder_timeout"><di:waypoint x="298" y="194" /><di:waypoint x="298" y="298" /><di:waypoint x="400" y="298" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="reminder_followup_done_di" bpmnElement="reminder_followup_done"><di:waypoint x="516" y="298" /><di:waypoint x="600" y="298" /></bpmndi:BPMNEdge>
+  </bpmndi:BPMNPlane></bpmndi:BPMNDiagram>
+</bpmn:definitions>

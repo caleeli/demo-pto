@@ -1,0 +1,7 @@
+,Inputs,,Outputs,
+,Amount,Customer Tier,Risk,Description
+,amount,customer_tier,risk,
+Type,Number,String,String,
+1,> 1000,"""gold""","""medium""","Large amount, gold customer"
+2,> 1000,-,"""high""",Large amount
+3,-,-,"""low""",Default

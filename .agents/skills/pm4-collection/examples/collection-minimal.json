@@ -1,0 +1,12 @@
+{
+  "name": "Customers",
+  "description": "Customer master data",
+  "create_screen_id": 101,
+  "read_screen_id": 102,
+  "update_screen_id": 103,
+  "custom_title": "{{ data.name }}",
+  "signal_create": false,
+  "signal_update": false,
+  "signal_delete": false,
+  "obfuscate": false
+}

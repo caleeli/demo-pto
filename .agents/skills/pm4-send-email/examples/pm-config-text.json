@@ -1,0 +1,13 @@
+{
+  "emailServer": "",
+  "type": "text",
+  "subject": "Invoice {{invoice_id}} approved",
+  "textBody": "Hello {{requester_name}},\n\nYour invoice was approved.",
+  "screenRef": null,
+  "toRecipients": [
+    { "type": "email", "value": "{{notify_email}}" }
+  ],
+  "ccRecipients": [],
+  "bccRecipients": [],
+  "attachments": []
+}

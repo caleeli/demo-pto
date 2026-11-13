@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd"
+                  id="Definitions_EmbeddedSubProcess"
+                  targetNamespace="http://bpmn.io/schema/bpmn"
+                  exporter="ProcessMaker Modeler"
+                  exporterVersion="1.0">
+  <bpmn:process id="ProcessId" name="GroupedPhases" isExecutable="true">
+    <bpmn:startEvent id="node_1" name="Start">
+      <bpmn:outgoing>flow_1</bpmn:outgoing>
+    </bpmn:startEvent>
+
+    <bpmn:subProcess id="Sub_Capture" name="Capture">
+      <bpmn:incoming>flow_1</bpmn:incoming>
+      <bpmn:outgoing>flow_2</bpmn:outgoing>
+      <bpmn:startEvent id="Start_Capture">
+        <bpmn:outgoing>flow_cap_1</bpmn:outgoing>
+      </bpmn:startEvent>
+      <bpmn:task id="Task_Capture" name="Enter data" pm:screenRef="SCREEN_ID" pm:assignment="requester">
+        <bpmn:incoming>flow_cap_1</bpmn:incoming>
+        <bpmn:outgoing>flow_cap_2</bpmn:outgoing>
+      </bpmn:task>
+      <bpmn:endEvent id="End_Capture">
+        <bpmn:incoming>flow_cap_2</bpmn:incoming>
+      </bpmn:endEvent>
+      <bpmn:sequenceFlow id="flow_cap_1" sourceRef="Start_Capture" targetRef="Task_Capture"/>
+      <bpmn:sequenceFlow id="flow_cap_2" sourceRef="Task_Capture" targetRef="End_Capture"/>
+    </bpmn:subProcess>
+
+    <bpmn:subProcess id="Sub_Review" name="Review">
+      <bpmn:incoming>flow_2</bpmn:incoming>
+      <bpmn:outgoing>flow_3</bpmn:outgoing>
+      <bpmn:startEvent id="Start_Review">
+        <bpmn:outgoing>flow_rev_1</bpmn:outgoing>
+      </bpmn:startEvent>
+      <bpmn:task id="Task_Review" name="Review request" pm:screenRef="SCREEN_ID" pm:assignment="requester">
+        <bpmn:incoming>flow_rev_1</bpmn:incoming>
+        <bpmn:outgoing>flow_rev_2</bpmn:outgoing>
+      </bpmn:task>
+      <bpmn:exclusiveGateway id="Gw_Review" name="Approved?" default="flow_rev_reject">
+        <bpmn:incoming>flow_rev_2</bpmn:incoming>
+        <bpmn:outgoing>flow_rev_ok</bpmn:outgoing>
+        <bpmn:outgoing>flow_rev_reject</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:endEvent id="End_Review_Ok" name="Approved">
+        <bpmn:incoming>flow_rev_ok</bpmn:incoming>
+      </bpmn:endEvent>
+      <bpmn:task id="Task_Changes" name="Request changes" pm:screenRef="SCREEN_ID" pm:assignment="requester">
+        <bpmn:incoming>flow_rev_reject</bpmn:incoming>
+        <bpmn:outgoing>flow_rev_back</bpmn:outgoing>
+      </bpmn:task>
+      <bpmn:sequenceFlow id="flow_rev_1" sourceRef="Start_Review" targetRef="Task_Review"/>
+      <bpmn:sequenceFlow id="flow_rev_2" sourceRef="Task_Review" targetRef="Gw_Review"/>
+      <bpmn:sequenceFlow id="flow_rev_ok" name="yes" sourceRef="Gw_Review" targetRef="End_Review_Ok">
+        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">approved === true</bpmn:conditionExpression>
+      </bpmn:sequenceFlow>
+      <bpmn:sequenceFlow id="flow_rev_reject" name="no" sourceRef="Gw_Review" targetRef="Task_Changes"/>
+      <bpmn:sequenceFlow id="flow_rev_back" sourceRef="Task_Changes" targetRef="Task_Review"/>
+    </bpmn:subProcess>
+
+    <bpmn:endEvent id="node_end" name="End">
+      <bpmn:incoming>flow_3</bpmn:incoming>
+    </bpmn:endEvent>
+
+    <bpmn:sequenceFlow id="flow_1" sourceRef="node_1" targetRef="Sub_Capture"/>
+    <bpmn:sequenceFlow id="flow_2" sourceRef="Sub_Capture" targetRef="Sub_Review"/>
+    <bpmn:sequenceFlow id="flow_3" sourceRef="Sub_Review" targetRef="node_end"/>
+  </bpmn:process>
+</bpmn:definitions>

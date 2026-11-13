@@ -1,0 +1,20 @@
+{
+  "definition_arrays": {
+    "inputs": ["amount", "customer_tier"],
+    "outputs": ["risk"],
+    "rules": [
+      ["> 1000", "\"gold\"", "\"medium\""],
+      ["> 1000", "-", "\"high\""],
+      ["-", "-", "\"low\""]
+    ],
+    "descriptions": ["Large amount, gold customer", "Large amount", "Default"],
+    "inputLabels": ["Amount", "Customer Tier"],
+    "outputLabels": ["Risk"],
+    "inputTypes": ["number", "string"],
+    "outputTypes": ["string"],
+    "formulas": [
+      { "expression": "amount", "type": "number" },
+      { "expression": "customer_tier", "type": "string" }
+    ]
+  }
+}

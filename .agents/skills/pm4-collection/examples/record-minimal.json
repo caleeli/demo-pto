@@ -1,0 +1,7 @@
+{
+  "data": {
+    "name": "Acme Corp",
+    "email": "contact@acme.example",
+    "status": "active"
+  }
+}

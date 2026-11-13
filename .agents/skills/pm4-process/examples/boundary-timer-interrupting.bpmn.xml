@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd" id="Definitions_Interrupting" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="InterruptingProcess" name="InterruptingDeadline" isExecutable="true">
+    <bpmn:startEvent id="interrupt_start" name="Review requested"><bpmn:outgoing>interrupt_enter</bpmn:outgoing></bpmn:startEvent>
+    <bpmn:task id="interrupt_review" name="Review within thirty minutes" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester"><bpmn:incoming>interrupt_enter</bpmn:incoming><bpmn:outgoing>interrupt_normal</bpmn:outgoing></bpmn:task>
+    <bpmn:boundaryEvent id="interrupt_deadline" name="Deadline reached" attachedToRef="interrupt_review" cancelActivity="true">
+      <bpmn:outgoing>interrupt_timeout</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="interrupt_deadline_timer_event_definition"><bpmn:timeDuration>PT30M</bpmn:timeDuration></bpmn:timerEventDefinition>
+    </bpmn:boundaryEvent>
+    <bpmn:task id="interrupt_escalate" name="Handle overdue review" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester"><bpmn:incoming>interrupt_timeout</bpmn:incoming><bpmn:outgoing>interrupt_escalate_done</bpmn:outgoing></bpmn:task>
+    <bpmn:endEvent id="interrupt_reviewed" name="Reviewed on time"><bpmn:incoming>interrupt_normal</bpmn:incoming></bpmn:endEvent>
+    <bpmn:endEvent id="interrupt_escalated" name="Overdue handled"><bpmn:incoming>interrupt_escalate_done</bpmn:incoming></bpmn:endEvent>
+    <bpmn:sequenceFlow id="interrupt_enter" sourceRef="interrupt_start" targetRef="interrupt_review" />
+    <bpmn:sequenceFlow id="interrupt_normal" sourceRef="interrupt_review" targetRef="interrupt_reviewed" />
+    <bpmn:sequenceFlow id="interrupt_timeout" sourceRef="interrupt_deadline" targetRef="interrupt_escalate" />
+    <bpmn:sequenceFlow id="interrupt_escalate_done" sourceRef="interrupt_escalate" targetRef="interrupt_escalated" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_Interrupting"><bpmndi:BPMNPlane id="Plane_Interrupting" bpmnElement="InterruptingProcess">
+    <bpmndi:BPMNShape id="interrupt_start_di" bpmnElement="interrupt_start"><dc:Bounds x="100" y="120" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="interrupt_review_di" bpmnElement="interrupt_review"><dc:Bounds x="240" y="100" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="interrupt_deadline_di" bpmnElement="interrupt_deadline"><dc:Bounds x="280" y="158" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="interrupt_escalate_di" bpmnElement="interrupt_escalate"><dc:Bounds x="400" y="260" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="interrupt_reviewed_di" bpmnElement="interrupt_reviewed"><dc:Bounds x="600" y="120" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="interrupt_escalated_di" bpmnElement="interrupt_escalated"><dc:Bounds x="600" y="280" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNEdge id="interrupt_enter_di" bpmnElement="interrupt_enter"><di:waypoint x="136" y="138" /><di:waypoint x="240" y="138" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="interrupt_normal_di" bpmnElement="interrupt_normal"><di:waypoint x="356" y="138" /><di:waypoint x="600" y="138" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="interrupt_timeout_di" bpmnElement="interrupt_timeout"><di:waypoint x="298" y="194" /><di:waypoint x="298" y="298" /><di:waypoint x="400" y="298" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="interrupt_escalate_done_di" bpmnElement="interrupt_escalate_done"><di:waypoint x="516" y="298" /><di:waypoint x="600" y="298" /></bpmndi:BPMNEdge>
+  </bpmndi:BPMNPlane></bpmndi:BPMNDiagram>
+</bpmn:definitions>

@@ -1,0 +1,45 @@
+{
+  "title": "slfi-process-review-investors-list",
+  "description": "SLFI \u2014 slfi-process-review-investors-list",
+  "type": "FORM",
+  "config": [
+    {
+      "name": "Page 1",
+      "order": 1,
+      "items": [
+        {
+          "uuid": "0b49e71d-3c06-48a5-b6f3-1de31a0ee22a",
+          "component": "VueComponentRenderTemplate",
+          "editor-component": "VueComponentEditor",
+          "editor-control": "VueComponentEditor",
+          "label": "Vue component Editor",
+          "inspector": [],
+          "config": {
+            "icon": "fas fa-pencil-ruler",
+            "interactive": true,
+            "componentName": "SlfiProcessReviewInvestorsList",
+            "contentVue": "<SlfiProcessReviewInvestorsList v-model=\"data\" :submit=\"submit\" />",
+            "handlerVue": "return {\n  created() {\n    if (!this.data) {\n      return;\n    }\n  },\n};",
+            "components": [
+              {
+                "name": "SlfiProcessReviewInvestorsList",
+                "key": "@/projects/slfiProcess/reviewInvestorsList/SlfiProcessReviewInvestorsList.vue",
+                "components": [
+                  {
+                    "name": "SlfiInvestorsRecordList",
+                    "key": "@/projects/slfiProcess/shared/SlfiInvestorsRecordList.vue"
+                  }
+                ]
+              }
+            ],
+            "renderVarHtml": null,
+            "ignoreMustache": true
+          }
+        }
+      ]
+    }
+  ],
+  "computed": [],
+  "watchers": [],
+  "custom_css": null
+}

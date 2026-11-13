@@ -1,0 +1,10 @@
+vendor
+node_modules
+composer.lock
+webpack.callback.js
+.tools
+.php-cs-fixer.cache
+.php-cs-fixer.php
+coverage
+.env
+.semantic-code-mcp/

@@ -1,0 +1,111 @@
+{
+  "title": "PM4 Screen Example Display Minimal",
+  "description": "Read-only summary of the invoice",
+  "type": "DISPLAY",
+  "screen_category_id": "SCREEN_CATEGORY_ID",
+  "config": [
+    {
+      "name": "Page 1",
+      "order": 1,
+      "items": [
+        {
+          "uuid": "e9f9b952-4529-4a7a-8fe1-09a60c8920dc",
+          "label": "Rich Text",
+          "component": "FormHtmlViewer",
+          "editor-component": "FormHtmlEditor",
+          "editor-control": "FormHtmlEditor",
+          "config": {
+            "icon": "fas fa-pencil-ruler",
+            "label": null,
+            "content": "<p>Invoice <strong>{{invoiceNumber}}</strong> was received.</p>",
+            "interactive": true,
+            "renderVarHtml": false
+          },
+          "inspector": [
+            {
+              "type": "FormTextArea",
+              "field": "content",
+              "config": {
+                "rows": 5,
+                "label": "Content",
+                "value": null,
+                "helper": "The HTML text to display"
+              }
+            },
+            {
+              "type": "FormCheckbox",
+              "field": "renderVarHtml",
+              "config": {
+                "label": "Render HTML from a Variable",
+                "value": null,
+                "helper": null
+              }
+            },
+            {
+              "type": "FormInput",
+              "field": "conditionalHide",
+              "config": {
+                "label": "Visibility Rule",
+                "helper": "This control is hidden until this expression is true"
+              }
+            },
+            {
+              "type": "DeviceVisibility",
+              "field": "deviceVisibility",
+              "config": {
+                "label": "Device Visibility",
+                "helper": "This control is hidden until this expression is true"
+              }
+            },
+            {
+              "type": "FormInput",
+              "field": "customFormatter",
+              "config": {
+                "label": "Custom Format String",
+                "helper": "Use the Mask Pattern format <br> Date ##/##/#### <br> SSN ###-##-#### <br> Phone (###) ###-####",
+                "validation": null
+              }
+            },
+            {
+              "type": "FormInput",
+              "field": "customCssSelector",
+              "config": {
+                "label": "CSS Selector Name",
+                "helper": "Use this in your custom css rules",
+                "validation": "regex: [-?[_a-zA-Z]+[_-a-zA-Z0-9]*]"
+              }
+            },
+            {
+              "type": "FormInput",
+              "field": "ariaLabel",
+              "config": {
+                "label": "Aria Label",
+                "helper": "Attribute designed to help assistive technology (e.g. screen readers) attach a label"
+              }
+            },
+            {
+              "type": "FormInput",
+              "field": "tabindex",
+              "config": {
+                "label": "Tab Order",
+                "helper": "Order in which a user will move focus from one control to another by pressing the Tab key",
+                "validation": "regex: [0-9]*"
+              }
+            },
+            {
+              "type": "EncryptedConfig",
+              "field": "encryptedConfig",
+              "config": {
+                "label": "Encrypted",
+                "helper": null
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "computed": [],
+  "watchers": [],
+  "custom_css": null
+}

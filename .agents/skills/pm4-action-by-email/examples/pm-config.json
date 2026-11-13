@@ -1,0 +1,23 @@
+{
+  "email": "{{approver_email}}",
+  "subject": "Please approve request {{_request_id}}",
+  "bodyType": "text",
+  "body": "Hello,\n\nPlease choose an action below.",
+  "screenRef": "",
+  "emailServer": "",
+  "keyName": "approval_decision",
+  "selectedLanguage": "en",
+  "options": [
+    {
+      "content": "Approve",
+      "value": "approved",
+      "buttonVariant": "success"
+    },
+    {
+      "content": "Reject",
+      "value": "rejected",
+      "buttonVariant": "danger"
+    }
+  ],
+  "startEvent": "subprocess_start"
+}

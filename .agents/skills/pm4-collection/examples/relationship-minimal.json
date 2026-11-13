@@ -1,0 +1,7 @@
+{
+  "name": "Customer Orders",
+  "description": "Child orders for a parent customer record",
+  "parent_collection_key": "data.customerId",
+  "child_collection_id": 5,
+  "child_collection_key": "data.customerId"
+}

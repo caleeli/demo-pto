@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd" id="Definitions_Exclusive" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="ExclusiveProcess" name="ExclusiveFallback" isExecutable="true">
+    <bpmn:startEvent id="exclusive_start" name="Review available"><bpmn:outgoing>exclusive_enter</bpmn:outgoing></bpmn:startEvent>
+    <bpmn:exclusiveGateway id="exclusive_choice" name="Approved?" default="exclusive_fallback">
+      <bpmn:incoming>exclusive_enter</bpmn:incoming><bpmn:outgoing>exclusive_approved</bpmn:outgoing><bpmn:outgoing>exclusive_fallback</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="exclusive_approve" name="Process approval" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester">
+      <bpmn:incoming>exclusive_approved</bpmn:incoming><bpmn:outgoing>exclusive_approve_done</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="exclusive_reject" name="Handle rejection" pm:screenRef="FORM_SCREEN_ID" pm:assignment="requester">
+      <bpmn:incoming>exclusive_fallback</bpmn:incoming><bpmn:outgoing>exclusive_reject_done</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="exclusive_end" name="Outcome handled"><bpmn:incoming>exclusive_approve_done</bpmn:incoming><bpmn:incoming>exclusive_reject_done</bpmn:incoming></bpmn:endEvent>
+    <bpmn:sequenceFlow id="exclusive_enter" sourceRef="exclusive_start" targetRef="exclusive_choice" />
+    <bpmn:sequenceFlow id="exclusive_approved" name="Approved" sourceRef="exclusive_choice" targetRef="exclusive_approve">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">approved === true</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="exclusive_fallback" name="Otherwise" sourceRef="exclusive_choice" targetRef="exclusive_reject" />
+    <bpmn:sequenceFlow id="exclusive_approve_done" sourceRef="exclusive_approve" targetRef="exclusive_end" />
+    <bpmn:sequenceFlow id="exclusive_reject_done" sourceRef="exclusive_reject" targetRef="exclusive_end" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_Exclusive"><bpmndi:BPMNPlane id="Plane_Exclusive" bpmnElement="ExclusiveProcess">
+    <bpmndi:BPMNShape id="exclusive_start_di" bpmnElement="exclusive_start"><dc:Bounds x="100" y="160" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="exclusive_choice_di" bpmnElement="exclusive_choice" isMarkerVisible="true"><dc:Bounds x="220" y="160" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="exclusive_approve_di" bpmnElement="exclusive_approve"><dc:Bounds x="350" y="60" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="exclusive_reject_di" bpmnElement="exclusive_reject"><dc:Bounds x="350" y="240" width="116" height="76" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="exclusive_end_di" bpmnElement="exclusive_end"><dc:Bounds x="580" y="160" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNEdge id="exclusive_enter_di" bpmnElement="exclusive_enter"><di:waypoint x="136" y="178" /><di:waypoint x="220" y="178" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="exclusive_approved_di" bpmnElement="exclusive_approved"><di:waypoint x="238" y="160" /><di:waypoint x="238" y="98" /><di:waypoint x="350" y="98" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="exclusive_fallback_di" bpmnElement="exclusive_fallback"><di:waypoint x="238" y="196" /><di:waypoint x="238" y="278" /><di:waypoint x="350" y="278" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="exclusive_approve_done_di" bpmnElement="exclusive_approve_done"><di:waypoint x="466" y="98" /><di:waypoint x="598" y="98" /><di:waypoint x="598" y="160" /></bpmndi:BPMNEdge>
+    <bpmndi:BPMNEdge id="exclusive_reject_done_di" bpmnElement="exclusive_reject_done"><di:waypoint x="466" y="278" /><di:waypoint x="598" y="278" /><di:waypoint x="598" y="196" /></bpmndi:BPMNEdge>
+  </bpmndi:BPMNPlane></bpmndi:BPMNDiagram>
+</bpmn:definitions>

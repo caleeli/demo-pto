@@ -1,0 +1,2403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProcessMaker-Project version="3.0">
+  <metadata>
+    <meta key="vendor_version">3.8.6</meta>
+    <meta key="vendor_version_code">Michelangelo</meta>
+    <meta key="export_timestamp">1794583349</meta>
+    <meta key="export_datetime"><![CDATA[2026-11-13T15:22:29+00:00]]></meta>
+    <meta key="export_server_os">Linux</meta>
+    <meta key="export_server_php_version">80109</meta>
+    <meta key="workspace">northleaf</meta>
+    <meta key="name">SLFI Process</meta>
+    <meta key="uid">49495392760ca7026529f80008442485</meta>
+  </metadata>
+  <definition class="BPMN">
+    <table name="ACTIVITY">
+      <record>
+        <act_uid>37012459760ca70ef951c71095717114</act_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <pro_uid>23767889160ca70265ac8c7002215083</pro_uid>
+        <act_name>Submit Investor Confirmation Form</act_name>
+        <act_type>TASK</act_type>
+        <act_is_for_compensation>0</act_is_for_compensation>
+        <act_start_quantity>1</act_start_quantity>
+        <act_completion_quantity>0</act_completion_quantity>
+        <act_task_type>EMPTY</act_task_type>
+        <act_implementation></act_implementation>
+        <act_instantiate>0</act_instantiate>
+        <act_script_type></act_script_type>
+        <act_script></act_script>
+        <act_loop_type>EMPTY</act_loop_type>
+        <act_test_before>0</act_test_before>
+        <act_loop_maximum>0</act_loop_maximum>
+        <act_loop_condition>0</act_loop_condition>
+        <act_loop_cardinality>0</act_loop_cardinality>
+        <act_loop_behavior>0</act_loop_behavior>
+        <act_is_adhoc>0</act_is_adhoc>
+        <act_is_collapsed>0</act_is_collapsed>
+        <act_completion_condition>0</act_completion_condition>
+        <act_ordering>0</act_ordering>
+        <act_cancel_remaining_instances>0</act_cancel_remaining_instances>
+        <act_protocol>0</act_protocol>
+        <act_method>0</act_method>
+        <act_is_global>0</act_is_global>
+        <act_referer>0</act_referer>
+        <act_default_flow>0</act_default_flow>
+        <act_master_diagram>0</act_master_diagram>
+        <bou_uid>86339850560ca70ef9575e1023920412</bou_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>37012459760ca70ef951c71095717114</element_uid>
+        <bou_element>47255742060ca704f97bf96018142664</bou_element>
+        <bou_element_type>bpmnActivity</bou_element_type>
+        <bou_x>149</bou_x>
+        <bou_y>17</bou_y>
+        <bou_width>150</bou_width>
+        <bou_height>75</bou_height>
+        <bou_rel_position>0</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnLane</bou_container>
+      </record>
+      <record>
+        <act_uid>47952522060ca7117820a83001764405</act_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <pro_uid>23767889160ca70265ac8c7002215083</pro_uid>
+        <act_name>Tracking Forms</act_name>
+        <act_type>TASK</act_type>
+        <act_is_for_compensation>0</act_is_for_compensation>
+        <act_start_quantity>1</act_start_quantity>
+        <act_completion_quantity>0</act_completion_quantity>
+        <act_task_type>EMPTY</act_task_type>
+        <act_implementation></act_implementation>
+        <act_instantiate>0</act_instantiate>
+        <act_script_type></act_script_type>
+        <act_script></act_script>
+        <act_loop_type>EMPTY</act_loop_type>
+        <act_test_before>0</act_test_before>
+        <act_loop_maximum>0</act_loop_maximum>
+        <act_loop_condition>0</act_loop_condition>
+        <act_loop_cardinality>0</act_loop_cardinality>
+        <act_loop_behavior>0</act_loop_behavior>
+        <act_is_adhoc>0</act_is_adhoc>
+        <act_is_collapsed>0</act_is_collapsed>
+        <act_completion_condition>0</act_completion_condition>
+        <act_ordering>0</act_ordering>
+        <act_cancel_remaining_instances>0</act_cancel_remaining_instances>
+        <act_protocol>0</act_protocol>
+        <act_method>0</act_method>
+        <act_is_global>0</act_is_global>
+        <act_referer>0</act_referer>
+        <act_default_flow>0</act_default_flow>
+        <act_master_diagram>0</act_master_diagram>
+        <bou_uid>16841132860ca7117825545001013681</bou_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>47952522060ca7117820a83001764405</element_uid>
+        <bou_element>47255742060ca704f97bf96018142664</bou_element>
+        <bou_element_type>bpmnActivity</bou_element_type>
+        <bou_x>476</bou_x>
+        <bou_y>18</bou_y>
+        <bou_width>150</bou_width>
+        <bou_height>75</bou_height>
+        <bou_rel_position>0</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnLane</bou_container>
+      </record>
+      <record>
+        <act_uid>79391920060ca7117742054032410881</act_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <pro_uid>23767889160ca70265ac8c7002215083</pro_uid>
+        <act_name>Review Investors List</act_name>
+        <act_type>TASK</act_type>
+        <act_is_for_compensation>0</act_is_for_compensation>
+        <act_start_quantity>1</act_start_quantity>
+        <act_completion_quantity>0</act_completion_quantity>
+        <act_task_type>EMPTY</act_task_type>
+        <act_implementation></act_implementation>
+        <act_instantiate>0</act_instantiate>
+        <act_script_type></act_script_type>
+        <act_script></act_script>
+        <act_loop_type>EMPTY</act_loop_type>
+        <act_test_before>0</act_test_before>
+        <act_loop_maximum>0</act_loop_maximum>
+        <act_loop_condition>0</act_loop_condition>
+        <act_loop_cardinality>0</act_loop_cardinality>
+        <act_loop_behavior>0</act_loop_behavior>
+        <act_is_adhoc>0</act_is_adhoc>
+        <act_is_collapsed>0</act_is_collapsed>
+        <act_completion_condition>0</act_completion_condition>
+        <act_ordering>0</act_ordering>
+        <act_cancel_remaining_instances>0</act_cancel_remaining_instances>
+        <act_protocol>0</act_protocol>
+        <act_method>0</act_method>
+        <act_is_global>0</act_is_global>
+        <act_referer>0</act_referer>
+        <act_default_flow>0</act_default_flow>
+        <act_master_diagram>0</act_master_diagram>
+        <bou_uid>47794328760ca71177474c2092448469</bou_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>79391920060ca7117742054032410881</element_uid>
+        <bou_element>36681390560ca704f9fdf03082888768</bou_element>
+        <bou_element_type>bpmnActivity</bou_element_type>
+        <bou_x>313</bou_x>
+        <bou_y>79</bou_y>
+        <bou_width>150</bou_width>
+        <bou_height>75</bou_height>
+        <bou_rel_position>0</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnLane</bou_container>
+      </record>
+    </table>
+    <table name="ARTIFACT"/>
+    <table name="BOUND">
+      <record>
+        <bou_uid>10424890660ca713f7d16f3078695939</bou_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>61902338660ca713f7cc0d1011700647</element_uid>
+        <bou_element>47255742060ca704f97bf96018142664</bou_element>
+        <bou_element_type>bpmnEvent</bou_element_type>
+        <bou_x>665</bou_x>
+        <bou_y>39</bou_y>
+        <bou_width>33</bou_width>
+        <bou_height>33</bou_height>
+        <bou_rel_position>0</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnLane</bou_container>
+      </record>
+      <record>
+        <bou_uid>12854665060ca704f8ed2d8069854283</bou_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>29974245760ca704f8e6255034053163</element_uid>
+        <bou_element>92350894060ca7026552cb2005657295</bou_element>
+        <bou_element_type>bpmnLaneset</bou_element_type>
+        <bou_x>33</bou_x>
+        <bou_y>32</bou_y>
+        <bou_width>782</bou_width>
+        <bou_height>337</bou_height>
+        <bou_rel_position>0</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnDiagram</bou_container>
+      </record>
+      <record>
+        <bou_uid>13170255260d1dd657b8468015055806</bou_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>40057916360d1dd657b4254052607158</element_uid>
+        <bou_element>36681390560ca704f9fdf03082888768</bou_element>
+        <bou_element_type>bpmnEvent</bou_element_type>
+        <bou_x>607</bou_x>
+        <bou_y>44</bou_y>
+        <bou_width>33</bou_width>
+        <bou_height>33</bou_height>
+        <bou_rel_position>0</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnLane</bou_container>
+      </record>
+      <record>
+        <bou_uid>16841132860ca7117825545001013681</bou_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>47952522060ca7117820a83001764405</element_uid>
+        <bou_element>47255742060ca704f97bf96018142664</bou_element>
+        <bou_element_type>bpmnActivity</bou_element_type>
+        <bou_x>476</bou_x>
+        <bou_y>18</bou_y>
+        <bou_width>150</bou_width>
+        <bou_height>75</bou_height>
+        <bou_rel_position>0</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnLane</bou_container>
+      </record>
+      <record>
+        <bou_uid>30439301860ca704fa00e43078348799</bou_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>36681390560ca704f9fdf03082888768</element_uid>
+        <bou_element>29974245760ca704f8e6255034053163</bou_element>
+        <bou_element_type>bpmnLane</bou_element_type>
+        <bou_x>40</bou_x>
+        <bou_y>138</bou_y>
+        <bou_width>741</bou_width>
+        <bou_height>199</bou_height>
+        <bou_rel_position>2</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnPool</bou_container>
+      </record>
+      <record>
+        <bou_uid>35306617560ca70efa15dd9036088040</bou_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>99077771660ca70efa114b6095772472</element_uid>
+        <bou_element>47255742060ca704f97bf96018142664</bou_element>
+        <bou_element_type>bpmnEvent</bou_element_type>
+        <bou_x>81</bou_x>
+        <bou_y>38</bou_y>
+        <bou_width>33</bou_width>
+        <bou_height>33</bou_height>
+        <bou_rel_position>0</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnLane</bou_container>
+      </record>
+      <record>
+        <bou_uid>47794328760ca71177474c2092448469</bou_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>79391920060ca7117742054032410881</element_uid>
+        <bou_element>36681390560ca704f9fdf03082888768</bou_element>
+        <bou_element_type>bpmnActivity</bou_element_type>
+        <bou_x>313</bou_x>
+        <bou_y>79</bou_y>
+        <bou_width>150</bou_width>
+        <bou_height>75</bou_height>
+        <bou_rel_position>0</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnLane</bou_container>
+      </record>
+      <record>
+        <bou_uid>74259105660ca704f97f494022600804</bou_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>47255742060ca704f97bf96018142664</element_uid>
+        <bou_element>29974245760ca704f8e6255034053163</bou_element>
+        <bou_element_type>bpmnLane</bou_element_type>
+        <bou_x>40</bou_x>
+        <bou_y>0</bou_y>
+        <bou_width>741</bou_width>
+        <bou_height>138</bou_height>
+        <bou_rel_position>1</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnPool</bou_container>
+      </record>
+      <record>
+        <bou_uid>78390682960d1dd6572e611097405586</bou_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>55207458760d1dd65728c95057127352</element_uid>
+        <bou_element>36681390560ca704f9fdf03082888768</bou_element>
+        <bou_element_type>bpmnGateway</bou_element_type>
+        <bou_x>531</bou_x>
+        <bou_y>40</bou_y>
+        <bou_width>41</bou_width>
+        <bou_height>41</bou_height>
+        <bou_rel_position>0</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnLane</bou_container>
+      </record>
+      <record>
+        <bou_uid>86339850560ca70ef9575e1023920412</bou_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>37012459760ca70ef951c71095717114</element_uid>
+        <bou_element>47255742060ca704f97bf96018142664</bou_element>
+        <bou_element_type>bpmnActivity</bou_element_type>
+        <bou_x>149</bou_x>
+        <bou_y>17</bou_y>
+        <bou_width>150</bou_width>
+        <bou_height>75</bou_height>
+        <bou_rel_position>0</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnLane</bou_container>
+      </record>
+    </table>
+    <table name="DATA"/>
+    <table name="DIAGRAM">
+      <record>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_name>SLFI Process</dia_name>
+        <dia_is_closable>0</dia_is_closable>
+      </record>
+    </table>
+    <table name="DOCUMENTATION"/>
+    <table name="EVENT">
+      <record>
+        <evn_uid>40057916360d1dd657b4254052607158</evn_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <pro_uid>23767889160ca70265ac8c7002215083</pro_uid>
+        <evn_name></evn_name>
+        <evn_type>END</evn_type>
+        <evn_marker>EMPTY</evn_marker>
+        <evn_is_interrupting>1</evn_is_interrupting>
+        <evn_attached_to></evn_attached_to>
+        <evn_cancel_activity>0</evn_cancel_activity>
+        <evn_activity_ref></evn_activity_ref>
+        <evn_wait_for_completion>0</evn_wait_for_completion>
+        <evn_error_name></evn_error_name>
+        <evn_error_code></evn_error_code>
+        <evn_escalation_name></evn_escalation_name>
+        <evn_escalation_code></evn_escalation_code>
+        <evn_condition></evn_condition>
+        <evn_message></evn_message>
+        <evn_operation_name></evn_operation_name>
+        <evn_operation_implementation_ref></evn_operation_implementation_ref>
+        <evn_time_date></evn_time_date>
+        <evn_time_cycle></evn_time_cycle>
+        <evn_time_duration></evn_time_duration>
+        <evn_behavior>THROW</evn_behavior>
+        <bou_uid>13170255260d1dd657b8468015055806</bou_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>40057916360d1dd657b4254052607158</element_uid>
+        <bou_element>36681390560ca704f9fdf03082888768</bou_element>
+        <bou_element_type>bpmnEvent</bou_element_type>
+        <bou_x>607</bou_x>
+        <bou_y>44</bou_y>
+        <bou_width>33</bou_width>
+        <bou_height>33</bou_height>
+        <bou_rel_position>0</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnLane</bou_container>
+      </record>
+      <record>
+        <evn_uid>61902338660ca713f7cc0d1011700647</evn_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <pro_uid>23767889160ca70265ac8c7002215083</pro_uid>
+        <evn_name></evn_name>
+        <evn_type>END</evn_type>
+        <evn_marker>EMPTY</evn_marker>
+        <evn_is_interrupting>1</evn_is_interrupting>
+        <evn_attached_to></evn_attached_to>
+        <evn_cancel_activity>0</evn_cancel_activity>
+        <evn_activity_ref></evn_activity_ref>
+        <evn_wait_for_completion>0</evn_wait_for_completion>
+        <evn_error_name></evn_error_name>
+        <evn_error_code></evn_error_code>
+        <evn_escalation_name></evn_escalation_name>
+        <evn_escalation_code></evn_escalation_code>
+        <evn_condition></evn_condition>
+        <evn_message></evn_message>
+        <evn_operation_name></evn_operation_name>
+        <evn_operation_implementation_ref></evn_operation_implementation_ref>
+        <evn_time_date></evn_time_date>
+        <evn_time_cycle></evn_time_cycle>
+        <evn_time_duration></evn_time_duration>
+        <evn_behavior>THROW</evn_behavior>
+        <bou_uid>10424890660ca713f7d16f3078695939</bou_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>61902338660ca713f7cc0d1011700647</element_uid>
+        <bou_element>47255742060ca704f97bf96018142664</bou_element>
+        <bou_element_type>bpmnEvent</bou_element_type>
+        <bou_x>665</bou_x>
+        <bou_y>39</bou_y>
+        <bou_width>33</bou_width>
+        <bou_height>33</bou_height>
+        <bou_rel_position>0</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnLane</bou_container>
+      </record>
+      <record>
+        <evn_uid>99077771660ca70efa114b6095772472</evn_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <pro_uid>23767889160ca70265ac8c7002215083</pro_uid>
+        <evn_name></evn_name>
+        <evn_type>START</evn_type>
+        <evn_marker>EMPTY</evn_marker>
+        <evn_is_interrupting>1</evn_is_interrupting>
+        <evn_attached_to></evn_attached_to>
+        <evn_cancel_activity>0</evn_cancel_activity>
+        <evn_activity_ref></evn_activity_ref>
+        <evn_wait_for_completion>0</evn_wait_for_completion>
+        <evn_error_name></evn_error_name>
+        <evn_error_code></evn_error_code>
+        <evn_escalation_name></evn_escalation_name>
+        <evn_escalation_code></evn_escalation_code>
+        <evn_condition></evn_condition>
+        <evn_message>LEAD</evn_message>
+        <evn_operation_name></evn_operation_name>
+        <evn_operation_implementation_ref></evn_operation_implementation_ref>
+        <evn_time_date></evn_time_date>
+        <evn_time_cycle></evn_time_cycle>
+        <evn_time_duration></evn_time_duration>
+        <evn_behavior>CATCH</evn_behavior>
+        <bou_uid>35306617560ca70efa15dd9036088040</bou_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>99077771660ca70efa114b6095772472</element_uid>
+        <bou_element>47255742060ca704f97bf96018142664</bou_element>
+        <bou_element_type>bpmnEvent</bou_element_type>
+        <bou_x>81</bou_x>
+        <bou_y>38</bou_y>
+        <bou_width>33</bou_width>
+        <bou_height>33</bou_height>
+        <bou_rel_position>0</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnLane</bou_container>
+      </record>
+    </table>
+    <table name="EXTENSION"/>
+    <table name="FLOW">
+      <record>
+        <flo_uid>363163665654b943f31f682035510408</flo_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <flo_type>SEQUENCE</flo_type>
+        <flo_name> </flo_name>
+        <flo_element_origin>79391920060ca7117742054032410881</flo_element_origin>
+        <flo_element_origin_type>bpmnActivity</flo_element_origin_type>
+        <flo_element_origin_port>0</flo_element_origin_port>
+        <flo_element_dest>55207458760d1dd65728c95057127352</flo_element_dest>
+        <flo_element_dest_type>bpmnGateway</flo_element_dest_type>
+        <flo_element_dest_port>0</flo_element_dest_port>
+        <flo_is_inmediate>1</flo_is_inmediate>
+        <flo_condition></flo_condition>
+        <flo_x1>539</flo_x1>
+        <flo_y1>291</flo_y1>
+        <flo_x2>627</flo_x2>
+        <flo_y2>255</flo_y2>
+        <flo_state><![CDATA[[{"x":539,"y":291},{"x":627,"y":291},{"x":627,"y":255}]]]></flo_state>
+        <flo_position>1</flo_position>
+      </record>
+      <record>
+        <flo_uid>549122304654b943f31f555022091437</flo_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <flo_type>SEQUENCE</flo_type>
+        <flo_name> </flo_name>
+        <flo_element_origin>37012459760ca70ef951c71095717114</flo_element_origin>
+        <flo_element_origin_type>bpmnActivity</flo_element_origin_type>
+        <flo_element_origin_port>0</flo_element_origin_port>
+        <flo_element_dest>79391920060ca7117742054032410881</flo_element_dest>
+        <flo_element_dest_type>bpmnActivity</flo_element_dest_type>
+        <flo_element_dest_port>0</flo_element_dest_port>
+        <flo_is_inmediate>1</flo_is_inmediate>
+        <flo_condition></flo_condition>
+        <flo_x1>300</flo_x1>
+        <flo_y1>126</flo_y1>
+        <flo_x2>388</flo_x2>
+        <flo_y2>291</flo_y2>
+        <flo_state><![CDATA[[{"x":300,"y":126},{"x":300,"y":291},{"x":388,"y":291}]]]></flo_state>
+        <flo_position>1</flo_position>
+      </record>
+      <record>
+        <flo_uid>581226824654b943f31f4e5079238102</flo_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <flo_type>SEQUENCE</flo_type>
+        <flo_name> </flo_name>
+        <flo_element_origin>99077771660ca70efa114b6095772472</flo_element_origin>
+        <flo_element_origin_type>bpmnEvent</flo_element_origin_type>
+        <flo_element_origin_port>0</flo_element_origin_port>
+        <flo_element_dest>37012459760ca70ef951c71095717114</flo_element_dest>
+        <flo_element_dest_type>bpmnActivity</flo_element_dest_type>
+        <flo_element_dest_port>0</flo_element_dest_port>
+        <flo_is_inmediate>1</flo_is_inmediate>
+        <flo_condition></flo_condition>
+        <flo_x1>189</flo_x1>
+        <flo_y1>89</flo_y1>
+        <flo_x2>224</flo_x2>
+        <flo_y2>89</flo_y2>
+        <flo_state><![CDATA[[{"x":189,"y":89},{"x":224,"y":89}]]]></flo_state>
+        <flo_position>1</flo_position>
+      </record>
+      <record>
+        <flo_uid>600097647654b943f31f611047051083</flo_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <flo_type>SEQUENCE</flo_type>
+        <flo_name> </flo_name>
+        <flo_element_origin>47952522060ca7117820a83001764405</flo_element_origin>
+        <flo_element_origin_type>bpmnActivity</flo_element_origin_type>
+        <flo_element_origin_port>0</flo_element_origin_port>
+        <flo_element_dest>61902338660ca713f7cc0d1011700647</flo_element_dest>
+        <flo_element_dest_type>bpmnEvent</flo_element_dest_type>
+        <flo_element_dest_port>0</flo_element_dest_port>
+        <flo_is_inmediate>1</flo_is_inmediate>
+        <flo_condition></flo_condition>
+        <flo_x1>702</flo_x1>
+        <flo_y1>90</flo_y1>
+        <flo_x2>740</flo_x2>
+        <flo_y2>90</flo_y2>
+        <flo_state><![CDATA[[{"x":702,"y":90},{"x":740,"y":90}]]]></flo_state>
+        <flo_position>1</flo_position>
+      </record>
+      <record>
+        <flo_uid>793266664654b943f31f372027910955</flo_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <flo_type>SEQUENCE</flo_type>
+        <flo_name> </flo_name>
+        <flo_element_origin>55207458760d1dd65728c95057127352</flo_element_origin>
+        <flo_element_origin_type>bpmnGateway</flo_element_origin_type>
+        <flo_element_origin_port>0</flo_element_origin_port>
+        <flo_element_dest>47952522060ca7117820a83001764405</flo_element_dest>
+        <flo_element_dest_type>bpmnActivity</flo_element_dest_type>
+        <flo_element_dest_port>0</flo_element_dest_port>
+        <flo_is_inmediate>1</flo_is_inmediate>
+        <flo_condition><![CDATA[@@SLFI_FLAG_CANCEL_CASE == ""]]></flo_condition>
+        <flo_x1>627</flo_x1>
+        <flo_y1>214</flo_y1>
+        <flo_x2>627</flo_x2>
+        <flo_y2>127</flo_y2>
+        <flo_state><![CDATA[[{"x":627,"y":214},{"x":627,"y":127}]]]></flo_state>
+        <flo_position>1</flo_position>
+      </record>
+      <record>
+        <flo_uid>692082657654b943f31f6f0002160076</flo_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <flo_type>SEQUENCE</flo_type>
+        <flo_name> </flo_name>
+        <flo_element_origin>55207458760d1dd65728c95057127352</flo_element_origin>
+        <flo_element_origin_type>bpmnGateway</flo_element_origin_type>
+        <flo_element_origin_port>0</flo_element_origin_port>
+        <flo_element_dest>40057916360d1dd657b4254052607158</flo_element_dest>
+        <flo_element_dest_type>bpmnEvent</flo_element_dest_type>
+        <flo_element_dest_port>0</flo_element_dest_port>
+        <flo_is_inmediate>1</flo_is_inmediate>
+        <flo_condition><![CDATA[@@SLFI_FLAG_CANCEL_CASE != "" && @@SLFI_FLAG_CANCEL_CASE != "RETURN"]]></flo_condition>
+        <flo_x1>647</flo_x1>
+        <flo_y1>235</flo_y1>
+        <flo_x2>682</flo_x2>
+        <flo_y2>235</flo_y2>
+        <flo_state><![CDATA[[{"x":647,"y":235},{"x":682,"y":235}]]]></flo_state>
+        <flo_position>2</flo_position>
+      </record>
+      <record>
+        <flo_uid>410722100654b943f31f770006530382</flo_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <flo_type>SEQUENCE</flo_type>
+        <flo_name> </flo_name>
+        <flo_element_origin>55207458760d1dd65728c95057127352</flo_element_origin>
+        <flo_element_origin_type>bpmnGateway</flo_element_origin_type>
+        <flo_element_origin_port>0</flo_element_origin_port>
+        <flo_element_dest>37012459760ca70ef951c71095717114</flo_element_dest>
+        <flo_element_dest_type>bpmnActivity</flo_element_dest_type>
+        <flo_element_dest_port>0</flo_element_dest_port>
+        <flo_is_inmediate>1</flo_is_inmediate>
+        <flo_condition><![CDATA[@@SLFI_FLAG_CANCEL_CASE == "RETURN"]]></flo_condition>
+        <flo_x1>606</flo_x1>
+        <flo_y1>235</flo_y1>
+        <flo_x2>375</flo_x2>
+        <flo_y2>89</flo_y2>
+        <flo_state><![CDATA[[{"x":606,"y":235},{"x":491,"y":235},{"x":491,"y":89},{"x":375,"y":89}]]]></flo_state>
+        <flo_position>3</flo_position>
+      </record>
+    </table>
+    <table name="GATEWAY">
+      <record>
+        <gat_uid>55207458760d1dd65728c95057127352</gat_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <pro_uid>23767889160ca70265ac8c7002215083</pro_uid>
+        <gat_name></gat_name>
+        <gat_type>EXCLUSIVE</gat_type>
+        <gat_direction>DIVERGING</gat_direction>
+        <gat_instantiate>0</gat_instantiate>
+        <gat_event_gateway_type>NONE</gat_event_gateway_type>
+        <gat_activation_count>0</gat_activation_count>
+        <gat_waiting_for_start>1</gat_waiting_for_start>
+        <gat_default_flow>0</gat_default_flow>
+        <bou_uid>78390682960d1dd6572e611097405586</bou_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>55207458760d1dd65728c95057127352</element_uid>
+        <bou_element>36681390560ca704f9fdf03082888768</bou_element>
+        <bou_element_type>bpmnGateway</bou_element_type>
+        <bou_x>531</bou_x>
+        <bou_y>40</bou_y>
+        <bou_width>41</bou_width>
+        <bou_height>41</bou_height>
+        <bou_rel_position>0</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnLane</bou_container>
+      </record>
+    </table>
+    <table name="LANE">
+      <record>
+        <lan_uid>47255742060ca704f97bf96018142664</lan_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <lns_uid>29974245760ca704f8e6255034053163</lns_uid>
+        <lan_name>Tax</lan_name>
+        <lan_child_laneset></lan_child_laneset>
+        <lan_is_horizontal>1</lan_is_horizontal>
+        <bou_uid>74259105660ca704f97f494022600804</bou_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>47255742060ca704f97bf96018142664</element_uid>
+        <bou_element>29974245760ca704f8e6255034053163</bou_element>
+        <bou_element_type>bpmnLane</bou_element_type>
+        <bou_x>40</bou_x>
+        <bou_y>0</bou_y>
+        <bou_width>741</bou_width>
+        <bou_height>138</bou_height>
+        <bou_rel_position>1</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnPool</bou_container>
+      </record>
+      <record>
+        <lan_uid>36681390560ca704f9fdf03082888768</lan_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <lns_uid>29974245760ca704f8e6255034053163</lns_uid>
+        <lan_name>Reviewer</lan_name>
+        <lan_child_laneset></lan_child_laneset>
+        <lan_is_horizontal>1</lan_is_horizontal>
+        <bou_uid>30439301860ca704fa00e43078348799</bou_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>36681390560ca704f9fdf03082888768</element_uid>
+        <bou_element>29974245760ca704f8e6255034053163</bou_element>
+        <bou_element_type>bpmnLane</bou_element_type>
+        <bou_x>40</bou_x>
+        <bou_y>138</bou_y>
+        <bou_width>741</bou_width>
+        <bou_height>199</bou_height>
+        <bou_rel_position>2</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnPool</bou_container>
+      </record>
+    </table>
+    <table name="LANESET">
+      <record>
+        <lns_uid>29974245760ca704f8e6255034053163</lns_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <pro_uid>23767889160ca70265ac8c7002215083</pro_uid>
+        <lns_name>SLFI</lns_name>
+        <lns_parent_lane></lns_parent_lane>
+        <lns_is_horizontal>1</lns_is_horizontal>
+        <lns_state></lns_state>
+        <bou_uid>12854665060ca704f8ed2d8069854283</bou_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <element_uid>29974245760ca704f8e6255034053163</element_uid>
+        <bou_element>92350894060ca7026552cb2005657295</bou_element>
+        <bou_element_type>bpmnLaneset</bou_element_type>
+        <bou_x>33</bou_x>
+        <bou_y>32</bou_y>
+        <bou_width>782</bou_width>
+        <bou_height>337</bou_height>
+        <bou_rel_position>0</bou_rel_position>
+        <bou_size_identical>0</bou_size_identical>
+        <bou_container>bpmnDiagram</bou_container>
+      </record>
+    </table>
+    <table name="PARTICIPANT"/>
+    <table name="PROCESS">
+      <record>
+        <pro_uid>23767889160ca70265ac8c7002215083</pro_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <dia_uid>92350894060ca7026552cb2005657295</dia_uid>
+        <pro_name>SLFI Process</pro_name>
+        <pro_type>NONE</pro_type>
+        <pro_is_executable>0</pro_is_executable>
+        <pro_is_closed>0</pro_is_closed>
+        <pro_is_subprocess>0</pro_is_subprocess>
+      </record>
+    </table>
+    <table name="PROJECT">
+      <record>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <prj_name>SLFI Process</prj_name>
+        <prj_description>Reach out to each of our investors annually to confirm the percentage of their residency</prj_description>
+        <prj_target_namespace></prj_target_namespace>
+        <prj_expresion_language></prj_expresion_language>
+        <prj_type_language></prj_type_language>
+        <prj_exporter></prj_exporter>
+        <prj_exporter_version></prj_exporter_version>
+        <prj_create_date><![CDATA[2021-06-16 21:41:58]]></prj_create_date>
+        <prj_update_date><![CDATA[2025-11-26 19:08:44]]></prj_update_date>
+        <prj_author>00000000000000000000000000000001</prj_author>
+        <prj_author_version></prj_author_version>
+        <prj_original_source></prj_original_source>
+      </record>
+    </table>
+  </definition>
+  <definition class="workflow">
+    <table name="process">
+      <record>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <pro_title>SLFI Process</pro_title>
+        <pro_description>Reach out to each of our investors annually to confirm the percentage of their residency</pro_description>
+        <pro_parent>49495392760ca7026529f80008442485</pro_parent>
+        <pro_time>1</pro_time>
+        <pro_timeunit>DAYS</pro_timeunit>
+        <pro_status>ACTIVE</pro_status>
+        <pro_status_id>1</pro_status_id>
+        <pro_type_day></pro_type_day>
+        <pro_type>NORMAL</pro_type>
+        <pro_assignment>FALSE</pro_assignment>
+        <pro_show_map>0</pro_show_map>
+        <pro_show_message>0</pro_show_message>
+        <pro_subprocess>0</pro_subprocess>
+        <pro_tri_create></pro_tri_create>
+        <pro_tri_open></pro_tri_open>
+        <pro_tri_deleted></pro_tri_deleted>
+        <pro_tri_canceled></pro_tri_canceled>
+        <pro_tri_paused></pro_tri_paused>
+        <pro_tri_reassigned></pro_tri_reassigned>
+        <pro_tri_unpaused></pro_tri_unpaused>
+        <pro_type_process>PUBLIC</pro_type_process>
+        <pro_show_delegate>0</pro_show_delegate>
+        <pro_show_dynaform>0</pro_show_dynaform>
+        <pro_category></pro_category>
+        <pro_sub_category></pro_sub_category>
+        <pro_industry>0</pro_industry>
+        <pro_update_date><![CDATA[2025-11-26 19:08:44]]></pro_update_date>
+        <pro_create_date><![CDATA[2023-11-01 21:13:23]]></pro_create_date>
+        <pro_create_user>00000000000000000000000000000001</pro_create_user>
+        <pro_height>5000</pro_height>
+        <pro_width>10000</pro_width>
+        <pro_title_x>0</pro_title_x>
+        <pro_title_y>0</pro_title_y>
+        <pro_debug>0</pro_debug>
+        <pro_dynaforms></pro_dynaforms>
+        <pro_derivation_screen_tpl></pro_derivation_screen_tpl>
+        <pro_cost>0</pro_cost>
+        <pro_unit_cost></pro_unit_cost>
+        <pro_itee>1</pro_itee>
+        <pro_action_done><![CDATA[a:1:{i:0;s:41:"GATEWAYTOGATEWAY_DELETE_CORRUPTED_RECORDS";}]]></pro_action_done>
+        <category_id>0</category_id>
+        <pro_category_label>No Category</pro_category_label>
+        <pro_bpmn>1</pro_bpmn>
+      </record>
+    </table>
+    <table name="tasks">
+      <record>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <pro_id>0</pro_id>
+        <tas_uid>79391920060ca7117742054032410881</tas_uid>
+        <tas_title>Review Investors List</tas_title>
+        <tas_description><![CDATA[Tax user should review the investors list and confirm that all emails are correct, then send the external form to the investors]]></tas_description>
+        <tas_def_title><![CDATA[SLFI - @#SLFI_YEAR]]></tas_def_title>
+        <tas_def_subject_message></tas_def_subject_message>
+        <tas_def_proc_code></tas_def_proc_code>
+        <tas_def_message></tas_def_message>
+        <tas_def_description></tas_def_description>
+        <tas_type>NORMAL</tas_type>
+        <tas_duration>3</tas_duration>
+        <tas_delay_type></tas_delay_type>
+        <tas_temporizer>0</tas_temporizer>
+        <tas_type_day>1</tas_type_day>
+        <tas_timeunit>DAYS</tas_timeunit>
+        <tas_alert>FALSE</tas_alert>
+        <tas_priority_variable></tas_priority_variable>
+        <tas_assign_type>SELF_SERVICE</tas_assign_type>
+        <tas_assign_variable><![CDATA[@@SYS_NEXT_USER_TO_BE_ASSIGNED]]></tas_assign_variable>
+        <tas_group_variable></tas_group_variable>
+        <tas_mi_instance_variable><![CDATA[@@SYS_VAR_TOTAL_INSTANCE]]></tas_mi_instance_variable>
+        <tas_mi_complete_variable><![CDATA[@@SYS_VAR_TOTAL_INSTANCES_COMPLETE]]></tas_mi_complete_variable>
+        <tas_assign_location>FALSE</tas_assign_location>
+        <tas_assign_location_adhoc>FALSE</tas_assign_location_adhoc>
+        <tas_transfer_fly>FALSE</tas_transfer_fly>
+        <tas_last_assigned>5354812545eb025e1676631092538657</tas_last_assigned>
+        <tas_user>0</tas_user>
+        <tas_can_upload>FALSE</tas_can_upload>
+        <tas_view_upload>FALSE</tas_view_upload>
+        <tas_view_additional_documentation>FALSE</tas_view_additional_documentation>
+        <tas_can_cancel>FALSE</tas_can_cancel>
+        <tas_owner_app>FALSE</tas_owner_app>
+        <stg_uid></stg_uid>
+        <tas_can_pause>FALSE</tas_can_pause>
+        <tas_can_send_message>TRUE</tas_can_send_message>
+        <tas_can_delete_docs>FALSE</tas_can_delete_docs>
+        <tas_self_service>FALSE</tas_self_service>
+        <tas_start>FALSE</tas_start>
+        <tas_to_last_user>FALSE</tas_to_last_user>
+        <tas_send_last_email>FALSE</tas_send_last_email>
+        <tas_derivation>NORMAL</tas_derivation>
+        <tas_posx>313</tas_posx>
+        <tas_posy>79</tas_posy>
+        <tas_width>110</tas_width>
+        <tas_height>60</tas_height>
+        <tas_color></tas_color>
+        <tas_evn_uid></tas_evn_uid>
+        <tas_boundary></tas_boundary>
+        <tas_derivation_screen_tpl></tas_derivation_screen_tpl>
+        <tas_selfservice_timeout>0</tas_selfservice_timeout>
+        <tas_selfservice_time>0</tas_selfservice_time>
+        <tas_selfservice_time_unit></tas_selfservice_time_unit>
+        <tas_selfservice_trigger_uid></tas_selfservice_trigger_uid>
+        <tas_selfservice_execution>EVERY_TIME</tas_selfservice_execution>
+        <tas_not_email_from_format>0</tas_not_email_from_format>
+        <tas_offline>FALSE</tas_offline>
+        <tas_email_server_uid></tas_email_server_uid>
+        <tas_auto_root>FALSE</tas_auto_root>
+        <tas_receive_server_uid></tas_receive_server_uid>
+        <tas_receive_last_email>FALSE</tas_receive_last_email>
+        <tas_receive_email_from_format>0</tas_receive_email_from_format>
+        <tas_receive_message_type>text</tas_receive_message_type>
+        <tas_receive_message_template>alert_message.html</tas_receive_message_template>
+        <tas_receive_subject_message></tas_receive_subject_message>
+        <tas_receive_message></tas_receive_message>
+        <tas_average></tas_average>
+        <tas_sdv></tas_sdv>
+      </record>
+      <record>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <pro_id>0</pro_id>
+        <tas_uid>37012459760ca70ef951c71095717114</tas_uid>
+        <tas_title>Submit Investor Confirmation Form</tas_title>
+        <tas_description>The Tax user upload the investor list to send the external form</tas_description>
+        <tas_def_title><![CDATA[SLFI - @#SLFI_YEAR]]></tas_def_title>
+        <tas_def_subject_message></tas_def_subject_message>
+        <tas_def_proc_code></tas_def_proc_code>
+        <tas_def_message></tas_def_message>
+        <tas_def_description></tas_def_description>
+        <tas_type>NORMAL</tas_type>
+        <tas_duration>1</tas_duration>
+        <tas_delay_type></tas_delay_type>
+        <tas_temporizer>0</tas_temporizer>
+        <tas_type_day>1</tas_type_day>
+        <tas_timeunit>DAYS</tas_timeunit>
+        <tas_alert>FALSE</tas_alert>
+        <tas_priority_variable></tas_priority_variable>
+        <tas_assign_type>EVALUATE</tas_assign_type>
+        <tas_assign_variable><![CDATA[@@SLFI_TAX_USER]]></tas_assign_variable>
+        <tas_group_variable></tas_group_variable>
+        <tas_mi_instance_variable><![CDATA[@@SYS_VAR_TOTAL_INSTANCE]]></tas_mi_instance_variable>
+        <tas_mi_complete_variable><![CDATA[@@SYS_VAR_TOTAL_INSTANCES_COMPLETE]]></tas_mi_complete_variable>
+        <tas_assign_location>FALSE</tas_assign_location>
+        <tas_assign_location_adhoc>FALSE</tas_assign_location_adhoc>
+        <tas_transfer_fly>FALSE</tas_transfer_fly>
+        <tas_last_assigned>2865434435ec8186114a3a7059622514</tas_last_assigned>
+        <tas_user>0</tas_user>
+        <tas_can_upload>FALSE</tas_can_upload>
+        <tas_view_upload>FALSE</tas_view_upload>
+        <tas_view_additional_documentation>FALSE</tas_view_additional_documentation>
+        <tas_can_cancel>FALSE</tas_can_cancel>
+        <tas_owner_app>FALSE</tas_owner_app>
+        <stg_uid></stg_uid>
+        <tas_can_pause>FALSE</tas_can_pause>
+        <tas_can_send_message>TRUE</tas_can_send_message>
+        <tas_can_delete_docs>FALSE</tas_can_delete_docs>
+        <tas_self_service>FALSE</tas_self_service>
+        <tas_start>TRUE</tas_start>
+        <tas_to_last_user>FALSE</tas_to_last_user>
+        <tas_send_last_email>FALSE</tas_send_last_email>
+        <tas_derivation>NORMAL</tas_derivation>
+        <tas_posx>149</tas_posx>
+        <tas_posy>17</tas_posy>
+        <tas_width>110</tas_width>
+        <tas_height>60</tas_height>
+        <tas_color></tas_color>
+        <tas_evn_uid></tas_evn_uid>
+        <tas_boundary></tas_boundary>
+        <tas_derivation_screen_tpl></tas_derivation_screen_tpl>
+        <tas_selfservice_timeout>0</tas_selfservice_timeout>
+        <tas_selfservice_time>0</tas_selfservice_time>
+        <tas_selfservice_time_unit></tas_selfservice_time_unit>
+        <tas_selfservice_trigger_uid></tas_selfservice_trigger_uid>
+        <tas_selfservice_execution>EVERY_TIME</tas_selfservice_execution>
+        <tas_not_email_from_format>0</tas_not_email_from_format>
+        <tas_offline>FALSE</tas_offline>
+        <tas_email_server_uid></tas_email_server_uid>
+        <tas_auto_root>FALSE</tas_auto_root>
+        <tas_receive_server_uid></tas_receive_server_uid>
+        <tas_receive_last_email>FALSE</tas_receive_last_email>
+        <tas_receive_email_from_format>0</tas_receive_email_from_format>
+        <tas_receive_message_type>text</tas_receive_message_type>
+        <tas_receive_message_template>alert_message.html</tas_receive_message_template>
+        <tas_receive_subject_message></tas_receive_subject_message>
+        <tas_receive_message></tas_receive_message>
+        <tas_average></tas_average>
+        <tas_sdv></tas_sdv>
+      </record>
+      <record>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <pro_id>0</pro_id>
+        <tas_uid>47952522060ca7117820a83001764405</tas_uid>
+        <tas_title>Tracking Forms</tas_title>
+        <tas_description>Verify the status of the answers of the investors</tas_description>
+        <tas_def_title><![CDATA[SLFI - @#SLFI_YEAR]]></tas_def_title>
+        <tas_def_subject_message></tas_def_subject_message>
+        <tas_def_proc_code></tas_def_proc_code>
+        <tas_def_message></tas_def_message>
+        <tas_def_description></tas_def_description>
+        <tas_type>NORMAL</tas_type>
+        <tas_duration>90</tas_duration>
+        <tas_delay_type></tas_delay_type>
+        <tas_temporizer>0</tas_temporizer>
+        <tas_type_day>1</tas_type_day>
+        <tas_timeunit>DAYS</tas_timeunit>
+        <tas_alert>FALSE</tas_alert>
+        <tas_priority_variable></tas_priority_variable>
+        <tas_assign_type>EVALUATE</tas_assign_type>
+        <tas_assign_variable><![CDATA[@@SLFI_TAX_USER]]></tas_assign_variable>
+        <tas_group_variable></tas_group_variable>
+        <tas_mi_instance_variable><![CDATA[@@SYS_VAR_TOTAL_INSTANCE]]></tas_mi_instance_variable>
+        <tas_mi_complete_variable><![CDATA[@@SYS_VAR_TOTAL_INSTANCES_COMPLETE]]></tas_mi_complete_variable>
+        <tas_assign_location>FALSE</tas_assign_location>
+        <tas_assign_location_adhoc>FALSE</tas_assign_location_adhoc>
+        <tas_transfer_fly>FALSE</tas_transfer_fly>
+        <tas_last_assigned>0</tas_last_assigned>
+        <tas_user>0</tas_user>
+        <tas_can_upload>FALSE</tas_can_upload>
+        <tas_view_upload>FALSE</tas_view_upload>
+        <tas_view_additional_documentation>FALSE</tas_view_additional_documentation>
+        <tas_can_cancel>FALSE</tas_can_cancel>
+        <tas_owner_app>FALSE</tas_owner_app>
+        <stg_uid></stg_uid>
+        <tas_can_pause>FALSE</tas_can_pause>
+        <tas_can_send_message>TRUE</tas_can_send_message>
+        <tas_can_delete_docs>FALSE</tas_can_delete_docs>
+        <tas_self_service>FALSE</tas_self_service>
+        <tas_start>FALSE</tas_start>
+        <tas_to_last_user>FALSE</tas_to_last_user>
+        <tas_send_last_email>FALSE</tas_send_last_email>
+        <tas_derivation>NORMAL</tas_derivation>
+        <tas_posx>476</tas_posx>
+        <tas_posy>18</tas_posy>
+        <tas_width>110</tas_width>
+        <tas_height>60</tas_height>
+        <tas_color></tas_color>
+        <tas_evn_uid></tas_evn_uid>
+        <tas_boundary></tas_boundary>
+        <tas_derivation_screen_tpl></tas_derivation_screen_tpl>
+        <tas_selfservice_timeout>0</tas_selfservice_timeout>
+        <tas_selfservice_time>0</tas_selfservice_time>
+        <tas_selfservice_time_unit></tas_selfservice_time_unit>
+        <tas_selfservice_trigger_uid></tas_selfservice_trigger_uid>
+        <tas_selfservice_execution>EVERY_TIME</tas_selfservice_execution>
+        <tas_not_email_from_format>0</tas_not_email_from_format>
+        <tas_offline>FALSE</tas_offline>
+        <tas_email_server_uid></tas_email_server_uid>
+        <tas_auto_root>FALSE</tas_auto_root>
+        <tas_receive_server_uid></tas_receive_server_uid>
+        <tas_receive_last_email>FALSE</tas_receive_last_email>
+        <tas_receive_email_from_format>0</tas_receive_email_from_format>
+        <tas_receive_message_type>text</tas_receive_message_type>
+        <tas_receive_message_template>alert_message.html</tas_receive_message_template>
+        <tas_receive_subject_message></tas_receive_subject_message>
+        <tas_receive_message></tas_receive_message>
+        <tas_average></tas_average>
+        <tas_sdv></tas_sdv>
+      </record>
+    </table>
+    <table name="routes">
+      <record>
+        <rou_uid>3371961706927503c8ee847000301079</rou_uid>
+        <rou_parent>0</rou_parent>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tas_uid>37012459760ca70ef951c71095717114</tas_uid>
+        <rou_next_task>79391920060ca7117742054032410881</rou_next_task>
+        <rou_case>1</rou_case>
+        <rou_type>SEQUENTIAL</rou_type>
+        <rou_default>0</rou_default>
+        <rou_condition></rou_condition>
+        <rou_to_last_user>FALSE</rou_to_last_user>
+        <rou_optional>FALSE</rou_optional>
+        <rou_send_email>TRUE</rou_send_email>
+        <rou_sourceanchor>1</rou_sourceanchor>
+        <rou_targetanchor>0</rou_targetanchor>
+        <rou_to_port>1</rou_to_port>
+        <rou_from_port>2</rou_from_port>
+        <rou_evn_uid></rou_evn_uid>
+        <gat_uid></gat_uid>
+      </record>
+      <record>
+        <rou_uid>5735220496927503c916ef7058058854</rou_uid>
+        <rou_parent>0</rou_parent>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tas_uid>47952522060ca7117820a83001764405</tas_uid>
+        <rou_next_task>-1</rou_next_task>
+        <rou_case>1</rou_case>
+        <rou_type>SEQUENTIAL</rou_type>
+        <rou_default>0</rou_default>
+        <rou_condition></rou_condition>
+        <rou_to_last_user>FALSE</rou_to_last_user>
+        <rou_optional>FALSE</rou_optional>
+        <rou_send_email>TRUE</rou_send_email>
+        <rou_sourceanchor>1</rou_sourceanchor>
+        <rou_targetanchor>0</rou_targetanchor>
+        <rou_to_port>1</rou_to_port>
+        <rou_from_port>2</rou_from_port>
+        <rou_evn_uid></rou_evn_uid>
+        <gat_uid></gat_uid>
+      </record>
+      <record>
+        <rou_uid>6337357646927503c96ee94031272829</rou_uid>
+        <rou_parent>0</rou_parent>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tas_uid>79391920060ca7117742054032410881</tas_uid>
+        <rou_next_task>47952522060ca7117820a83001764405</rou_next_task>
+        <rou_case>1</rou_case>
+        <rou_type>EVALUATE</rou_type>
+        <rou_default>0</rou_default>
+        <rou_condition><![CDATA[@@SLFI_FLAG_CANCEL_CASE == ""]]></rou_condition>
+        <rou_to_last_user>FALSE</rou_to_last_user>
+        <rou_optional>FALSE</rou_optional>
+        <rou_send_email>TRUE</rou_send_email>
+        <rou_sourceanchor>1</rou_sourceanchor>
+        <rou_targetanchor>0</rou_targetanchor>
+        <rou_to_port>1</rou_to_port>
+        <rou_from_port>2</rou_from_port>
+        <rou_evn_uid></rou_evn_uid>
+        <gat_uid></gat_uid>
+      </record>
+      <record>
+        <rou_uid>8731656246927503c93d6e3029878249</rou_uid>
+        <rou_parent>0</rou_parent>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tas_uid>79391920060ca7117742054032410881</tas_uid>
+        <rou_next_task>37012459760ca70ef951c71095717114</rou_next_task>
+        <rou_case>3</rou_case>
+        <rou_type>EVALUATE</rou_type>
+        <rou_default>0</rou_default>
+        <rou_condition><![CDATA[@@SLFI_FLAG_CANCEL_CASE == "RETURN"]]></rou_condition>
+        <rou_to_last_user>FALSE</rou_to_last_user>
+        <rou_optional>FALSE</rou_optional>
+        <rou_send_email>TRUE</rou_send_email>
+        <rou_sourceanchor>1</rou_sourceanchor>
+        <rou_targetanchor>0</rou_targetanchor>
+        <rou_to_port>1</rou_to_port>
+        <rou_from_port>2</rou_from_port>
+        <rou_evn_uid></rou_evn_uid>
+        <gat_uid></gat_uid>
+      </record>
+      <record>
+        <rou_uid>9532694276927503c959e77005298650</rou_uid>
+        <rou_parent>0</rou_parent>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tas_uid>79391920060ca7117742054032410881</tas_uid>
+        <rou_next_task>-1</rou_next_task>
+        <rou_case>2</rou_case>
+        <rou_type>EVALUATE</rou_type>
+        <rou_default>0</rou_default>
+        <rou_condition><![CDATA[@@SLFI_FLAG_CANCEL_CASE != "" && @@SLFI_FLAG_CANCEL_CASE != "RETURN"]]></rou_condition>
+        <rou_to_last_user>FALSE</rou_to_last_user>
+        <rou_optional>FALSE</rou_optional>
+        <rou_send_email>TRUE</rou_send_email>
+        <rou_sourceanchor>1</rou_sourceanchor>
+        <rou_targetanchor>0</rou_targetanchor>
+        <rou_to_port>1</rou_to_port>
+        <rou_from_port>2</rou_from_port>
+        <rou_evn_uid></rou_evn_uid>
+        <gat_uid></gat_uid>
+      </record>
+    </table>
+    <table name="lanes"/>
+    <table name="gateways"/>
+    <table name="inputs">
+      <record>
+        <inp_doc_uid>40191439160cb72a495ef78032163596</inp_doc_uid>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <inp_doc_title>Investors List</inp_doc_title>
+        <inp_doc_description>Excel with all investors list</inp_doc_description>
+        <inp_doc_form_needed>VIRTUAL</inp_doc_form_needed>
+        <inp_doc_original>ORIGINAL</inp_doc_original>
+        <inp_doc_published>PRIVATE</inp_doc_published>
+        <inp_doc_versioning>0</inp_doc_versioning>
+        <inp_doc_destination_path></inp_doc_destination_path>
+        <inp_doc_tags>INPUT</inp_doc_tags>
+        <inp_doc_type_file><![CDATA[*.xlsx, *.xls, *.XLSX, *.XLS]]></inp_doc_type_file>
+        <inp_doc_max_filesize>0</inp_doc_max_filesize>
+        <inp_doc_max_filesize_unit>KB</inp_doc_max_filesize_unit>
+      </record>
+    </table>
+    <table name="outputs">
+      <record>
+        <out_doc_uid>605074963610c13317b0708060671108</out_doc_uid>
+        <out_doc_title>Investors External Form</out_doc_title>
+        <out_doc_description>Investors External Form per each answer that we receive</out_doc_description>
+        <out_doc_filename>Investors External Form</out_doc_filename>
+        <out_doc_template><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+</head>
+<body>
+<p style="display: none;">@#OUTPUT_DOCUMENT_INVESTOR</p>
+</body>
+</html>]]></out_doc_template>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <out_doc_report_generator>TCPDF</out_doc_report_generator>
+        <out_doc_landscape>0</out_doc_landscape>
+        <out_doc_media>Letter</out_doc_media>
+        <out_doc_left_margin>10</out_doc_left_margin>
+        <out_doc_right_margin>10</out_doc_right_margin>
+        <out_doc_top_margin>5</out_doc_top_margin>
+        <out_doc_bottom_margin>5</out_doc_bottom_margin>
+        <out_doc_generate>PDF</out_doc_generate>
+        <out_doc_type>HTML</out_doc_type>
+        <out_doc_current_revision>0</out_doc_current_revision>
+        <out_doc_field_mapping></out_doc_field_mapping>
+        <out_doc_versioning>1</out_doc_versioning>
+        <out_doc_destination_path></out_doc_destination_path>
+        <out_doc_tags></out_doc_tags>
+        <out_doc_pdf_security_enabled>0</out_doc_pdf_security_enabled>
+        <out_doc_pdf_security_open_password></out_doc_pdf_security_open_password>
+        <out_doc_pdf_security_owner_password></out_doc_pdf_security_owner_password>
+        <out_doc_pdf_security_permissions></out_doc_pdf_security_permissions>
+        <out_doc_open_type>1</out_doc_open_type>
+        <out_doc_header><![CDATA[{"logo":"","logoWidth":"0","logoPositionX":"0","logoPositionY":"0","title":"","titleFontSize":"8","titleFontPositionX":"0","titleFontPositionY":"0","pageNumber":false,"pageNumberTitle":"","pageNumberTotal":false,"pageNumberPositionX":"0","pageNumberPositionY":"0","enableHeader":false}]]></out_doc_header>
+        <out_doc_footer><![CDATA[{"logo":"","logoWidth":"0","logoPositionX":"0","logoPositionY":"0","title":"","titleFontSize":"8","titleFontPositionX":"0","titleFontPositionY":"0","pageNumber":false,"pageNumberTitle":"","pageNumberTotal":false,"pageNumberPositionX":"0","pageNumberPositionY":"0","enableFooter":false}]]></out_doc_footer>
+      </record>
+    </table>
+    <table name="dynaforms">
+      <record>
+        <dyn_uid>19275318760cc9c8de259f3061686186</dyn_uid>
+        <dyn_title>Show Investors Confirmation</dyn_title>
+        <dyn_description>Show Investors Confirmation file uploaded</dyn_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <dyn_type>xmlform</dyn_type>
+        <dyn_filename><![CDATA[49495392760ca7026529f80008442485/19275318760cc9c8de259f3061686186]]></dyn_filename>
+        <dyn_content><![CDATA[{"name":"Show Investors Confirmation","description":"Show Investors Confirmation file uploaded","items":[{"type":"form","variable":"","var_uid":"","dataType":"","id":"19275318760cc9c8de259f3061686186","name":"Show Investors Confirmation","description":"Show Investors Confirmation file uploaded","mode":"edit","script":{"type":"js","code":"$(document).ready(function() {\n    //Remove backward and forward buttons\n    $(\"#dyn_forward\").parent().hide();\n\n    //Preview Buttons\n    $(\"#RETURN button\").click(function() {\n        $(\"#SLFI_BACK_FORM\").setValue(\"\");\n        $(\"#19275318760cc9c8de259f3061686186\").saveForm();\n        window.location = \"cases_Step?TYPE=DYNAFORM&UID=64451100060cb6df2862b38034471456&POSITION=1&ACTION=EDIT\";\n    });\n});"},"language":"en","externalLibs":"","printable":false,"items":[[{"type":"title","id":"SLFI_SHOW_TITLE","label":"Show Investors Confirmation","ariaLabel":"","colSpan":12}],[{"type":"grid","variable":"SLFI_INVESTORS_GRID","var_uid":"34516674260ccf35d9ab887061269756","dataType":"grid","protectedValue":false,"id":"SLFI_INVESTORS_GRID","name":"SLFI_INVESTORS_GRID","label":"","hint":"","required":false,"requiredFieldErrorMessage":"","columns":[{"type":"textarea","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_EMAIL","name":"SLFI_GRID_INVESTORS_EMAIL","label":"Email","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":true,"requiredFieldErrorMessage":"","validate":"^[\\W]*([\\w+'\\-.%]+@[\\w\\-.]+\\.[A-Za-z]+[\\W]*,{1}[\\W]*)*([\\w+'\\-.%]+@[\\w\\-.]+\\.[A-Za-z]+)[\\W]*$","validateMessage":"Invalid Email","mode":"parent","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"rows":"2","columnWidth":"24","width":100,"title":"Email"},{"type":"textarea","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_DISPLAY_NAME","name":"SLFI_GRID_INVESTORS_DISPLAY_NAME","label":"Display Name","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":true,"requiredFieldErrorMessage":"","validate":"","validateMessage":"","mode":"parent","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"rows":"2","columnWidth":"24","width":100,"title":"Display Name"},{"type":"textarea","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_INVESTOR_NAME","name":"SLFI_GRID_INVESTORS_INVESTOR_NAME","label":"Investor Name","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":true,"requiredFieldErrorMessage":"","validate":"","validateMessage":"","mode":"parent","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"rows":"2","columnWidth":"20","width":100,"title":"Investor Name"},{"type":"text","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_INVESTOR_ID","name":"SLFI_GRID_INVESTORS_INVESTOR_ID","label":"Investor ID","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":false,"requiredFieldErrorMessage":"","textTransform":"none","validate":"","validateMessage":"","maxLength":1000,"formula":"","mode":"parent","operation":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"columnWidth":"10","width":100,"title":"Investor ID"},{"type":"text","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_CLASS","name":"SLFI_GRID_INVESTORS_CLASS","label":"Class","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":false,"requiredFieldErrorMessage":"","textTransform":"none","validate":"","validateMessage":"","maxLength":1000,"formula":"","mode":"parent","operation":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"columnWidth":"18","width":100,"title":"Class"},{"type":"hidden","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_UID","name":"SLFI_GRID_INVESTORS_UID","defaultValue":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","width":100}],"data":[],"mode":"disabled","layout":"responsive","pageSize":"0","addRow":false,"deleteRow":false,"title":"","colSpan":12}],[{"colSpan":3},{"type":"button","id":"RETURN","name":"RETURN","label":"Re-upload the File","tabIndex":"","ariaLabel":"","colSpan":3},{"type":"submit","id":"SUBMIT","name":"SUBMIT","label":"SUBMIT","tabIndex":"","ariaLabel":"","colSpan":3},{"colSpan":3}],[{"type":"hidden","variable":"SLFI_BACK_FORM","var_uid":"86052484860cca2fd52a413006611353","dataType":"string","protectedValue":false,"id":"SLFI_BACK_FORM","name":"SLFI_BACK_FORM","defaultValue":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","var_name":"SLFI_BACK_FORM","colSpan":12}]],"variables":[{"var_uid":"86052484860cca2fd52a413006611353","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_BACK_FORM","var_field_type":"string","var_field_size":10,"var_label":"string","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""}]}]}]]></dyn_content>
+        <dyn_label></dyn_label>
+        <dyn_version>2</dyn_version>
+        <dyn_update_date><![CDATA[2026-05-19 20:50:06]]></dyn_update_date>
+      </record>
+      <record>
+        <dyn_uid>22396521760ccee338b6f71023598418</dyn_uid>
+        <dyn_title>Review Investors List</dyn_title>
+        <dyn_description>Review Investors List second task</dyn_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <dyn_type>xmlform</dyn_type>
+        <dyn_filename><![CDATA[49495392760ca7026529f80008442485/22396521760ccee338b6f71023598418]]></dyn_filename>
+        <dyn_content><![CDATA[{"name":"Review Investors List","description":"Review Investors List second task","items":[{"type":"form","variable":"","var_uid":"","dataType":"","id":"22396521760ccee338b6f71023598418","name":"Review Investors List","description":"Review Investors List second task","mode":"edit","script":{"type":"js","code":"$(document).ready(function() {\n    //Remove backward and forward buttons\n    $(\"#dyn_forward\").parent().hide();\n  \n    //Set libraries\n    var random = Math.random();\n    $(\"head\").append('<script type=\"text/javascript\" src=\"/plugin/psSLFIFunctions/js/javascriptLibrary.js?random=\"' + random + '\" />');\n\n    //Set array to set the rows modified of the grid\n    var updateGridArray = [];\n    //Clean flag cancel case\n    $(\"#SLFI_FLAG_CANCEL_CASE\").setValue(\"\");\n    //Preview Buttons\n    $(\"#SLFI_CANCEL_CASE button\").click(function() {\n        confirmMessage(\"cancelCase\", \"Cancel Case\", \"<p>Are you sure to Cancel Case?</p>\", \"modalBtnYes\", \"modalBtnNo\");\n        $(\"#modalBtnYes\").on(\"click\", function() {\n            $(\"#SLFI_FLAG_CANCEL_CASE\").setValue(\"1\");\n            $(\"#22396521760ccee338b6f71023598418\").submitForm();\n        });\n    });\n    //Return First Task\n    $(\"#SLFI_RETURN_CASE button\").click(function() {\n        $(\"#SLFI_FLAG_CANCEL_CASE\").setValue(\"RETURN\");\n        $(\"#SLFI_BACK_FORM\").setValue(\"\");\n        $(\"#22396521760ccee338b6f71023598418\").submitForm();\n    });\t\n  \n    $(\"#22396521760ccee338b6f71023598418\").setOnchange( function( fieldID, newValue, oldValue) {\n        //Validate if the field is the grid\n        var rowGridUpdate = fieldID.split(\"]\");\n        if (rowGridUpdate.length > 1) {\n            //Get row of the grid\n            rowGridUpdate = rowGridUpdate[1].split('[')[1];\n\n            //Validate if the row is not in the update Array\n            if (jQuery.inArray(rowGridUpdate, updateGridArray) == -1) {\n                updateGridArray.push(rowGridUpdate);\n            }\n        }\n    });\n  \n    //Submit form\n    $(\"#SUBMIT\").find(\"button\").on(\"click\" , function() {\n        if (updateGridArray.length > 0) {\n            var rowsMissingInfo = [];\n            for (var investor = 0; investor < updateGridArray.length; investor++) {\n                var gridRow = updateGridArray[investor];\n                var rowEmails = $(\"#SLFI_INVESTORS_GRID\").getValue(gridRow, 1);\n                //Split emails by comma\n                rowEmails = rowEmails.split(\",\");\n                //Remove all empty values\n                var rowEmailsCleaned = rowEmails.filter(function checkAdult(email) {\n                    var regex = /[a-zA-Z\\d]/g;\n                    return regex.test(email);\n                });\n                var rowNames = $(\"#SLFI_INVESTORS_GRID\").getValue(gridRow, 2);\n                //Split names by comma\n                rowNames = rowNames.split(\",\");\n                //Remove all empty values\n                var rowNamesCleaned = rowNames.filter(function checkAdult(name) {\n                    var regex = /[a-zA-Z\\d]/g;\n                    return regex.test(name);\n                });\n                //Check if exist the same number of emails and names\n                if (rowEmailsCleaned.length != rowNamesCleaned.length) {\n                    rowsMissingInfo.push(gridRow);\n                }\n                if((investor + 1) == updateGridArray.length) {\n                    if (rowsMissingInfo.length == 0) {\n                        saveDataInvestorsGrid(updateGridArray, \"SUBMIT\");\n                    } else {\n                        //Concat the rows which have error\n                        var errorRows = rowsMissingInfo.join(\", \");\n                        alertMessage(\"incorrectEmailsModal\", \"WARNING\", \"Missing Information in row: \" + errorRows + \". Remember the number of Emails should be the same as the number of Names described in the grid.\", 1, \"\");\n                    }\n                }\n            }\n        } else {\n            confirmMessage(\"sendEmail\", \"Send Investor's Email\", \"<p>Are you sure to send the email to the whole list of investors?</p>\", \"modalBtnYesSubmit\", \"modalBtnNoSubmit\");\n            $(\"#modalBtnYesSubmit\").on(\"click\", function() {\n                $(\"#22396521760ccee338b6f71023598418\").submitForm();\n            });\n        }\n        return false;\n    });\n  \n    //Save form\n    $(\"#SAVE\").find(\"button\").on(\"click\" , function() {\n        //Save dynaform\n        if (updateGridArray.length > 0) {\n            saveDataInvestorsGrid(updateGridArray, \"SAVE\"); \n        } else {\n            $(\"#22396521760ccee338b6f71023598418\").showFormModal();\n            $(\"#22396521760ccee338b6f71023598418\").saveForm();\n            $(\"#22396521760ccee338b6f71023598418\").hideFormModal();\n        }\n    });\n});\n\n/**\n* Save data updated in the investors grid\n*\n* @param (Array) updateGridArray\n* @param (String) typeSave\n* @return none\n*\n* by Ana Castillo\n* modified by Cinthia Romero\n*/\nfunction saveDataInvestorsGrid(updateGridArray, typeSave)\n{\n    //Add loading\n    $(\"#22396521760ccee338b6f71023598418\").showFormModal();\n\n    setTimeout(function(){\n        var aDataGrid = [];\n        for (var g = 0; g < updateGridArray.length; g++) {\n            //Set all data of the row to save data\n            var rowGrid = updateGridArray[g];\n            var rowData = {};\n            var rowEmails = $(\"#SLFI_INVESTORS_GRID\").getValue(rowGrid, 1)\n            //Split emails by comma\n            rowEmails = rowEmails.split(\",\");\n            //Remove empty values\n            var rowEmailsCleaned = rowEmails.filter(function checkAdult(email) {\n                var regex = /[a-zA-Z\\d]/g;\n                return regex.test(email);\n            });\n            //Join all cleaned emails by comma\n            rowEmailsCleaned = rowEmailsCleaned.join(\",\");\n            var rowNames = $(\"#SLFI_INVESTORS_GRID\").getValue(rowGrid, 2);\n            //Split names by comma\n            rowNames = rowNames.split(\",\");\n            //Remove empty values\n            var rowNamesCleaned = rowNames.filter(function checkAdult(name) {\n                var regex = /[a-zA-Z\\d]/g;\n                return regex.test(name);\n            });\n            //Join all cleaned names by comma\n            rowNamesCleaned = rowNamesCleaned.join(\",\");\n            rowData['EMAIL'] = rowEmailsCleaned;\n            rowData['DISPLAY_NAME'] = rowNamesCleaned;\n            rowData['INVESTOR_NAME'] = $(\"#SLFI_INVESTORS_GRID\").getValue(rowGrid, 3);\n            rowData['INVESTOR_ID'] = $(\"#SLFI_INVESTORS_GRID\").getValue(rowGrid, 4);\n            rowData['CLASS'] = $(\"#SLFI_INVESTORS_GRID\").getValue(rowGrid, 5);\n            rowData['UID'] = $(\"#SLFI_INVESTORS_GRID\").getValue(rowGrid, 6);\n\n            //Add Row data to the array\n            aDataGrid.push(rowData);\n\n            if (g == (updateGridArray.length - 1)) {\n                $.ajax({\n                    type: \"POST\",\n                    url: \"../psSLFIFunctions/investorsController.php\",\n                    data: {type: \"updateInvestors\",\n                           aData: JSON.stringify(aDataGrid)},\n                    dataType: 'JSON',\n                    cache: false\n                }).done(function(data) {\n                    //Remove loading screen\n                    $(\"#22396521760ccee338b6f71023598418\").hideFormModal();\n                    if (typeSave == 'SUBMIT') {\n                        confirmMessage(\"sendEmail\", \"Send Investor's Email\", \"<p>Are you sure to send the email to the whole list of investors?</p>\", \"modalBtnYesSubmit\", \"modalBtnNoSubmit\");\n                        $(\"#modalBtnYesSubmit\").on(\"click\", function() {\n                            $(\"#22396521760ccee338b6f71023598418\").submitForm();\n                        });\n                    } else {\n                        $(\"#22396521760ccee338b6f71023598418\").saveForm();\n                    }\n                });\n            }\n        }\n    }, 2000);\n}"},"language":"en","externalLibs":"","printable":false,"items":[[{"type":"title","id":"SLFI_REVIEW_TITLE","label":"Review Investors List","ariaLabel":"","colSpan":12}],[{"colSpan":3},{"type":"datetime","variable":"SLFI_CURRENT_DATE","var_uid":"63945459460cb6e50b2bb32074968473","dataType":"datetime","protectedValue":false,"id":"SLFI_CURRENT_DATE","name":"SLFI_CURRENT_DATE","label":"Date","tabIndex":"","placeholder":"","hint":"","ariaLabel":"","required":false,"requiredFieldErrorMessage":"","mode":"disabled","format":"MMM Do, YYYY","dayViewHeaderFormat":"MMMM YYYY","extraFormats":false,"stepping":1,"minDate":"","maxDate":"","useCurrent":"false","collapse":true,"locale":"","defaultDate":"","disabledDates":false,"enabledDates":false,"icons":{"time":"glyphicon glyphicon-time","date":"glyphicon glyphicon-calendar","up":"glyphicon glyphicon-chevron-up","down":"glyphicon glyphicon-chevron-down","previous":"glyphicon glyphicon-chevron-left","next":"glyphicon glyphicon-chevron-right","today":"glyphicon glyphicon-screenshot","clear":"glyphicon glyphicon-trash"},"useStrict":false,"sideBySide":false,"daysOfWeekDisabled":false,"calendarWeeks":false,"viewMode":"days","toolbarPlacement":"default","showTodayButton":false,"showClear":"false","widgetPositioning":{"horizontal":"auto","vertical":"auto"},"widgetParent":null,"keepOpen":false,"var_name":"SLFI_CURRENT_DATE","colSpan":6},{"colSpan":3}],[{"colSpan":3},{"type":"text","variable":"SLFI_SUBMITTER","var_uid":"24906670160cb6e9295e5e5028051084","dataType":"string","protectedValue":false,"id":"SLFI_SUBMITTER","name":"SLFI_SUBMITTER","label":"Name","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":false,"requiredFieldErrorMessage":"","textTransform":"none","validate":"","validateMessage":"","maxLength":1000,"formula":"","mode":"disabled","operation":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"var_name":"SLFI_SUBMITTER","colSpan":6},{"colSpan":3}],[{"colSpan":3},{"type":"datetime","variable":"SLFI_EXPIRATION_DATE","var_uid":"31239748960ccffda578fd9006522268","dataType":"datetime","protectedValue":false,"id":"SLFI_EXPIRATION_DATE","name":"SLFI_EXPIRATION_DATE","label":"Expiration Date","tabIndex":"","placeholder":"","hint":"","ariaLabel":"","required":true,"requiredFieldErrorMessage":"","mode":"parent","format":"MMM Do, YYYY","dayViewHeaderFormat":"MMMM YYYY","extraFormats":false,"stepping":1,"minDate":"@@SLFI_MIN_EXPIRATION_DATE","maxDate":"","useCurrent":"false","collapse":true,"locale":"","defaultDate":"","disabledDates":false,"enabledDates":false,"icons":{"time":"glyphicon glyphicon-time","date":"glyphicon glyphicon-calendar","up":"glyphicon glyphicon-chevron-up","down":"glyphicon glyphicon-chevron-down","previous":"glyphicon glyphicon-chevron-left","next":"glyphicon glyphicon-chevron-right","today":"glyphicon glyphicon-screenshot","clear":"glyphicon glyphicon-trash"},"useStrict":false,"sideBySide":false,"daysOfWeekDisabled":false,"calendarWeeks":false,"viewMode":"days","toolbarPlacement":"default","showTodayButton":false,"showClear":"false","widgetPositioning":{"horizontal":"auto","vertical":"auto"},"widgetParent":null,"keepOpen":false,"var_name":"SLFI_EXPIRATION_DATE","colSpan":6},{"colSpan":3}],[{"type":"hidden","variable":"SLFI_FLAG_CANCEL_CASE","var_uid":"16491227660d1e4266a1824046069081","dataType":"string","protectedValue":false,"id":"SLFI_FLAG_CANCEL_CASE","name":"SLFI_FLAG_CANCEL_CASE","defaultValue":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","var_name":"SLFI_FLAG_CANCEL_CASE","colSpan":12}],[{"type":"grid","variable":"SLFI_INVESTORS_GRID","var_uid":"34516674260ccf35d9ab887061269756","dataType":"grid","protectedValue":false,"id":"SLFI_INVESTORS_GRID","name":"SLFI_INVESTORS_GRID","label":"","hint":"","required":false,"requiredFieldErrorMessage":"","columns":[{"type":"textarea","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_EMAIL","name":"SLFI_GRID_INVESTORS_EMAIL","label":"Email","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":true,"requiredFieldErrorMessage":"","validate":"^[\\W]*([\\w+'\\-.%]+@[\\w\\-.]+\\.[A-Za-z]+[\\W]*,{1}[\\W]*)*([\\w+'\\-.%]+@[\\w\\-.]+\\.[A-Za-z]+)[\\W]*$","validateMessage":"Invalid Email","mode":"parent","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"rows":"2","columnWidth":"24","width":100,"title":"Email"},{"type":"textarea","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_DISPLAY_NAME","name":"SLFI_GRID_INVESTORS_DISPLAY_NAME","label":"Display Name","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":true,"requiredFieldErrorMessage":"","validate":"","validateMessage":"","mode":"parent","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"rows":"2","columnWidth":"24","width":100,"title":"Display Name"},{"type":"textarea","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_INVESTOR_NAME","name":"SLFI_GRID_INVESTORS_INVESTOR_NAME","label":"Investor Name","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":true,"requiredFieldErrorMessage":"","validate":"","validateMessage":"","mode":"parent","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"rows":"2","columnWidth":"20","width":100,"title":"Investor Name"},{"type":"text","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_INVESTOR_ID","name":"SLFI_GRID_INVESTORS_INVESTOR_ID","label":"Investor ID","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":false,"requiredFieldErrorMessage":"","textTransform":"none","validate":"","validateMessage":"","maxLength":1000,"formula":"","mode":"parent","operation":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"columnWidth":"10","width":100,"title":"Investor ID"},{"type":"text","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_CLASS","name":"SLFI_GRID_INVESTORS_CLASS","label":"Class","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":false,"requiredFieldErrorMessage":"","textTransform":"none","validate":"","validateMessage":"","maxLength":1000,"formula":"","mode":"parent","operation":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"columnWidth":"18","width":100,"title":"Class"},{"type":"hidden","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_UID","name":"SLFI_GRID_INVESTORS_UID","defaultValue":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","width":100}],"data":[],"mode":"edit","layout":"responsive","pageSize":"0","addRow":false,"deleteRow":false,"title":"","colSpan":12}],[{"colSpan":2},{"type":"button","id":"SLFI_CANCEL_CASE","name":"SLFI_CANCEL_CASE","label":"Cancel Case","tabIndex":"","ariaLabel":"","colSpan":2},{"type":"button","id":"SAVE","name":"SAVE","label":"Save","tabIndex":"","ariaLabel":"","colSpan":2},{"type":"button","id":"SLFI_RETURN_CASE","name":"SLFI_RETURN_CASE","label":"Re-upload Investors list","tabIndex":"","ariaLabel":"","colSpan":2},{"type":"submit","id":"SUBMIT","name":"SUBMIT","label":"Send Bulk email","tabIndex":"","ariaLabel":"","colSpan":2},{"colSpan":2}],[{"type":"hidden","variable":"SLFI_BACK_FORM","var_uid":"86052484860cca2fd52a413006611353","dataType":"string","protectedValue":false,"id":"SLFI_BACK_FORM","name":"SLFI_BACK_FORM","defaultValue":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","var_name":"SLFI_BACK_FORM","colSpan":12}]],"variables":[{"var_uid":"63945459460cb6e50b2bb32074968473","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_CURRENT_DATE","var_field_type":"datetime","var_field_size":10,"var_label":"datetime","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""},{"var_uid":"24906670160cb6e9295e5e5028051084","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_SUBMITTER","var_field_type":"string","var_field_size":10,"var_label":"string","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""},{"var_uid":"31239748960ccffda578fd9006522268","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_EXPIRATION_DATE","var_field_type":"datetime","var_field_size":10,"var_label":"datetime","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""},{"var_uid":"16491227660d1e4266a1824046069081","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_FLAG_CANCEL_CASE","var_field_type":"string","var_field_size":10,"var_label":"string","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""},{"var_uid":"86052484860cca2fd52a413006611353","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_BACK_FORM","var_field_type":"string","var_field_size":10,"var_label":"string","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""}]}]}]]></dyn_content>
+        <dyn_label></dyn_label>
+        <dyn_version>2</dyn_version>
+        <dyn_update_date><![CDATA[2024-01-30 22:00:44]]></dyn_update_date>
+      </record>
+      <record>
+        <dyn_uid>52437100460df88f44e3f49053436605</dyn_uid>
+        <dyn_title>Tracking Form</dyn_title>
+        <dyn_description>Track the Bulk email sent to the investors</dyn_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <dyn_type>xmlform</dyn_type>
+        <dyn_filename><![CDATA[49495392760ca7026529f80008442485/52437100460df88f44e3f49053436605]]></dyn_filename>
+        <dyn_content><![CDATA[{"name":"Tracking Form","description":"Track the Bulk email sent to the investors","items":[{"type":"form","variable":"","var_uid":"","dataType":"","id":"52437100460df88f44e3f49053436605","name":"Tracking Form","description":"Track the Bulk email sent to the investors","mode":"edit","script":{"type":"js","code":"$(document).ready(function() {\n    //Remove backward and forward buttons\n    $(\"#dyn_forward\").parent().hide();\n  \n    //Set libraries\n    var random = Math.random();\n    $(\"head\").append('<script type=\"text/javascript\" src=\"/plugin/psSLFIFunctions/js/javascriptLibrary.js?random=\"' + random + '\" />');\n    $(\"head\").append('<link rel=\"stylesheet\" href=\"/plugin/psSLFIFunctions/css/cssDynaformNorthleaf.css?random=\"' + random + '\"\">');\n  \n    //Check if button to send investors PDFs should be disabled\n    var disabledInvestorsPDFButton = $(\"#SLFI_DISABLED_BUTTON_INVESTORS_ZIP\").getValue();\n    if (disabledInvestorsPDFButton == 1) {\n        $(\"#BTN_SEND_EMAIL_WITH_PDF button\").attr(\"disabled\", \"disabled\");\n    }\n  \n    //Add buttons to the grid\n    var nRows = $(\"#SLFI_INVESTORS_GRID_TRACKING\").getNumberRows();\n    for (var row = 1; row <= nRows; row++) {\n        showHideButtonsGrid(row);\n    }\n  \n    //Show or hide submit button\n    var flagSubmit = $(\"#SLFI_FLAG_SUBMIT\").getValue();\n    if (flagSubmit == \"NO\") {\n        $(\"#SUBMIT\").parent().parent().hide();\n    }\n  \n    sendReminder(1);\n    $(\"#BTN_SEND_REMINDER\").find(\"button\").on(\"click\" , function() {\n        //Confirm the user wants to send the reminder\n        var body = \"<p>Are you sure to send a reminder to all pending investors?</p>\";\n        confirmMessage(\"reminderModal\", \"SEND REMINDER\", body, \"modalReminderYes\", \"modalReminderNo\");\n        $(\"#modalReminderYes\").on(\"click\", function() {\n            $(\"#52437100460df88f44e3f49053436605\").showFormModal();\n            sendReminder(0);\n        });\n    });\n  \n    $(\"#BTN_SEND_EMAIL_WITH_PDF\").find(\"button\").on(\"click\" , function() {\n        $(\"#52437100460df88f44e3f49053436605\").showFormModal();\n        $.ajax({\n            type: \"POST\",\n            url: \"../psSLFIFunctions/investorsController.php\",\n            data: {type: \"sendEmailWithPDFs\",\n                   appUid: $(\"#APP_UID\").getValue()},\n            dataType: 'JSON',\n            cache: false\n        }).done(function(data) {\n            $(\"#52437100460df88f44e3f49053436605\").hideFormModal();\n            if (!data[\"success\"]) {\n                alertMessage(\"errorPDFModal\", \"WARNING\", \"The email with the documents could not be sent, please contact your system administrator\", 1, \"\");\n            } else {\n                alertMessage(\"successPDF\", \"INFO\", \"The email with the documents was successfully sent, remember that the file will be available only for one day and the button will be disabled that period of time.\", 1, \"\");\n                $(\"#BTN_SEND_EMAIL_WITH_PDF button\").attr(\"disabled\", \"disabled\");\n            }\n        });\n    });\n});\n\n/**\n * Show or hide buttons of the grid\n * \n * @param (String) gridRow\n * @return none\n *\n * by Ana Castillo\n * modified by Cinthia Romero\n */\nfunction showHideButtonsGrid(gridRow)\n{\n    //Set flags to show or not buttons\n    var flagView = false;\n    var flagCancel = false;\n    var flagResent = false;\n    var flagEdit = false;\n    var flagCopyLink = false;\n\n    //Get current status\n    var status = $(\"#SLFI_INVESTORS_GRID_TRACKING\").getValue(gridRow, 8);\n\n    //Set variables\n    switch (status) {\n        case 'Sent':\n        case 'Re-sent':\n            flagCancel = true;\n            flagResent = true;\n            flagEdit = true;\n            flagCopyLink = true;\n            break;\n        case 'Completed':\n        case 'Completed Manually':\n            flagView = true;\n            flagResent = true;\n            flagEdit = true;\n            break;\n    }\n\n    if (flagView) {\n        document.getElementById(\"[SLFI_INVESTORS_GRID_TRACKING][\" + gridRow + \"][SLFI_GRID_INVESTORS_VIEW]\").innerHTML = \"<span class='glyphicon glyphicon-search buttonsGrid' title='View' id='VIEW_\" + gridRow + \"' onclick='viewExternalForm(this)'>\";\n    } else {\n        document.getElementById(\"[SLFI_INVESTORS_GRID_TRACKING][\" + gridRow + \"][SLFI_GRID_INVESTORS_VIEW]\").innerHTML = \"\";\n    }\n\n    if (flagCancel) {\n        document.getElementById(\"[SLFI_INVESTORS_GRID_TRACKING][\" + gridRow + \"][SLFI_GRID_INVESTORS_CANCEL]\").innerHTML = \"<span class='glyphicon glyphicon-ban-circle bigButtonsGrid' title='Cancel' id='CANCEL_\" + gridRow + \"' onclick='cancelExternalForm(this)'>\";\n    } else {\n        document.getElementById(\"[SLFI_INVESTORS_GRID_TRACKING][\" + gridRow + \"][SLFI_GRID_INVESTORS_CANCEL]\").innerHTML = \"\";\n    }\n\n    if (flagResent) {\n        document.getElementById(\"[SLFI_INVESTORS_GRID_TRACKING][\" + gridRow + \"][SLFI_GRID_INVESTORS_RESENT]\").innerHTML = \"<span class='glyphicon glyphicon-envelope bigButtonsGrid' title='Re-send' id='RESENT_\" + gridRow + \"' onclick='reSentExternalForm(this)'>\";\n    } else {\n        document.getElementById(\"[SLFI_INVESTORS_GRID_TRACKING][\" + gridRow + \"][SLFI_GRID_INVESTORS_RESENT]\").innerHTML = \"\";\n    }\n\n    if (flagEdit) {\n        document.getElementById(\"[SLFI_INVESTORS_GRID_TRACKING][\" + gridRow + \"][SLFI_GRID_INVESTORS_EDIT]\").parentNode.parentNode.style.display = \"inline-block\";\n        document.getElementById(\"[SLFI_INVESTORS_GRID_TRACKING][\" + gridRow + \"][SLFI_GRID_INVESTORS_EDIT]\").parentNode.parentNode.style.width = \"3%\";\n        document.getElementById(\"[SLFI_INVESTORS_GRID_TRACKING][\" + gridRow + \"][SLFI_GRID_INVESTORS_EDIT]\").innerHTML = \"<span class='glyphicon glyphicon-pencil bigButtonsGrid' title='Edit' id='EDIT_\" + gridRow + \"' onclick='editExternalForm(this)'>\";\n    } else {\n        document.getElementById(\"[SLFI_INVESTORS_GRID_TRACKING][\" + gridRow + \"][SLFI_GRID_INVESTORS_EDIT]\").innerHTML = \"\";\n    }\n  \n    if (flagCopyLink) {\n        document.getElementById(\"[SLFI_INVESTORS_GRID_TRACKING][\" + gridRow + \"][SLFI_GRID_INVESTORS_COPY_LINK]\").parentNode.parentNode.style.display = \"inline-block\";\n        document.getElementById(\"[SLFI_INVESTORS_GRID_TRACKING][\" + gridRow + \"][SLFI_GRID_INVESTORS_COPY_LINK]\").parentNode.parentNode.style.width = \"3%\";\n        document.getElementById(\"[SLFI_INVESTORS_GRID_TRACKING][\" + gridRow + \"][SLFI_GRID_INVESTORS_COPY_LINK]\").innerHTML = \"<span class='glyphicon glyphicon-link bigButtonsGrid' title='Copy Link' id='COPY_LINK_\" + gridRow + \"' onclick='copyLink(this, \" + gridRow + \")'>\";\n    } else {\n        document.getElementById(\"[SLFI_INVESTORS_GRID_TRACKING][\" + gridRow + \"][SLFI_GRID_INVESTORS_COPY_LINK]\").innerHTML = \"\";\n    }\n}\n/**\n * View External Form answer\n * \n * @param (Object) objView\n * @return none\n *\n * by Ana Castillo\n * modified by Cinthia Romero\n */\nfunction viewExternalForm(objView)\n{\n    //Get ssid\n    var idView = objView.id;\n    var rowNumber = idView.split(\"_\")[1];\n    var investorClueExternalForm = $(\"#SLFI_INVESTORS_GRID_TRACKING\").getValue(rowNumber, 14);\n    var encryptedInvestorClue = btoa(investorClueExternalForm);\n  \n    //Set link of the External Form\n    var externalLink = $(\"#SLFI_EXTERNAL_FORM\").getValue();\n    externalLink += \"?identifier=\" + encryptedInvestorClue + \"&type=VIEW\";\n  \n    var ssid = $(\"#SLFI_INVESTORS_GRID_TRACKING\").getValue(rowNumber, 6);\n  \n    //Set generate document function\n    var generateDocument = \"generateDocument('\" + $(\"#APP_UID\").getValue() + \"', '\" + ssid + \"')\";\n\n    //Create modal html\n    $(\"#modalView\").remove();\n    var htmlModal = '<div id=\"modalView\" class=\"modal fade\"\">';\n    htmlModal += '<div class=\"modal-dialog bigModal\" style=\"width:90%;\">';\n    htmlModal += '<div class=\"modal-content bigModal\">';\n    htmlModal += '<div class=\"modal-header modalTitleColors\">';\n    htmlModal += '<center>';\n    htmlModal += '<b>Edit External Form</b>';\n    htmlModal += '</center>';\n    htmlModal += '</div>';\n    htmlModal += '<div id=\"bodyModal\" class=\"modal-body bigModal\">';\n    htmlModal += '<p><iframe id=\"externalform\" src=\"' + externalLink + '\" style=\"width:100%;\" onload=\"resizeIframe(this)\"></iframe></p>';\n    htmlModal += '</div>';\n    htmlModal += '<div class=\"modal-footer bigModal\">';\n    htmlModal += '<button type=\"button\" class=\"btn btn-default pull-left\" onclick=\"' + generateDocument + '\">Download PDF</button>';\n    htmlModal += '<button type=\"button\" class=\"btn btn-primary\" data-dismiss=\"modal\">Close</button>';\n    htmlModal += '</div>';\n    htmlModal += '</div>';\n    htmlModal += '</div>';\n    htmlModal += '</div>';\n    $(\"body\").append(htmlModal);\n\n    $(\"#modalView\").modal({\n        backdrop: 'static',\n        keyboard: false\n    });\n\n    //Verify if browser is internet explorer\n    var ms_ie = false;\n    var ua = window.navigator.userAgent;\n    var old_ie = ua.indexOf('MSIE ');\n    var new_ie = ua.indexOf('Trident/');\n\n    if ((old_ie > -1) || (new_ie > -1)) {\n        ms_ie = true;\n    }\n    //Remove class fade only if browser is internet explorer\n    if ( ms_ie ) {\n        $('.modal').removeClass('fade');\n    }\n}\n/**\n * Resize iframe\n * \n * @param (Object) obj\n * @return none\n *\n * by Ana Castillo\n */\nfunction resizeIframe(obj) {\n    obj.style.height = (document.getElementById(\"bodyModal\").scrollHeight - 4) + 'px';\n}\n\n/**\n * Cancel External Form\n * \n * @param (Object) objCancel\n * @return none\n *\n * by Ana Castillo\n */\nfunction cancelExternalForm(objCancel)\n{\n    //Get ssid\n    var idCancel = objCancel.id;\n    var rowNumber = idCancel.split(\"_\")[1];\n    var ssid = $(\"#SLFI_INVESTORS_GRID_TRACKING\").getValue(rowNumber, 6);\n\n    //Get application\n    var appUid = $(\"#APP_UID\").getValue();\n\n    //Ask to confirm the cancelation\n    var body = \"<p>Are you sure to cancel the Investor confirmation form?</p>\";\n    confirmMessage(\"cancelModal\", \"Cancel\", body, \"modalCancelYes\", \"modalCancelNo\");\n    $(\"#modalCancelYes\").on(\"click\", function() {\n        var aData = {};\n        aData[\"APP_UID\"] = appUid;\n        aData[\"SID_UID\"] = ssid;\n        $.ajax({\n            type: \"POST\",\n            url: \"../psSLFIFunctions/investorsController.php\",\n            data: {type: \"cancelInvestor\",\n                   aData: JSON.stringify(aData)},\n            dataType: 'JSON',\n            cache: false\n        }).done(function(data) {\n            if (data) {\n                $(\"#SLFI_INVESTORS_GRID_TRACKING\").setValue(\"Cancelled\", rowNumber, 8);\n                showHideButtonsGrid(rowNumber);\n            }\n        });\n    });\n}\n/**\n * Resent External Form email\n * \n * @param (Object) objResend\n * @return none\n *\n * by Ana Castillo\n * modified by Cinthia Romero\n */\nfunction reSentExternalForm(objResend)\n{\n    //Get ssid\n    var idRedend = objResend.id;\n    var rowNumber = idRedend.split(\"_\")[1];\n    var ssid = $(\"#SLFI_INVESTORS_GRID_TRACKING\").getValue(rowNumber, 6);\n    //Get email\n    var email = $(\"#SLFI_INVESTORS_GRID_TRACKING\").getValue(rowNumber, 1);\n    //Get Task Uid\n    var taskUid = $(\"#TASK_UID\").getValue();\n    //Get display Name\n    var displayName = $(\"#SLFI_INVESTORS_GRID_TRACKING\").getValue(rowNumber, 2);\n    //Get Investor Name\n    var investorName = $(\"#SLFI_INVESTORS_GRID_TRACKING\").getValue(rowNumber, 3);\n    //Get application\n    var appUid = $(\"#APP_UID\").getValue();\n    //Get appNumber\n    var appNumber = $(\"#CASE_NUMBER\").getValue();\n    //Get variables needed to the email\n    var contactInformation = $(\"#SLFI_CONTACT_INFORMATION\").getValue();\n    var currentYear = $(\"#SLFI_CURRENT_YEAR\").getValue();\n\n    //Ask to confirm the cancelation\n    var body = \"<p>Are you sure to re-send the email of this Investor?</p>\";\n    confirmMessage(\"resendModal\", \"Re-send\", body, \"modalResendYes\", \"modalresendNo\");\n    $(\"#modalResendYes\").on(\"click\", function() {\n        var aData = {};\n        aData[\"APP_UID\"] = appUid;\n        aData[\"APP_NUMBER\"] = appNumber;\n        aData[\"SID_UID\"] = ssid;\n        aData[\"email\"] = email;\n        aData[\"taskUid\"] = taskUid;\n        aData[\"displayName\"] = displayName;\n        aData[\"investorName\"] = investorName;\n        aData[\"contactInformation\"] = contactInformation;\n        aData[\"currentYear\"] = currentYear;\n        $.ajax({\n            type: \"POST\",\n            url: \"../psSLFIFunctions/investorsController.php\",\n            data: {type: \"resendInvestor\",\n                   aData: JSON.stringify(aData)},\n            dataType: 'JSON',\n            cache: false\n        }).done(function(data) {\n            var status = data['STATUS'];\n            var date = data['DATE'];\n            $(\"#SLFI_INVESTORS_GRID_TRACKING\").setValue(date, rowNumber, 7);\n            $(\"#SLFI_INVESTORS_GRID_TRACKING\").setValue(status, rowNumber, 8);\n            showHideButtonsGrid(rowNumber);\n        });\n    });\n}\n/**\n * Edit External Form information\n * \n * @param (Object) objEdit\n * @return none\n *\n * by Ana Castillo\n * modified by Cinthia Romero\n */\nfunction editExternalForm(objEdit)\n{\n    //Get ssid\n    var idEdit = objEdit.id;\n    var rowNumber = idEdit.split(\"_\")[1];\n    var ssid = $(\"#SLFI_INVESTORS_GRID_TRACKING\").getValue(rowNumber, 6);\n    //Get application\n    var appUid = $(\"#APP_UID\").getValue();\n    //Get investor clue for external form\n    var investorClueExternalForm = $(\"#SLFI_INVESTORS_GRID_TRACKING\").getValue(rowNumber, 14);\n    var encryptedInvestorClue = btoa(investorClueExternalForm);\n  \n    //Set link of the External Form\n    var externalLink = $(\"#SLFI_EXTERNAL_FORM\").getValue();\n    externalLink += \"?identifier=\" + encryptedInvestorClue + \"&type=EDIT\";\n\n    //Create modal html\n    $(\"#modalView\").remove();\n    var htmlModal = '<div id=\"modalView\" class=\"modal fade\"\">';\n    htmlModal += '<div class=\"modal-dialog bigModal\" style=\"width:90%;\">';\n    htmlModal += '<div class=\"modal-content bigModal\">';\n    htmlModal += '<div class=\"modal-header modalTitleColors\">';\n    htmlModal += '<center>';\n    htmlModal += '<b>Edit External Form</b>';\n    htmlModal += '</center>';\n    htmlModal += '</div>';\n    htmlModal += '<div id=\"bodyModal\" class=\"modal-body bigModal\">';\n    htmlModal += '<p><iframe id=\"externalform\" src=\"' + externalLink + '\" style=\"width:100%;\" onload=\"resizeIframe(this)\"></iframe></p>';\n    htmlModal += '</div>';\n    htmlModal += '<div class=\"modal-footer bigModal\">';\n    htmlModal += '<button id=\"closeEdit\" type=\"button\" class=\"btn btn-primary\" data-dismiss=\"modal\">Close</button>';\n    htmlModal += '</div>';\n    htmlModal += '</div>';\n    htmlModal += '</div>';\n    htmlModal += '</div>';\n    $(\"body\").append(htmlModal);\n\n    $(\"#modalView\").modal({\n        backdrop: 'static',\n        keyboard: false\n    });\n\n    $(\"#closeEdit\").on(\"click\", function() {\n        var aData = {};\n        aData[\"APP_UID\"] = appUid;\n        aData[\"SID_UID\"] = ssid;\n        $.ajax({\n            type: \"POST\",\n            url: \"../psSLFIFunctions/investorsController.php\",\n            data: {type: \"getInvestorStatus\",\n                   aData: JSON.stringify(aData)},\n            dataType: 'JSON',\n            cache: false\n        }).done(function(data) {\n            $(\"#SLFI_INVESTORS_GRID_TRACKING\").setValue(data, rowNumber, 8);\n            showHideButtonsGrid(rowNumber);\n        });\n    });\n\n    //Verify if browser is internet explorer\n    var ms_ie = false;\n    var ua = window.navigator.userAgent;\n    var old_ie = ua.indexOf('MSIE ');\n    var new_ie = ua.indexOf('Trident/');\n\n    if ((old_ie > -1) || (new_ie > -1)) {\n        ms_ie = true;\n    }\n    //Remove class fade only if browser is internet explorer\n    if ( ms_ie ) {\n        $('.modal').removeClass('fade');\n    }\n}\n\n/**\n * Copy Link to Clipboard\n *\n * @param object objCopyLink\n * @param int gridRow\n * @return none\n *\n * by Cinthia Romero\n */\nfunction copyLink(objCopyLink, gridRow)\n{\n    //Get uid and value of field to copy\n    var objCopyUid = objCopyLink.id;\n    var investorClueExternalForm = $(\"#SLFI_INVESTORS_GRID_TRACKING\").getValue(gridRow, 14);\n    var encryptedInvestorClue = btoa(investorClueExternalForm);\n  \n    //Set link of the External Form\n    var externalLink = $(\"#SLFI_EXTERNAL_FORM\").getValue();\n    externalLink += \"?identifier=\" + encryptedInvestorClue;\n    \n    //Copy to clipboard\n    var $temp = $(\"<input id='linkDelete'>\");\n    $(\"body\").append($temp);\n    $temp.val(externalLink).select();\n    document.execCommand(\"copy\");\n    $temp.remove();\n    //Message\n    var messageInvestorName = \"Investor \" + $(\"#SLFI_INVESTORS_GRID_TRACKING\").getValue(gridRow, 3) + \" link copied\";\n    showPopUpMessage(messageInvestorName, \"alert-success\");\n}\n\n/*\n * showPopUpMessage\n *\n * @param (string) messageText\n * @param (string) alertType\n * @return none\n *\n * by Cinthia Romero\n */\nfunction showPopUpMessage (messageText, alertType) {\n    \n    var message = $('<div class=\"alert ' + alertType + ' popUp-message\" style=\"display: none;\">');\n    var close = $('<button type=\"button\" class=\"close\" data-dismiss=\"alert\">&times</button>');\n    message.append(close);\n    message.append(messageText);\n    message.appendTo($('body')).fadeIn(500).delay(4000).fadeOut(500);\n}\n\n/*\n* Generate PDF document for the invertor\n*\n* @param appUid\n* @param ssid\n* @return none\n*\n* by Ana Castillo\n*/\nfunction generateDocument(appUid, ssid)\n{\n    var aData = {};\n    aData[\"APP_UID\"] = appUid;\n    aData[\"SID_UID\"] = ssid;\n    $.ajax({\n        type: \"POST\",\n        url: \"../psSLFIFunctions/investorsController.php\",\n        data: {type: \"generatePDF\",\n               aData: JSON.stringify(aData)},\n        dataType: 'JSON',\n        cache: false\n    }).done(function(data) {\n        window.open(data,'_blank');\n    });\n}\n\n/**\n * Send Reminder\n * \n * @param int onlyCheckCases\n * @return none\n *\n * by Cinthia Romero\n */\nfunction sendReminder(onlyCheckCases)\n{\n    $.ajax({\n        type: \"POST\",\n        url: \"../psSLFIFunctions/investorsController.php\",\n        data: {type: \"sendReminder\",\n               appUid: $(\"#APP_UID\").getValue(),\n               onlyCheckCases: onlyCheckCases},\n        dataType: 'JSON',\n        cache: false\n    }).done(function(data) {\n        $(\"#52437100460df88f44e3f49053436605\").hideFormModal();\n        if (data[\"success\"]) {\n            if (onlyCheckCases == 1 && data[\"blockButton\"]) {\n                $(\"#BTN_SEND_REMINDER button\").prop('disabled', true);\n            }\n            if (onlyCheckCases == 0 && data[\"errorMessage\"] != \"\") {\n                alertMessage(\"errorModal\", \"WARNING\", data[\"errorMessage\"], 1, \"\");\n            }\n            if (onlyCheckCases == 0 && data[\"errorMessage\"] == \"\") {\n                location.reload();\n            }\n        } else {\n            alertMessage(\"errorModal\", \"WARNING\", \"The emails could not be sent, please contact your system administrator\", 1, \"\");\n        }\n    });\n}"},"language":"en","externalLibs":"","printable":false,"items":[[{"type":"title","id":"SLFI_TRACKING_TITLE","label":"Investors Confirmation Tracking Task","ariaLabel":"","colSpan":12}],[{"colSpan":3},{"type":"datetime","variable":"SLFI_CURRENT_DATE","var_uid":"63945459460cb6e50b2bb32074968473","dataType":"datetime","protectedValue":false,"id":"SLFI_CURRENT_DATE","name":"SLFI_CURRENT_DATE","label":"Date","tabIndex":"","placeholder":"","hint":"","ariaLabel":"","required":false,"requiredFieldErrorMessage":"","mode":"disabled","format":"MMM Do, YYYY","dayViewHeaderFormat":"MMMM YYYY","extraFormats":false,"stepping":1,"minDate":"","maxDate":"","useCurrent":"false","collapse":true,"locale":"","defaultDate":"","disabledDates":false,"enabledDates":false,"icons":{"time":"glyphicon glyphicon-time","date":"glyphicon glyphicon-calendar","up":"glyphicon glyphicon-chevron-up","down":"glyphicon glyphicon-chevron-down","previous":"glyphicon glyphicon-chevron-left","next":"glyphicon glyphicon-chevron-right","today":"glyphicon glyphicon-screenshot","clear":"glyphicon glyphicon-trash"},"useStrict":false,"sideBySide":false,"daysOfWeekDisabled":false,"calendarWeeks":false,"viewMode":"days","toolbarPlacement":"default","showTodayButton":false,"showClear":"false","widgetPositioning":{"horizontal":"auto","vertical":"auto"},"widgetParent":null,"keepOpen":false,"var_name":"SLFI_CURRENT_DATE","colSpan":6},{"colSpan":3}],[{"colSpan":3},{"type":"text","variable":"SLFI_SUBMITTER","var_uid":"24906670160cb6e9295e5e5028051084","dataType":"string","protectedValue":false,"id":"SLFI_SUBMITTER","name":"SLFI_SUBMITTER","label":"Name","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":false,"requiredFieldErrorMessage":"","textTransform":"none","validate":"","validateMessage":"","maxLength":1000,"formula":"","mode":"disabled","operation":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"var_name":"SLFI_SUBMITTER","colSpan":6},{"colSpan":3}],[{"colSpan":3},{"type":"datetime","variable":"SLFI_EXPIRATION_DATE","var_uid":"31239748960ccffda578fd9006522268","dataType":"datetime","protectedValue":false,"id":"SLFI_EXPIRATION_DATE","name":"SLFI_EXPIRATION_DATE","label":"Expiration Date","tabIndex":"","placeholder":"","hint":"","ariaLabel":"","required":false,"requiredFieldErrorMessage":"","mode":"disabled","format":"MMM Do, YYYY","dayViewHeaderFormat":"MMMM YYYY","extraFormats":false,"stepping":1,"minDate":"","maxDate":"","useCurrent":"false","collapse":true,"locale":"","defaultDate":"","disabledDates":false,"enabledDates":false,"icons":{"time":"glyphicon glyphicon-time","date":"glyphicon glyphicon-calendar","up":"glyphicon glyphicon-chevron-up","down":"glyphicon glyphicon-chevron-down","previous":"glyphicon glyphicon-chevron-left","next":"glyphicon glyphicon-chevron-right","today":"glyphicon glyphicon-screenshot","clear":"glyphicon glyphicon-trash"},"useStrict":false,"sideBySide":false,"daysOfWeekDisabled":false,"calendarWeeks":false,"viewMode":"days","toolbarPlacement":"default","showTodayButton":false,"showClear":"false","widgetPositioning":{"horizontal":"auto","vertical":"auto"},"widgetParent":null,"keepOpen":false,"var_name":"SLFI_EXPIRATION_DATE","colSpan":6},{"colSpan":3}],[{"colSpan":3},{"type":"button","id":"BTN_SEND_REMINDER","name":"BTN_SEND_REMINDER","label":"Send Reminder","tabIndex":"","ariaLabel":"","colSpan":3},{"type":"button","id":"BTN_SEND_EMAIL_WITH_PDF","name":"BTN_SEND_EMAIL_WITH_PDF","label":"Send Completed Investors PDFs","tabIndex":"","ariaLabel":"","colSpan":3},{"colSpan":3}],[{"type":"grid","variable":"SLFI_INVESTORS_GRID_TRACKING","var_uid":"69204721960df8d5602a341029794127","dataType":"grid","protectedValue":false,"id":"SLFI_INVESTORS_GRID_TRACKING","name":"SLFI_INVESTORS_GRID_TRACKING","label":"","hint":"","required":false,"requiredFieldErrorMessage":"","columns":[{"type":"textarea","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_EMAIL","name":"SLFI_GRID_INVESTORS_EMAIL","label":"Email","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":true,"requiredFieldErrorMessage":"","validate":"^[\\W]*([\\w+'\\-.%]+@[\\w\\-.]+\\.[A-Za-z]+[\\W]*,{1}[\\W]*)*([\\w+'\\-.%]+@[\\w\\-.]+\\.[A-Za-z]+)[\\W]*$","validateMessage":"Invalid Email","mode":"disabled","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"rows":"2","columnWidth":"15","width":100,"title":"Email"},{"type":"textarea","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_DISPLAY_NAME","name":"SLFI_GRID_INVESTORS_DISPLAY_NAME","label":"Display Name","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":true,"requiredFieldErrorMessage":"","validate":"","validateMessage":"","mode":"disabled","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"rows":"2","columnWidth":"13","width":100,"title":"Display Name"},{"type":"textarea","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_INVESTOR_NAME","name":"SLFI_GRID_INVESTORS_INVESTOR_NAME","label":"Investor Name","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":true,"requiredFieldErrorMessage":"","validate":"","validateMessage":"","mode":"disabled","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"rows":"2","columnWidth":"13","width":100,"title":"Investor Name"},{"type":"text","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_INVESTOR_ID","name":"SLFI_GRID_INVESTORS_INVESTOR_ID","label":"Investor ID","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":false,"requiredFieldErrorMessage":"","textTransform":"none","validate":"","validateMessage":"","maxLength":1000,"formula":"","mode":"disabled","operation":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"columnWidth":"10","width":100,"title":"Investor ID"},{"type":"text","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_CLASS","name":"SLFI_GRID_INVESTORS_CLASS","label":"Class","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":false,"requiredFieldErrorMessage":"","textTransform":"none","validate":"","validateMessage":"","maxLength":1000,"formula":"","mode":"disabled","operation":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"columnWidth":"11","width":100,"title":"Class"},{"type":"hidden","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_UID","name":"SLFI_GRID_INVESTORS_UID","defaultValue":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","width":100},{"type":"text","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_SEND_DATE","name":"SLFI_GRID_INVESTORS_SEND_DATE","label":"Sent Date","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":false,"requiredFieldErrorMessage":"","textTransform":"none","validate":"","validateMessage":"","maxLength":1000,"formula":"","mode":"disabled","operation":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"columnWidth":"10","width":100,"title":"Sent Date"},{"type":"text","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_STATUS","name":"SLFI_GRID_INVESTORS_STATUS","label":"Status","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":false,"requiredFieldErrorMessage":"","textTransform":"none","validate":"","validateMessage":"","maxLength":1000,"formula":"","mode":"disabled","operation":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","memoryCache":false,"columnWidth":"10","width":100,"title":"Status"},{"type":"link","id":"SLFI_GRID_INVESTORS_VIEW","name":"SLFI_GRID_INVESTORS_VIEW","label":"","tabIndex":"","value":"","href":"","hint":"","ariaLabel":"","columnWidth":"3","width":100,"title":""},{"type":"link","id":"SLFI_GRID_INVESTORS_CANCEL","name":"SLFI_GRID_INVESTORS_CANCEL","label":"","tabIndex":"","value":"","href":"","hint":"","ariaLabel":"","columnWidth":"3","width":100,"title":""},{"type":"link","id":"SLFI_GRID_INVESTORS_RESENT","name":"SLFI_GRID_INVESTORS_RESENT","label":"","tabIndex":"","value":"","href":"","hint":"","ariaLabel":"","columnWidth":"3","width":100,"title":""},{"type":"link","id":"SLFI_GRID_INVESTORS_EDIT","name":"SLFI_GRID_INVESTORS_EDIT","label":"","tabIndex":"","value":"","href":"","hint":"","ariaLabel":"","columnWidth":"3","width":100,"title":""},{"type":"link","id":"SLFI_GRID_INVESTORS_COPY_LINK","name":"SLFI_GRID_INVESTORS_COPY_LINK","label":"","tabIndex":"","value":"","href":"","hint":"","ariaLabel":"","columnWidth":"3","width":100,"title":""},{"type":"hidden","variable":"","var_uid":"","dataType":"","protectedValue":false,"id":"SLFI_GRID_INVESTORS_COPY_LINK_VALUE","name":"SLFI_GRID_INVESTORS_COPY_LINK_VALUE","defaultValue":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","width":100}],"data":[],"mode":"edit","layout":"responsive","pageSize":"0","addRow":false,"deleteRow":false,"title":"","colSpan":12}],[{"colSpan":4},{"type":"submit","id":"SUBMIT","name":"SUBMIT","label":"Submit","tabIndex":"","ariaLabel":"","colSpan":4},{"colSpan":4}],[{"type":"hidden","variable":"APP_UID","var_uid":"39666017860e46e971617e0055740493","dataType":"string","protectedValue":false,"id":"APP_UID","name":"APP_UID","defaultValue":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","var_name":"APP_UID","colSpan":2},{"type":"hidden","variable":"SLFI_EXTERNAL_FORM","var_uid":"64290444760e475ad009e45063899575","dataType":"string","protectedValue":false,"id":"SLFI_EXTERNAL_FORM","name":"SLFI_EXTERNAL_FORM","defaultValue":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","var_name":"SLFI_EXTERNAL_FORM","colSpan":2},{"type":"hidden","variable":"TASK_UID","var_uid":"74777321560e5d02c798717070186596","dataType":"string","protectedValue":false,"id":"TASK_UID","name":"TASK_UID","defaultValue":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","var_name":"TASK_UID","colSpan":2},{"type":"hidden","variable":"SLFI_FLAG_SUBMIT","var_uid":"41021686360ecb3f9a74478068612937","dataType":"string","protectedValue":false,"id":"SLFI_FLAG_SUBMIT","name":"SLFI_FLAG_SUBMIT","defaultValue":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","var_name":"SLFI_FLAG_SUBMIT","colSpan":2},{"type":"hidden","variable":"SLFI_CONTACT_INFORMATION","var_uid":"10091874260f70feb134881010865974","dataType":"string","protectedValue":false,"id":"SLFI_CONTACT_INFORMATION","name":"SLFI_CONTACT_INFORMATION","defaultValue":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","var_name":"SLFI_CONTACT_INFORMATION","colSpan":2},{"type":"hidden","variable":"SLFI_CURRENT_YEAR","var_uid":"81631795860f71533877bf9052628298","dataType":"string","protectedValue":false,"id":"SLFI_CURRENT_YEAR","name":"SLFI_CURRENT_YEAR","defaultValue":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","var_name":"SLFI_CURRENT_YEAR","colSpan":2}],[{"type":"hidden","variable":"CASE_NUMBER","var_uid":"4741476546441b05530b883030973534","dataType":"string","protectedValue":false,"id":"CASE_NUMBER","name":"CASE_NUMBER","defaultValue":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","var_name":"CASE_NUMBER","colSpan":12}],[{"type":"hidden","variable":"SLFI_DISABLED_BUTTON_INVESTORS_ZIP","var_uid":"35121772564553096bb2441068242888","dataType":"string","protectedValue":false,"id":"SLFI_DISABLED_BUTTON_INVESTORS_ZIP","name":"SLFI_DISABLED_BUTTON_INVESTORS_ZIP","defaultValue":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","var_name":"SLFI_DISABLED_BUTTON_INVESTORS_ZIP","colSpan":12}]],"variables":[{"var_uid":"63945459460cb6e50b2bb32074968473","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_CURRENT_DATE","var_field_type":"datetime","var_field_size":10,"var_label":"datetime","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":[],"inp_doc_uid":"","var_uid_old":"63945459460cb6e50b2bb32074968473","var_name_old":"SLFI_CURRENT_DATE","prj_uid_old":"49495392760ca7026529f80008442485","create":false},{"var_uid":"24906670160cb6e9295e5e5028051084","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_SUBMITTER","var_field_type":"string","var_field_size":10,"var_label":"string","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":[],"inp_doc_uid":"","var_uid_old":"24906670160cb6e9295e5e5028051084","var_name_old":"SLFI_SUBMITTER","prj_uid_old":"49495392760ca7026529f80008442485","create":false},{"var_uid":"31239748960ccffda578fd9006522268","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_EXPIRATION_DATE","var_field_type":"datetime","var_field_size":10,"var_label":"datetime","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":[],"inp_doc_uid":"","var_uid_old":"31239748960ccffda578fd9006522268","var_name_old":"SLFI_EXPIRATION_DATE","prj_uid_old":"49495392760ca7026529f80008442485","create":false},{"var_uid":"39666017860e46e971617e0055740493","prj_uid":"49495392760ca7026529f80008442485","var_name":"APP_UID","var_field_type":"string","var_field_size":10,"var_label":"string","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""},{"var_uid":"64290444760e475ad009e45063899575","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_EXTERNAL_FORM","var_field_type":"string","var_field_size":10,"var_label":"string","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""},{"var_uid":"74777321560e5d02c798717070186596","prj_uid":"49495392760ca7026529f80008442485","var_name":"TASK_UID","var_field_type":"string","var_field_size":10,"var_label":"string","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""},{"var_uid":"41021686360ecb3f9a74478068612937","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_FLAG_SUBMIT","var_field_type":"string","var_field_size":10,"var_label":"string","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""},{"var_uid":"10091874260f70feb134881010865974","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_CONTACT_INFORMATION","var_field_type":"string","var_field_size":10,"var_label":"string","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""},{"var_uid":"81631795860f71533877bf9052628298","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_CURRENT_YEAR","var_field_type":"string","var_field_size":10,"var_label":"string","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""},{"var_uid":"4741476546441b05530b883030973534","prj_uid":"49495392760ca7026529f80008442485","var_name":"CASE_NUMBER","var_field_type":"string","var_field_size":10,"var_label":"string","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""},{"var_uid":"35121772564553096bb2441068242888","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_DISABLED_BUTTON_INVESTORS_ZIP","var_field_type":"string","var_field_size":10,"var_label":"string","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""}]}]}]]></dyn_content>
+        <dyn_label></dyn_label>
+        <dyn_version>2</dyn_version>
+        <dyn_update_date><![CDATA[2026-10-13 14:30:07]]></dyn_update_date>
+      </record>
+      <record>
+        <dyn_uid>64451100060cb6df2862b38034471456</dyn_uid>
+        <dyn_title>Upload Investors Confirmation Form</dyn_title>
+        <dyn_description>Upload information of the investors</dyn_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <dyn_type>xmlform</dyn_type>
+        <dyn_filename><![CDATA[49495392760ca7026529f80008442485/64451100060cb6df2862b38034471456]]></dyn_filename>
+        <dyn_content><![CDATA[{"name":"Upload Investors Confirmation Form","description":"Upload information of the investors","items":[{"type":"form","variable":"","var_uid":"","dataType":"","id":"64451100060cb6df2862b38034471456","name":"Upload Investors Confirmation Form","description":"Upload information of the investors","mode":"edit","script":{"type":"js","code":"$(document).ready(function() {\n    //Remove backward and forward buttons\n    $(\"#dyn_forward\").parent().hide();\n});"},"language":"en","externalLibs":"","printable":false,"items":[[{"type":"title","id":"SLIF_TITLE","label":"Submit Investors Confirmation Form","ariaLabel":"","colSpan":12}],[{"colSpan":3},{"type":"datetime","variable":"SLFI_CURRENT_DATE","var_uid":"63945459460cb6e50b2bb32074968473","dataType":"datetime","protectedValue":false,"id":"SLFI_CURRENT_DATE","name":"SLFI_CURRENT_DATE","label":"Date","tabIndex":"","placeholder":"","hint":"","ariaLabel":"","required":false,"requiredFieldErrorMessage":"","mode":"disabled","format":"MMM Do, YYYY","dayViewHeaderFormat":"MMMM YYYY","extraFormats":false,"stepping":1,"minDate":"","maxDate":"","useCurrent":"false","collapse":true,"locale":"","defaultDate":"","disabledDates":false,"enabledDates":false,"icons":{"time":"glyphicon glyphicon-time","date":"glyphicon glyphicon-calendar","up":"glyphicon glyphicon-chevron-up","down":"glyphicon glyphicon-chevron-down","previous":"glyphicon glyphicon-chevron-left","next":"glyphicon glyphicon-chevron-right","today":"glyphicon glyphicon-screenshot","clear":"glyphicon glyphicon-trash"},"useStrict":false,"sideBySide":false,"daysOfWeekDisabled":false,"calendarWeeks":false,"viewMode":"days","toolbarPlacement":"default","showTodayButton":false,"showClear":"false","widgetPositioning":{"horizontal":"auto","vertical":"auto"},"widgetParent":null,"keepOpen":false,"var_name":"SLFI_CURRENT_DATE","colSpan":6},{"colSpan":3}],[{"colSpan":3},{"type":"text","variable":"SLFI_SUBMITTER","var_uid":"24906670160cb6e9295e5e5028051084","dataType":"string","protectedValue":false,"id":"SLFI_SUBMITTER","name":"SLFI_SUBMITTER","label":"Name","tabIndex":"","defaultValue":"","placeholder":"","hint":"","ariaLabel":"","required":false,"requiredFieldErrorMessage":"","textTransform":"none","validate":"","validateMessage":"","maxLength":1000,"formula":"","mode":"disabled","operation":"","dbConnection":"workflow","dbConnectionLabel":"PM Database","sql":"","var_name":"SLFI_SUBMITTER","colSpan":6},{"colSpan":3}],[{"colSpan":3},{"type":"datetime","variable":"SLFI_EXPIRATION_DATE","var_uid":"31239748960ccffda578fd9006522268","dataType":"datetime","protectedValue":false,"id":"SLFI_EXPIRATION_DATE","name":"SLFI_EXPIRATION_DATE","label":"Expiration Date","tabIndex":"","placeholder":"","hint":"","ariaLabel":"","required":true,"requiredFieldErrorMessage":"","mode":"parent","format":"MMM Do, YYYY","dayViewHeaderFormat":"MMMM YYYY","extraFormats":false,"stepping":1,"minDate":"@@SLFI_MIN_EXPIRATION_DATE","maxDate":"","useCurrent":"false","collapse":true,"locale":"","defaultDate":"","disabledDates":false,"enabledDates":false,"icons":{"time":"glyphicon glyphicon-time","date":"glyphicon glyphicon-calendar","up":"glyphicon glyphicon-chevron-up","down":"glyphicon glyphicon-chevron-down","previous":"glyphicon glyphicon-chevron-left","next":"glyphicon glyphicon-chevron-right","today":"glyphicon glyphicon-screenshot","clear":"glyphicon glyphicon-trash"},"useStrict":false,"sideBySide":false,"daysOfWeekDisabled":false,"calendarWeeks":false,"viewMode":"days","toolbarPlacement":"default","showTodayButton":false,"showClear":"false","widgetPositioning":{"horizontal":"auto","vertical":"auto"},"widgetParent":null,"keepOpen":false,"var_name":"SLFI_EXPIRATION_DATE","colSpan":6},{"colSpan":3}],[{"colSpan":3},{"type":"multipleFile","variable":"SLFI_UPLOAD_INVESTORS","var_uid":"24322660960cb70f83026a3092354543","dataType":"multiplefile","protectedValue":false,"id":"SLFI_UPLOAD_INVESTORS","name":"SLFI_UPLOAD_INVESTORS","label":"Investors List","tabIndex":"","ariaLabel":"","inputDocument":"Investors List","required":true,"requiredFieldErrorMessage":"","dnd":false,"extensions":"*.xlsx, *.xls, *.XLSX, *.XLS","size":0,"sizeUnity":"KB","enableVersioning":false,"mode":"parent","multiple":false,"inp_doc_uid":"40191439160cb72a495ef78032163596","var_name":"SLFI_UPLOAD_INVESTORS","colSpan":6},{"colSpan":3}],[{"type":"submit","id":"SUBMIT","name":"SUBMIT","label":"Preview","tabIndex":"","ariaLabel":"","colSpan":12}]],"variables":[{"var_uid":"63945459460cb6e50b2bb32074968473","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_CURRENT_DATE","var_field_type":"datetime","var_field_size":10,"var_label":"datetime","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""},{"var_uid":"24906670160cb6e9295e5e5028051084","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_SUBMITTER","var_field_type":"string","var_field_size":10,"var_label":"string","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""},{"var_uid":"31239748960ccffda578fd9006522268","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_EXPIRATION_DATE","var_field_type":"datetime","var_field_size":10,"var_label":"datetime","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""},{"var_uid":"24322660960cb70f83026a3092354543","prj_uid":"49495392760ca7026529f80008442485","var_name":"SLFI_UPLOAD_INVESTORS","var_field_type":"multiplefile","var_field_size":10,"var_label":"multiplefile","var_dbconnection":"workflow","var_dbconnection_label":"PM Database","var_sql":"","var_null":0,"var_default":"","var_accepted_values":"[]","inp_doc_uid":""}]}]}]]></dyn_content>
+        <dyn_label></dyn_label>
+        <dyn_version>2</dyn_version>
+        <dyn_update_date><![CDATA[2022-03-02 22:24:56]]></dyn_update_date>
+      </record>
+    </table>
+    <table name="steps">
+      <record>
+        <step_uid>49549544760cb7108a10e95086121916</step_uid>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tas_uid>37012459760ca70ef951c71095717114</tas_uid>
+        <step_type_obj>DYNAFORM</step_type_obj>
+        <step_uid_obj>64451100060cb6df2862b38034471456</step_uid_obj>
+        <step_condition><![CDATA[@@SLFI_BACK_FORM == ""]]></step_condition>
+        <step_position>1</step_position>
+        <step_mode>EDIT</step_mode>
+      </record>
+      <record>
+        <step_uid>31515451860cca2d461e264012632941</step_uid>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tas_uid>37012459760ca70ef951c71095717114</tas_uid>
+        <step_type_obj>DYNAFORM</step_type_obj>
+        <step_uid_obj>19275318760cc9c8de259f3061686186</step_uid_obj>
+        <step_condition></step_condition>
+        <step_position>2</step_position>
+        <step_mode>EDIT</step_mode>
+      </record>
+      <record>
+        <step_uid>20698068860df8d39747314053094151</step_uid>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tas_uid>47952522060ca7117820a83001764405</tas_uid>
+        <step_type_obj>DYNAFORM</step_type_obj>
+        <step_uid_obj>52437100460df88f44e3f49053436605</step_uid_obj>
+        <step_condition></step_condition>
+        <step_position>1</step_position>
+        <step_mode>EDIT</step_mode>
+      </record>
+      <record>
+        <step_uid>74078232060ccef2d44def2086223189</step_uid>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tas_uid>79391920060ca7117742054032410881</tas_uid>
+        <step_type_obj>DYNAFORM</step_type_obj>
+        <step_uid_obj>22396521760ccee338b6f71023598418</step_uid_obj>
+        <step_condition></step_condition>
+        <step_position>1</step_position>
+        <step_mode>EDIT</step_mode>
+      </record>
+    </table>
+    <table name="triggers">
+      <record>
+        <tri_uid>12499631260d635f82999d1029512283</tri_uid>
+        <tri_title>Set logo</tri_title>
+        <tri_description>This trigger will set the image url and the full html for the logo</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/********************
+* Set logo
+* by Ana Castillo
+********************/
+if (g::is_https()) {
+     $httpServer = 'https://';
+} else {
+     $httpServer = 'http://';
+}
+$imageUrl = $httpServer . $_SERVER['HTTP_HOST'] . "/plugin/psSLFIFunctions/images/northleaf_logo_small.png";
+@@IMG_LOGO = "<img src='" . $imageUrl . "' style='margin-bottom:10px;width:200px;'>";]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>14881206260e6f5348ad4e3019754141</tri_uid>
+        <tri_title>Remove Assign Screen</tri_title>
+        <tri_description>Remove the assignment screen</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/***********************
+* Remove Assign Screen
+* by Ana Castillo
+************************/
+PMFDerivateCase(@@APPLICATION, @%INDEX);
+G::header("Location: casesListExtJsRedirector");
+die();]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>15329532860cd0e45d0f3c1065423799</tri_uid>
+        <tri_title>Set year to case title</tri_title>
+        <tri_description>Set the year to use it into the case title</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/*****************************
+* Set year to case title
+* by Ana Castillo
+*****************************/
+@@SLFI_YEAR = date("Y");]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>25043383260f70ed492da83091729236</tri_uid>
+        <tri_title>Get Email for External form notification</tri_title>
+        <tri_description>Get the email that should be included into the notification</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/********************************
+* Get email for external form
+* by Ana Castillo
+*********************************/
+$sQGetEmail = "SELECT EFV_VALUE
+               FROM PMT_SLFI_EXTERNAL_FORM_VARIABLES
+               WHERE EFV_VARIABLE = 'SLFI_CONTACT_INFORMATION'";
+$rQGetEmail = executeQuery($sQGetEmail);
+$contact = "";
+if (count($rQGetEmail) > 0) {
+	$contact = $rQGetEmail[1]['EFV_VALUE'];
+}
+@@SLFI_CONTACT_INFORMATION = $contact;
+@@SLFI_CURRENT_YEAR = date("Y");]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>29695889160cbc4dd8921f9056969181</tri_uid>
+        <tri_title>Set Requestor</tri_title>
+        <tri_description>Set user requestor of the case</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/*******************
+* Set requestor
+* by Ana Castillo
+********************/
+$usrUid = @@USER_LOGGED;
+$aInfoUser = PMFInformationUser($usrUid);
+$nameUser = $aInfoUser['firstname'] . ' ' . $aInfoUser['lastname'];
+@@SLFI_SUBMITTER = $nameUser;
+//Set current user for Traking Form task
+@@SLFI_TAX_USER = $usrUid;]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>38145285560ecb3d84307e0039812125</tri_uid>
+        <tri_title>Validates show or hide submit button</tri_title>
+        <tri_description>Validates show or hide submit button with status of the grid</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/******************************************
+* Validates show or hide submit button
+*
+* by Ana Castillo
+* modified by Cinthia Romero
+******************************************/
+$showFlag = "YES";
+$appUid = @@APPLICATION;
+
+$sQValidate = "SELECT SID_UID,
+                      SID_EMAIL,
+                      SID_DISPLAY_NAME
+               FROM PMT_SLFI_INVESTORS_DATA
+               WHERE APP_UID = '$appUid'
+				   AND (SID_STATUS = 'Pending'
+				   OR SID_STATUS = 'Sent'
+                   OR SID_STATUS = 'Re-sent')";
+$rQValidate = executeQuery($sQValidate);
+if (count($rQValidate) > 0) {
+	$showFlag = "NO";
+}
+
+@@SLFI_FLAG_SUBMIT = $showFlag;]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>43298803864553169aec472097994316</tri_uid>
+        <tri_title>Check if button to send investors zip should be disabled</tri_title>
+        <tri_description>This trigger will check if one day passed from the email date in order to enable or disable the button to send the email in the dynaform</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/*********************************************************
+* Check if button to send investor zip should be disabled
+*
+* by Cinthia Romero
+*********************************************************/
+$queryGetZipMessageDate = "SELECT IZM_DATE
+                           FROM PMT_SLFI_INVESTORS_ZIP_MESSAGE_HISTORY
+                           WHERE APP_NUMBER = " . @@APP_NUMBER . "
+                           ORDER BY IZM_UID DESC
+                           LIMIT 1";    
+$zipMessageInfo = executeQuery($queryGetZipMessageDate);
+@@SLFI_DISABLED_BUTTON_INVESTORS_ZIP = 0;
+if (count($zipMessageInfo) > 0) {
+    $emailDate = $zipMessageInfo[1]["IZM_DATE"];
+    $emailDateAddOneDay = strtotime($emailDate . ' +1 day');
+    $currentDate = strtotime(date("Y-m-d H:i:s"));
+    //Check if one day passed from the date when the email was sent, if so show a message, else prepare que download link
+    if ($currentDate < $emailDateAddOneDay) {
+    	@@SLFI_DISABLED_BUTTON_INVESTORS_ZIP = 1;
+    }
+}
+//Check if at least one investor is completed, otherwise disable the button
+$queryCheckCases = "SELECT COUNT(APP_UID) AS TOTAL
+                    FROM PMT_SLFI_INVESTORS_DATA
+                    WHERE SID_STATUS LIKE 'Completed%'
+                        AND APP_UID = '" . @@APPLICATION . "'";
+$totalCases = executeQuery($queryCheckCases);
+if (count($totalCases) > 0 && $totalCases[1]["TOTAL"] == 0) {
+    @@SLFI_DISABLED_BUTTON_INVESTORS_ZIP = 1;
+}]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>47114398860e6fc3fa3ef29098129748</tri_uid>
+        <tri_title>Save Investors emails</tri_title>
+        <tri_description><![CDATA[Save investor's emails into a PMtable to send later with a cron job]]></tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/*****************************
+* Save investor's emails
+* by Ana Castillo
+* modified by Cinthia Romero
+*****************************/
+date_default_timezone_set("America/New_York");
+require_once PATH_PLUGINS . 'psSLFIFunctions/classes/class.phpLibrarySLFI.php';
+$phpLibraryClass = new phpLibrarySLFI();
+$appUid = @@APPLICATION;
+$taskUid = @@TASK;
+$template = "SLFIEmailTemplate.html";
+
+//Get subject and body of the notification
+$aData = array();
+$aData['SLFI_CONTACT_INFORMATION'] = @@SLFI_CONTACT_INFORMATION;
+$aData['SLFI_CURRENT_YEAR'] = @@SLFI_CURRENT_YEAR;
+$notificationData = $phpLibraryClass->getNotificationData($taskUid, 'INVESTORS', $aData);
+if (count($notificationData) > 0) {
+    $subject = $notificationData["SBN_SUBJECT"];
+    $body = $notificationData["SBN_BODY"];
+
+	//Get all Investors users
+	$sQInvestors = "SELECT SID_UID,
+	                       SID_EMAIL,
+	                       SID_DISPLAY_NAME,
+	                       SID_INVESTOR_NAME
+	                FROM PMT_SLFI_INVESTORS_DATA
+	                WHERE APP_UID = '$appUid'
+	                ORDER BY SID_UID ASC";
+	$rQInvestors = executeQuery($sQInvestors);
+    //Save Investor in Table to send email later
+    for ($i = 1; $i <= count($rQInvestors); $i++) {
+    	//Get Name and email of the investor
+    	$sidUid = $rQInvestors[$i]['SID_UID'];
+    	$displayName = $rQInvestors[$i]['SID_DISPLAY_NAME'];
+    	$investorName = $rQInvestors[$i]['SID_INVESTOR_NAME'];
+    	$investorEmail = $rQInvestors[$i]['SID_EMAIL'];
+    	
+    	//Set link of External Form
+		$linkInvestors = $phpLibraryClass->getLinkInvestors(@@APP_NUMBER, $sidUid);
+    	$bodyInvestor = str_replace("SLFI_LINK_INVESTORS", $linkInvestors, $body);
+    	$bodyInvestor = str_replace("SLFI_INVESTOR_NAME", $investorName, $bodyInvestor);
+		
+		//Set status
+		$status = "Sent";
+
+		//Save investor
+		$sQSave = "INSERT INTO PMT_SLFI_INVESTOR_EMAILS(APP_UID,
+		                                                SIE_DISPLAY_NAME,
+		                                                SIE_INVESTOR_EMAIL,
+		                                                SIE_SUBJECT,
+		                                                SIE_BODY,
+		                                                SIE_TEMPLATE,
+		                                                SIE_SID_UID,
+		                                                SIE_STATUS,
+		                                                SIE_SEND_EMAIL)
+		           VALUES('$appUid',
+		                  '" . $phpLibraryClass->pmEscapeString($displayName) . "',
+		                  '" . $phpLibraryClass->pmEscapeString($investorEmail) . "',
+		                  '" . $phpLibraryClass->pmEscapeString($subject) . "',
+		                  '" . $phpLibraryClass->pmEscapeString($bodyInvestor) . "',
+		                  '" . $phpLibraryClass->pmEscapeString($template) . "',
+		                  " . $sidUid . ",
+		                  '" . $status . "',
+		                  'NO')";
+		executeQuery($sQSave);
+    }
+}]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>50632909860e5d01e63bbc7045099742</tri_uid>
+        <tri_title>Set Task Uid</tri_title>
+        <tri_description>Set Task Uid</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/************************
+* Set task Uid
+* by Ana Castillo
+*************************/
+@@TASK_UID = @@TASK;]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>52985006060cca50c095465097912392</tri_uid>
+        <tri_title>Set flag first dynaform</tri_title>
+        <tri_description>Set flag first dynaform to not show the first dynaform if the case has been upload a file</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/***************************
+* Set flag first dynaform
+* by Ana Castillo
+***************************/
+@@SLFI_BACK_FORM = 1;]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>55034677360cbc5078bdc69092694274</tri_uid>
+        <tri_title>Set current date</tri_title>
+        <tri_description>Set current date</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/********************
+* Set current date
+* by Ana Castillo
+*********************/
+@@SLFI_CURRENT_DATE = getCurrentDate();
+
+]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>55866861160cd006ce5a4d9064536381</tri_uid>
+        <tri_title>Set Min date to expiration Date</tri_title>
+        <tri_description>Set Min date to expiration Date</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/***********************************
+* Set Min date to expiration Date
+* by Ana Castillo
+***********************************/
+//Get number of days of the Expiration date min value
+$sQMinDays = "SELECT SME_DAYS
+              FROM PMT_SLFI_MIN_EXPIRATION_DATE
+			  WHERE SME_STATUS = 'ACTIVE'";
+$rQMinDays = executeQuery($sQMinDays);
+$minDays = 0;
+if (count($rQMinDays) > 0) {
+	$minDays = $rQMinDays[1]['SME_DAYS'];
+}
+$minDate = date('Y-m-d', strtotime("+" . $minDays . " days"));
+@@SLFI_MIN_EXPIRATION_DATE = $minDate;
+@@SLFI_EXPIRATION_DATE = $minDate;]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>57421314960ecb512810208092129115</tri_uid>
+        <tri_title>Clean table when cancel the case</tri_title>
+        <tri_description>Delete rows of the table if the user cancel the case</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/**************************************
+* Clean table when cancel the case
+* by Ana Castillo
+* Modified by Helen Callisaya
+**************************************/
+if (@@SLFI_FLAG_CANCEL_CASE != "" && @@SLFI_FLAG_CANCEL_CASE != "RETURN") {
+	$appUid = @@APPLICATION;
+	$sQDelete = "DELETE FROM PMT_SLFI_INVESTORS_DATA
+	             WHERE APP_UID = '$appUid'";
+	executeQuery($sQDelete);
+}
+
+]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>64882840860e4737b6c3aa3077630463</tri_uid>
+        <tri_title>Get External Form Link</tri_title>
+        <tri_description>Get external form link</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/***************************
+* Get external Form link
+* by Ana Castillo
+****************************/
+if (g::is_https()) {
+     $httpServer = 'https://';
+} else {
+     $httpServer = 'http://';
+}
+$externalFormLink = $httpServer . $_SERVER['HTTP_HOST'] . "/sys" . @@SYS_SYS . "/" . @@SYS_LANG . "/" . @@SYS_SKIN . "/psSLFIFunctions/services/externalForm.php";
+
+@@SLFI_EXTERNAL_FORM = $externalFormLink;
+]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>74733335960e46e8e732380020181614</tri_uid>
+        <tri_title>Get application and app number</tri_title>
+        <tri_description>Get application uid</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/*********************************
+* Get application and app number
+*
+* by Ana Castillo
+* modified by Cinthia Romero
+*********************************/
+@@APP_UID = @@APPLICATION;
+@@CASE_NUMBER = @@APP_NUMBER;]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>75926963560cca6b5d48ae4078506178</tri_uid>
+        <tri_title><![CDATA[Read file, save it into the table and populate grid]]></tri_title>
+        <tri_description><![CDATA[Read the file, save it into the table and populate into the grid]]></tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/***************************************
+* Read file, save it into the table
+* and save it into the grid
+* by Ana Castillo
+* modified by Cinthia Romero
+****************************************/
+ini_set('max_execution_time', 0);
+ini_set('memory_limit', '-1');
+
+require_once PATH_PLUGINS . 'psSLFIFunctions/classes/class.investorsData.php';
+$investorsClass = new investorsData();
+g::pr($investorsClass);
+die();
+//Set variables to read the file
+$expirationDate = @@SLFI_EXPIRATION_DATE;
+$appUid = @@APPLICATION;
+$uploadFile = @@SLFI_UPLOAD_INVESTORS;
+
+//Delete all rows into the table
+$sQDelete = "DELETE FROM PMT_SLFI_INVESTORS_DATA
+             WHERE APP_UID = '$appUid'";
+executeQuery($sQDelete);
+
+//Fill the grid
+$arrayData = $investorsClass->saveGridInvestors($appUid, $uploadFile, $expirationDate);
+@=SLFI_INVESTORS_GRID = $arrayData;]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>77471359860df8d33a637d8096215885</tri_uid>
+        <tri_title>Get Data Investors Grid Tracking Form</tri_title>
+        <tri_description>GEt data of the investors grid to the Tracking Form</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/**************************
+* Get data investors grid
+* Tracking Form
+* by Ana Castillo
+***************************/
+require_once PATH_PLUGINS . 'psSLFIFunctions/classes/class.investorsData.php';
+$investorsClass = new investorsData();
+$appUid = @@APPLICATION;
+//Fill the grid
+$arrayData = $investorsClass->getGridInvestorsTracking($appUid);
+@=SLFI_INVESTORS_GRID_TRACKING = $arrayData;
+]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>80987873460d2377d88ad13028762798</tri_uid>
+        <tri_title>Get data investors grid</tri_title>
+        <tri_description>Get data to the investors grid</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/**************************
+* Get data investors grid
+* by Ana Castillo
+***************************/
+require_once PATH_PLUGINS . 'psSLFIFunctions/classes/class.investorsData.php';
+$investorsClass = new investorsData();
+$appUid = @@APPLICATION;
+//Fill the grid
+$arrayData = $investorsClass->getGridInvestors($appUid);
+@=SLFI_INVESTORS_GRID = $arrayData;
+]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+      <record>
+        <tri_uid>85464286460d629c0724d71048875741</tri_uid>
+        <tri_title>Send Notifications</tri_title>
+        <tri_description>Send notifications into the process</tri_description>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tri_type>SCRIPT</tri_type>
+        <tri_webbot><![CDATA[/***********************
+* Send Notifications
+* by Ana Castillo
+* Modified by Helen Callisaya
+***********************/
+require_once PATH_PLUGINS . 'psSLFIFunctions/classes/class.phpLibrarySLFI.php';
+$phpLibraryClass = new phpLibrarySLFI();
+$g = new G();
+
+$appUid = @@APPLICATION;
+$taskUid = @@TASK;
+$template = "SLFIEmailTemplate.html";
+switch($taskUid) {
+    //Submit Investor Confirmation Form
+    case '37012459760ca70ef951c71095717114':
+        $notificationData = $phpLibraryClass->getNotificationData($taskUid, 'SUBMIT', array());
+        if (count($notificationData) > 0) {
+            $subject = $notificationData["SBN_SUBJECT"];
+            $body = $notificationData["SBN_BODY"];
+
+            //Send notification to Tax group of users
+            $aUsers = PMFGetGroupUsers("7129995195eb9a1048f3df7005519636");
+            for ($l = 0; $l < count($aUsers); $l++) {
+			    $phpLibraryClass->sendNotification($appUid, $aUsers[$l]['USR_UID'], $subject, $body, $template, array());
+            }
+        }
+        break;
+    //Review Investors List
+    case '79391920060ca7117742054032410881':
+    	if (@@SLFI_FLAG_CANCEL_CASE != "") {
+	    	//Send notification to the first task user
+            if (@@SLFI_FLAG_CANCEL_CASE == "RETURN") {
+                $notificationData = $phpLibraryClass->getNotificationData($taskUid, 'RETURN', array());
+            } else {
+                //Flag is Cancel
+                $notificationData = $phpLibraryClass->getNotificationData($taskUid, 'CANCEL', array());
+            }
+	        if (count($notificationData) > 0) {
+	            $subject = $notificationData["SBN_SUBJECT"];
+	            $body = $notificationData["SBN_BODY"];
+
+	            //Send notification to the tax user 
+	            if (@@SLFI_TAX_USER != '') {
+				    $phpLibraryClass->sendNotification($appUid, @@SLFI_TAX_USER, $subject, $body, $template, array());
+	            }
+	        }
+    	} else {
+	    	//Send notification to the next user
+	        $notificationData = $phpLibraryClass->getNotificationData($taskUid, 'SUBMIT', array());
+	        if (count($notificationData) > 0) {
+	            $subject = $notificationData["SBN_SUBJECT"];
+	            $body = $notificationData["SBN_BODY"];
+
+	            //Send notification to the tax user 
+	            if (@@SLFI_TAX_USER != '') {
+				    $phpLibraryClass->sendNotification($appUid, @@SLFI_TAX_USER, $subject, $body, $template, array());
+	            }
+	        }
+	        //Send notification to the Investors
+	        /*$notificationData = $phpLibraryClass->getNotificationData($taskUid, 'INVESTORS', array());
+	        if (count($notificationData) > 0) {
+	            $subject = $notificationData["SBN_SUBJECT"];
+	            $body = $notificationData["SBN_BODY"];
+
+				//Get all Investors users
+				$sQInvestors = "SELECT SID_UID,
+				                       SID_EMAIL,
+				                       SID_DISPLAY_NAME
+				                FROM PMT_SLFI_INVESTORS_DATA
+				                WHERE APP_UID = '$appUid'
+				                ORDER BY SID_UID ASC";
+				$rQInvestors = executeQuery($sQInvestors);
+	            //Send notification to all investors
+	            for ($i = 1; $i <= count($rQInvestors); $i++) {
+	            	//Set link of External Form
+					$linkInvestors = $phpLibraryClass->getLinkInvestors($appUid, $rQInvestors[$i]['SID_UID']);
+                	$bodyInvestor = str_replace("SLFI_LINK_INVESTORS", $linkInvestors, $body);
+
+                	//Get Name and email of the investor
+                	$investorName = $rQInvestors[$i]['SID_DISPLAY_NAME'];
+                	$investorEmail = $rQInvestors[$i]['SID_EMAIL'];
+					
+					//Set status
+					$status = "Sent";
+
+                	//Send notification to the investor
+				    $phpLibraryClass->sendNotificationInvestor($appUid, $investorName, $investorEmail, $subject, $bodyInvestor, $template, array(), $rQInvestors[$i]['SID_UID'], $status);
+	            }
+	        }*/
+    	}
+        break;
+}]]></tri_webbot>
+        <tri_param></tri_param>
+      </record>
+    </table>
+    <table name="taskusers">
+      <record>
+        <tas_uid>37012459760ca70ef951c71095717114</tas_uid>
+        <tas_id>0</tas_id>
+        <usr_uid>7129995195eb9a1048f3df7005519636</usr_uid>
+        <tu_type>1</tu_type>
+        <tu_relation>2</tu_relation>
+        <assigned_id>0</assigned_id>
+      </record>
+      <record>
+        <tas_uid>47952522060ca7117820a83001764405</tas_uid>
+        <tas_id>0</tas_id>
+        <usr_uid>7129995195eb9a1048f3df7005519636</usr_uid>
+        <tu_type>1</tu_type>
+        <tu_relation>2</tu_relation>
+        <assigned_id>0</assigned_id>
+      </record>
+      <record>
+        <tas_uid>79391920060ca7117742054032410881</tas_uid>
+        <tas_id>0</tas_id>
+        <usr_uid>7129995195eb9a1048f3df7005519636</usr_uid>
+        <tu_type>1</tu_type>
+        <tu_relation>2</tu_relation>
+        <assigned_id>0</assigned_id>
+      </record>
+    </table>
+    <table name="groupwfs">
+      <record>
+        <grp_uid>7129995195eb9a1048f3df7005519636</grp_uid>
+        <grp_title>Tax</grp_title>
+        <grp_status>ACTIVE</grp_status>
+        <grp_status_id>0</grp_status_id>
+        <grp_ldap_dn></grp_ldap_dn>
+        <grp_ux>NORMAL</grp_ux>
+      </record>
+      <record>
+        <grp_uid>7129995195eb9a1048f3df7005519636</grp_uid>
+        <grp_id>5</grp_id>
+        <grp_title>Tax</grp_title>
+        <grp_status>ACTIVE</grp_status>
+        <grp_status_id>0</grp_status_id>
+        <grp_ldap_dn></grp_ldap_dn>
+        <grp_ux>NORMAL</grp_ux>
+      </record>
+    </table>
+    <table name="steptriggers">
+      <record>
+        <step_uid>-1</step_uid>
+        <tas_uid>37012459760ca70ef951c71095717114</tas_uid>
+        <tri_uid>14881206260e6f5348ad4e3019754141</tri_uid>
+        <st_type>BEFORE</st_type>
+        <st_condition></st_condition>
+        <st_position>1</st_position>
+      </record>
+      <record>
+        <step_uid>-1</step_uid>
+        <tas_uid>47952522060ca7117820a83001764405</tas_uid>
+        <tri_uid>14881206260e6f5348ad4e3019754141</tri_uid>
+        <st_type>BEFORE</st_type>
+        <st_condition>false</st_condition>
+        <st_position>1</st_position>
+      </record>
+      <record>
+        <step_uid>-1</step_uid>
+        <tas_uid>79391920060ca7117742054032410881</tas_uid>
+        <tri_uid>14881206260e6f5348ad4e3019754141</tri_uid>
+        <st_type>BEFORE</st_type>
+        <st_condition></st_condition>
+        <st_position>1</st_position>
+      </record>
+      <record>
+        <step_uid>-2</step_uid>
+        <tas_uid>37012459760ca70ef951c71095717114</tas_uid>
+        <tri_uid>85464286460d629c0724d71048875741</tri_uid>
+        <st_type>AFTER</st_type>
+        <st_condition></st_condition>
+        <st_position>1</st_position>
+      </record>
+      <record>
+        <step_uid>-2</step_uid>
+        <tas_uid>79391920060ca7117742054032410881</tas_uid>
+        <tri_uid>47114398860e6fc3fa3ef29098129748</tri_uid>
+        <st_type>AFTER</st_type>
+        <st_condition><![CDATA[@@SLFI_FLAG_CANCEL_CASE == ""]]></st_condition>
+        <st_position>3</st_position>
+      </record>
+      <record>
+        <step_uid>-2</step_uid>
+        <tas_uid>79391920060ca7117742054032410881</tas_uid>
+        <tri_uid>57421314960ecb512810208092129115</tri_uid>
+        <st_type>AFTER</st_type>
+        <st_condition></st_condition>
+        <st_position>2</st_position>
+      </record>
+      <record>
+        <step_uid>-2</step_uid>
+        <tas_uid>79391920060ca7117742054032410881</tas_uid>
+        <tri_uid>85464286460d629c0724d71048875741</tri_uid>
+        <st_type>AFTER</st_type>
+        <st_condition></st_condition>
+        <st_position>1</st_position>
+      </record>
+      <record>
+        <step_uid>20698068860df8d39747314053094151</step_uid>
+        <tas_uid>47952522060ca7117820a83001764405</tas_uid>
+        <tri_uid>38145285560ecb3d84307e0039812125</tri_uid>
+        <st_type>BEFORE</st_type>
+        <st_condition></st_condition>
+        <st_position>4</st_position>
+      </record>
+      <record>
+        <step_uid>20698068860df8d39747314053094151</step_uid>
+        <tas_uid>47952522060ca7117820a83001764405</tas_uid>
+        <tri_uid>43298803864553169aec472097994316</tri_uid>
+        <st_type>BEFORE</st_type>
+        <st_condition></st_condition>
+        <st_position>6</st_position>
+      </record>
+      <record>
+        <step_uid>20698068860df8d39747314053094151</step_uid>
+        <tas_uid>47952522060ca7117820a83001764405</tas_uid>
+        <tri_uid>50632909860e5d01e63bbc7045099742</tri_uid>
+        <st_type>BEFORE</st_type>
+        <st_condition></st_condition>
+        <st_position>2</st_position>
+      </record>
+      <record>
+        <step_uid>20698068860df8d39747314053094151</step_uid>
+        <tas_uid>47952522060ca7117820a83001764405</tas_uid>
+        <tri_uid>64882840860e4737b6c3aa3077630463</tri_uid>
+        <st_type>BEFORE</st_type>
+        <st_condition></st_condition>
+        <st_position>3</st_position>
+      </record>
+      <record>
+        <step_uid>20698068860df8d39747314053094151</step_uid>
+        <tas_uid>47952522060ca7117820a83001764405</tas_uid>
+        <tri_uid>74733335960e46e8e732380020181614</tri_uid>
+        <st_type>BEFORE</st_type>
+        <st_condition></st_condition>
+        <st_position>1</st_position>
+      </record>
+      <record>
+        <step_uid>20698068860df8d39747314053094151</step_uid>
+        <tas_uid>47952522060ca7117820a83001764405</tas_uid>
+        <tri_uid>77471359860df8d33a637d8096215885</tri_uid>
+        <st_type>BEFORE</st_type>
+        <st_condition></st_condition>
+        <st_position>5</st_position>
+      </record>
+      <record>
+        <step_uid>49549544760cb7108a10e95086121916</step_uid>
+        <tas_uid>37012459760ca70ef951c71095717114</tas_uid>
+        <tri_uid>12499631260d635f82999d1029512283</tri_uid>
+        <st_type>BEFORE</st_type>
+        <st_condition></st_condition>
+        <st_position>5</st_position>
+      </record>
+      <record>
+        <step_uid>49549544760cb7108a10e95086121916</step_uid>
+        <tas_uid>37012459760ca70ef951c71095717114</tas_uid>
+        <tri_uid>15329532860cd0e45d0f3c1065423799</tri_uid>
+        <st_type>BEFORE</st_type>
+        <st_condition></st_condition>
+        <st_position>4</st_position>
+      </record>
+      <record>
+        <step_uid>49549544760cb7108a10e95086121916</step_uid>
+        <tas_uid>37012459760ca70ef951c71095717114</tas_uid>
+        <tri_uid>29695889160cbc4dd8921f9056969181</tri_uid>
+        <st_type>BEFORE</st_type>
+        <st_condition></st_condition>
+        <st_position>2</st_position>
+      </record>
+      <record>
+        <step_uid>49549544760cb7108a10e95086121916</step_uid>
+        <tas_uid>37012459760ca70ef951c71095717114</tas_uid>
+        <tri_uid>52985006060cca50c095465097912392</tri_uid>
+        <st_type>AFTER</st_type>
+        <st_condition></st_condition>
+        <st_position>1</st_position>
+      </record>
+      <record>
+        <step_uid>49549544760cb7108a10e95086121916</step_uid>
+        <tas_uid>37012459760ca70ef951c71095717114</tas_uid>
+        <tri_uid>55034677360cbc5078bdc69092694274</tri_uid>
+        <st_type>BEFORE</st_type>
+        <st_condition></st_condition>
+        <st_position>1</st_position>
+      </record>
+      <record>
+        <step_uid>49549544760cb7108a10e95086121916</step_uid>
+        <tas_uid>37012459760ca70ef951c71095717114</tas_uid>
+        <tri_uid>55866861160cd006ce5a4d9064536381</tri_uid>
+        <st_type>BEFORE</st_type>
+        <st_condition><![CDATA[@@SLFI_EXPIRATION_DATE == ""]]></st_condition>
+        <st_position>3</st_position>
+      </record>
+      <record>
+        <step_uid>49549544760cb7108a10e95086121916</step_uid>
+        <tas_uid>37012459760ca70ef951c71095717114</tas_uid>
+        <tri_uid>75926963560cca6b5d48ae4078506178</tri_uid>
+        <st_type>AFTER</st_type>
+        <st_condition></st_condition>
+        <st_position>2</st_position>
+      </record>
+      <record>
+        <step_uid>74078232060ccef2d44def2086223189</step_uid>
+        <tas_uid>79391920060ca7117742054032410881</tas_uid>
+        <tri_uid>25043383260f70ed492da83091729236</tri_uid>
+        <st_type>BEFORE</st_type>
+        <st_condition></st_condition>
+        <st_position>2</st_position>
+      </record>
+      <record>
+        <step_uid>74078232060ccef2d44def2086223189</step_uid>
+        <tas_uid>79391920060ca7117742054032410881</tas_uid>
+        <tri_uid>80987873460d2377d88ad13028762798</tri_uid>
+        <st_type>BEFORE</st_type>
+        <st_condition></st_condition>
+        <st_position>1</st_position>
+      </record>
+    </table>
+    <table name="dbconnections"/>
+    <table name="reportTables"/>
+    <table name="reportTablesVars"/>
+    <table name="stepSupervisor"/>
+    <table name="objectPermissions">
+      <record>
+        <op_uid>58459949260d635489efc93037826427</op_uid>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tas_uid></tas_uid>
+        <usr_uid>7129995195eb9a1048f3df7005519636</usr_uid>
+        <op_user_relation>2</op_user_relation>
+        <op_task_source></op_task_source>
+        <op_participate>0</op_participate>
+        <op_obj_type>ANY</op_obj_type>
+        <op_obj_uid></op_obj_uid>
+        <op_action>VIEW</op_action>
+        <op_case_status>ALL</op_case_status>
+      </record>
+    </table>
+    <table name="subProcess"/>
+    <table name="caseTracker">
+      <record>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <ct_map_type>PROCESSMAP</ct_map_type>
+        <ct_derivation_history>1</ct_derivation_history>
+        <ct_message_history>1</ct_message_history>
+      </record>
+    </table>
+    <table name="caseTrackerObject"/>
+    <table name="stage"/>
+    <table name="fieldCondition"/>
+    <table name="event"/>
+    <table name="caseScheduler"/>
+    <table name="processCategory"/>
+    <table name="taskExtraProperties"/>
+    <table name="processUser"/>
+    <table name="processVariables">
+      <record>
+        <var_uid>39666017860e46e971617e0055740493</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>APP_UID</var_name>
+        <var_field_type>string</var_field_type>
+        <var_field_type_id>1</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>string</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+      <record>
+        <var_uid>4741476546441b05530b883030973534</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>CASE_NUMBER</var_name>
+        <var_field_type>string</var_field_type>
+        <var_field_type_id>1</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>string</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+      <record>
+        <var_uid>86052484860cca2fd52a413006611353</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>SLFI_BACK_FORM</var_name>
+        <var_field_type>string</var_field_type>
+        <var_field_type_id>1</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>string</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+      <record>
+        <var_uid>10091874260f70feb134881010865974</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>SLFI_CONTACT_INFORMATION</var_name>
+        <var_field_type>string</var_field_type>
+        <var_field_type_id>1</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>string</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+      <record>
+        <var_uid>63945459460cb6e50b2bb32074968473</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>SLFI_CURRENT_DATE</var_name>
+        <var_field_type>datetime</var_field_type>
+        <var_field_type_id>5</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>datetime</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+      <record>
+        <var_uid>81631795860f71533877bf9052628298</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>SLFI_CURRENT_YEAR</var_name>
+        <var_field_type>string</var_field_type>
+        <var_field_type_id>1</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>string</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+      <record>
+        <var_uid>35121772564553096bb2441068242888</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>SLFI_DISABLED_BUTTON_INVESTORS_ZIP</var_name>
+        <var_field_type>string</var_field_type>
+        <var_field_type_id>1</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>string</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+      <record>
+        <var_uid>31239748960ccffda578fd9006522268</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>SLFI_EXPIRATION_DATE</var_name>
+        <var_field_type>datetime</var_field_type>
+        <var_field_type_id>5</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>datetime</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+      <record>
+        <var_uid>64290444760e475ad009e45063899575</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>SLFI_EXTERNAL_FORM</var_name>
+        <var_field_type>string</var_field_type>
+        <var_field_type_id>1</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>string</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+      <record>
+        <var_uid>16491227660d1e4266a1824046069081</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>SLFI_FLAG_CANCEL_CASE</var_name>
+        <var_field_type>string</var_field_type>
+        <var_field_type_id>1</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>string</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+      <record>
+        <var_uid>41021686360ecb3f9a74478068612937</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>SLFI_FLAG_SUBMIT</var_name>
+        <var_field_type>string</var_field_type>
+        <var_field_type_id>1</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>string</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+      <record>
+        <var_uid>34516674260ccf35d9ab887061269756</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>SLFI_INVESTORS_GRID</var_name>
+        <var_field_type>grid</var_field_type>
+        <var_field_type_id>6</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>grid</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+      <record>
+        <var_uid>69204721960df8d5602a341029794127</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>SLFI_INVESTORS_GRID_TRACKING</var_name>
+        <var_field_type>grid</var_field_type>
+        <var_field_type_id>6</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>grid</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+      <record>
+        <var_uid>66247817860da26452447b6099236901</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>SLFI_INVESTOR_TYPE</var_name>
+        <var_field_type>string</var_field_type>
+        <var_field_type_id>1</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>string</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+      <record>
+        <var_uid>24906670160cb6e9295e5e5028051084</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>SLFI_SUBMITTER</var_name>
+        <var_field_type>string</var_field_type>
+        <var_field_type_id>1</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>string</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+      <record>
+        <var_uid>24322660960cb70f83026a3092354543</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>SLFI_UPLOAD_INVESTORS</var_name>
+        <var_field_type>multiplefile</var_field_type>
+        <var_field_type_id>9</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>multiplefile</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+      <record>
+        <var_uid>74777321560e5d02c798717070186596</var_uid>
+        <prj_uid>49495392760ca7026529f80008442485</prj_uid>
+        <var_name>TASK_UID</var_name>
+        <var_field_type>string</var_field_type>
+        <var_field_type_id>1</var_field_type_id>
+        <var_field_size>10</var_field_size>
+        <var_label>string</var_label>
+        <var_dbconnection>workflow</var_dbconnection>
+        <var_sql></var_sql>
+        <var_null>0</var_null>
+        <var_default></var_default>
+        <var_accepted_values><![CDATA[[]]]></var_accepted_values>
+        <inp_doc_uid></inp_doc_uid>
+      </record>
+    </table>
+    <table name="webEntry"/>
+    <table name="webEntryEvent"/>
+    <table name="messageType"/>
+    <table name="messageTypeVariable"/>
+    <table name="messageEventDefinition"/>
+    <table name="scriptTask"/>
+    <table name="timerEvent"/>
+    <table name="emailEvent"/>
+    <table name="filesManager">
+      <record>
+        <prf_uid>11108717460d629e25df362000773135</prf_uid>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <usr_uid>00000000000000000000000000000001</usr_uid>
+        <prf_update_usr_uid>00000000000000000000000000000001</prf_update_usr_uid>
+        <prf_path><![CDATA[/opt/processmaker/shared/sites/northleaf/mailTemplates/49495392760ca7026529f80008442485/SLFIEmailTemplate.html]]></prf_path>
+        <prf_type>file</prf_type>
+        <prf_editable>1</prf_editable>
+        <prf_create_date><![CDATA[2021-06-25 19:09:22]]></prf_create_date>
+        <prf_update_date><![CDATA[2021-10-07 21:53:42]]></prf_update_date>
+      </record>
+      <record>
+        <prf_uid>39703917660cd0ac49cbb84040066043</prf_uid>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <usr_uid>00000000000000000000000000000001</usr_uid>
+        <prf_update_usr_uid></prf_update_usr_uid>
+        <prf_path><![CDATA[/opt/processmaker/shared/sites/northleaf/mailTemplates/49495392760ca7026529f80008442485/actionsByEmailErrorReply.html]]></prf_path>
+        <prf_type>file</prf_type>
+        <prf_editable>1</prf_editable>
+        <prf_create_date><![CDATA[2021-06-18 21:06:12]]></prf_create_date>
+        <prf_update_date></prf_update_date>
+      </record>
+      <record>
+        <prf_uid>44606552160cd0ac498e8e9055183953</prf_uid>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <usr_uid>00000000000000000000000000000001</usr_uid>
+        <prf_update_usr_uid></prf_update_usr_uid>
+        <prf_path><![CDATA[/opt/processmaker/shared/sites/northleaf/mailTemplates/49495392760ca7026529f80008442485/actionsByEmail.html]]></prf_path>
+        <prf_type>file</prf_type>
+        <prf_editable>1</prf_editable>
+        <prf_create_date><![CDATA[2021-06-18 21:06:12]]></prf_create_date>
+        <prf_update_date></prf_update_date>
+      </record>
+    </table>
+    <table name="abeConfiguration">
+      <record>
+        <abe_uid>186503924654b943fe3f157028840144</abe_uid>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tas_uid>79391920060ca7117742054032410881</tas_uid>
+        <abe_type></abe_type>
+        <abe_template></abe_template>
+        <abe_dyn_type>NORMAL</abe_dyn_type>
+        <dyn_uid></dyn_uid>
+        <abe_email_field></abe_email_field>
+        <abe_action_field></abe_action_field>
+        <abe_action_body_field></abe_action_body_field>
+        <abe_case_note_in_response>0</abe_case_note_in_response>
+        <abe_force_login>0</abe_force_login>
+        <abe_create_date><![CDATA[2023-11-08 13:59:27]]></abe_create_date>
+        <abe_update_date><![CDATA[2023-11-08 13:59:27]]></abe_update_date>
+        <abe_subject_field></abe_subject_field>
+        <abe_mailserver_or_mailcurrent>0</abe_mailserver_or_mailcurrent>
+        <abe_custom_grid><![CDATA[b:0;]]></abe_custom_grid>
+        <abe_email_server_uid></abe_email_server_uid>
+        <abe_email_server_receiver_uid></abe_email_server_receiver_uid>
+      </record>
+      <record>
+        <abe_uid>464775135654b943fdc5777013637500</abe_uid>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tas_uid>37012459760ca70ef951c71095717114</tas_uid>
+        <abe_type></abe_type>
+        <abe_template></abe_template>
+        <abe_dyn_type>NORMAL</abe_dyn_type>
+        <dyn_uid></dyn_uid>
+        <abe_email_field></abe_email_field>
+        <abe_action_field></abe_action_field>
+        <abe_action_body_field></abe_action_body_field>
+        <abe_case_note_in_response>0</abe_case_note_in_response>
+        <abe_force_login>0</abe_force_login>
+        <abe_create_date><![CDATA[2023-11-08 13:59:27]]></abe_create_date>
+        <abe_update_date><![CDATA[2023-11-08 13:59:27]]></abe_update_date>
+        <abe_subject_field></abe_subject_field>
+        <abe_mailserver_or_mailcurrent>0</abe_mailserver_or_mailcurrent>
+        <abe_custom_grid><![CDATA[b:0;]]></abe_custom_grid>
+        <abe_email_server_uid></abe_email_server_uid>
+        <abe_email_server_receiver_uid></abe_email_server_receiver_uid>
+      </record>
+      <record>
+        <abe_uid>621002733654b943fe12633045929743</abe_uid>
+        <pro_uid>49495392760ca7026529f80008442485</pro_uid>
+        <tas_uid>47952522060ca7117820a83001764405</tas_uid>
+        <abe_type></abe_type>
+        <abe_template></abe_template>
+        <abe_dyn_type>NORMAL</abe_dyn_type>
+        <dyn_uid></dyn_uid>
+        <abe_email_field></abe_email_field>
+        <abe_action_field></abe_action_field>
+        <abe_action_body_field></abe_action_body_field>
+        <abe_case_note_in_response>0</abe_case_note_in_response>
+        <abe_force_login>0</abe_force_login>
+        <abe_create_date><![CDATA[2023-11-08 13:59:27]]></abe_create_date>
+        <abe_update_date><![CDATA[2023-11-08 13:59:27]]></abe_update_date>
+        <abe_subject_field></abe_subject_field>
+        <abe_mailserver_or_mailcurrent>0</abe_mailserver_or_mailcurrent>
+        <abe_custom_grid><![CDATA[b:0;]]></abe_custom_grid>
+        <abe_email_server_uid></abe_email_server_uid>
+        <abe_email_server_receiver_uid></abe_email_server_receiver_uid>
+      </record>
+    </table>
+    <table name="elementTask"/>
+  </definition>
+  <workflow-files>
+    <file target="dynaforms">
+      <file_name>Show Investors Confirmation</file_name>
+      <file_path><![CDATA[49495392760ca7026529f80008442485/19275318760cc9c8de259f3061686186.xml]]></file_path>
+      <file_content><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGR5bmFGb3JtIHR5cGU9InhtbGZvcm0iIG5hbWU9IjQ5NDk1MzkyNzYwY2E3MDI2NTI5ZjgwMDA4NDQyNDg1LzE5Mjc1MzE4NzYwY2M5YzhkZTI1OWYzMDYxNjg2MTg2IiB3aWR0aD0iNTAwIiBlbmFibGV0ZW1wbGF0ZT0iMCIgbW9kZT0iIiBuZXh0c3RlcHNhdmU9InByb21wdCI+CjwvZHluYUZvcm0+]]></file_content>
+    </file>
+    <file target="dynaforms">
+      <file_name>Review Investors List</file_name>
+      <file_path><![CDATA[49495392760ca7026529f80008442485/22396521760ccee338b6f71023598418.xml]]></file_path>
+      <file_content><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGR5bmFGb3JtIHR5cGU9InhtbGZvcm0iIG5hbWU9IjQ5NDk1MzkyNzYwY2E3MDI2NTI5ZjgwMDA4NDQyNDg1LzIyMzk2NTIxNzYwY2NlZTMzOGI2ZjcxMDIzNTk4NDE4IiB3aWR0aD0iNTAwIiBlbmFibGV0ZW1wbGF0ZT0iMCIgbW9kZT0iIiBuZXh0c3RlcHNhdmU9InByb21wdCI+CjwvZHluYUZvcm0+]]></file_content>
+    </file>
+    <file target="dynaforms">
+      <file_name>Tracking Form</file_name>
+      <file_path><![CDATA[49495392760ca7026529f80008442485/52437100460df88f44e3f49053436605.xml]]></file_path>
+      <file_content><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGR5bmFGb3JtIHR5cGU9InhtbGZvcm0iIG5hbWU9IjQ5NDk1MzkyNzYwY2E3MDI2NTI5ZjgwMDA4NDQyNDg1LzUyNDM3MTAwNDYwZGY4OGY0NGUzZjQ5MDUzNDM2NjA1IiB3aWR0aD0iNTAwIiBlbmFibGV0ZW1wbGF0ZT0iMCIgbW9kZT0iIiBuZXh0c3RlcHNhdmU9InByb21wdCI+CjwvZHluYUZvcm0+]]></file_content>
+    </file>
+    <file target="dynaforms">
+      <file_name>Upload Investors Confirmation Form</file_name>
+      <file_path><![CDATA[49495392760ca7026529f80008442485/64451100060cb6df2862b38034471456.xml]]></file_path>
+      <file_content><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGR5bmFGb3JtIHR5cGU9InhtbGZvcm0iIG5hbWU9IjQ5NDk1MzkyNzYwY2E3MDI2NTI5ZjgwMDA4NDQyNDg1LzY0NDUxMTAwMDYwY2I2ZGYyODYyYjM4MDM0NDcxNDU2IiB3aWR0aD0iNTAwIiBlbmFibGV0ZW1wbGF0ZT0iMCIgbW9kZT0iIiBuZXh0c3RlcHNhdmU9InByb21wdCI+CjwvZHluYUZvcm0+]]></file_content>
+    </file>
+    <file target="templates">
+      <file_name>SLFIEmailTemplate.html</file_name>
+      <file_path><![CDATA[49495392760ca7026529f80008442485/SLFIEmailTemplate.html]]></file_path>
+      <file_content><![CDATA[PCFET0NUWVBFIGh0bWwgUFVCTElDICItLy9XM0MvL0RURCBYSFRNTCAxLjAgVHJhbnNpdGlvbmFsLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL1RSL3hodG1sMS9EVEQveGh0bWwxLXRyYW5zaXRpb25hbC5kdGQiPgo8aHRtbD4KPGhlYWQ+CjwvaGVhZD4KPGJvZHk+Cjx0YWJsZSBzdHlsZT0iY29sb3I6ICMwMDAwMDA7IHdpZHRoOiA5MCU7IiBib3JkZXI9IjAiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCIgZGF0YS1tY2Utc3R5bGU9ImNvbG9yOiAjMDAwMDAwOyBmb250LXNpemU6IDEzcHg7IHdpZHRoOiA5MCU7Ij48dGJvZHk+PHRyPjx0ZCBzdHlsZT0iYm9yZGVyLWJvdHRvbTogIzcxMTQyNiBzb2xpZDsiIGRhdGEtbWNlLXN0eWxlPSJib3JkZXItYm90dG9tOiAjNzExNDI2IHNvbGlkOyI+QCNJTUdfTE9HTzwvdGQ+PC90cj48dHI+PHRkPjxicj5AI0JPRFlfTk9USUZJQ0FUSU9OPGJyPiZuYnNwOzwvdGQ+PC90cj48dHI+PHRkIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiAjNzExNDI2OyIgZGF0YS1tY2Utc3R5bGU9ImJhY2tncm91bmQtY29sb3I6ICM3MTE0MjY7Ij4mbmJzcDs8L3RkPjwvdHI+PC90Ym9keT48L3RhYmxlPgo8L2JvZHk+CjwvaHRtbD4=]]></file_content>
+    </file>
+    <file target="templates">
+      <file_name>actionsByEmail.html</file_name>
+      <file_path><![CDATA[49495392760ca7026529f80008442485/actionsByEmail.html]]></file_path>
+      <file_content><![CDATA[PHRhYmxlIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTsgZm9udC1mYW1pbHk6IEFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmOyBjb2xvcjogYmxhY2s7IGZvbnQtc2l6ZTogMTFweDsgdGV4dC1hbGlnbjogbGVmdDsiIGNlbGxwYWRkaW5nPSIxMCIgY2VsbHNwYWNpbmc9IjAiIHdpZHRoPSIxMDAlIj4NCjx0cj4NCiAgPHRkIHN0eWxlPSJmb250LXNpemU6IDE0cHg7Ij48Yj5BQ1RJT05TIEJZIEVNQUlMPC9iPjwvdGQ+DQo8L3RyPg0KPHRyPg0KICA8dGQgc3R5bGU9InZlcnRpY2FsLWFsaWduOm1pZGRsZTsiPg0KCSAgPGhyPg0KCSAgPGJyIC8+DQoJICBAI19fQUJFX18NCiAgICA8YnIgLz4NCgkJPGJyIC8+DQoJCTxocj48Yj5UaGlzIEJ1c2luZXNzIFByb2Nlc3MgaXMgcG93ZXJlZCBieSBQcm9jZXNzTWFrZXIuPGI+DQoJCTxiciAvPg0KCQk8YSBocmVmPSJodHRwOi8vd3d3LnByb2Nlc3NtYWtlci5jb20iIHN0eWxlPSJjb2xvcjojYzQwMDAwOyI+d3d3LnByb2Nlc3NtYWtlci5jb208L2E+DQoJCTxiciAvPg0KICA8L3RkPg0KPC90cj4NCjwvdGFibGU+]]></file_content>
+    </file>
+    <file target="templates">
+      <file_name>actionsByEmailErrorReply.html</file_name>
+      <file_path><![CDATA[49495392760ca7026529f80008442485/actionsByEmailErrorReply.html]]></file_path>
+      <file_content><![CDATA[PHRhYmxlIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTsgZm9udC1mYW1pbHk6IEFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmOyBjb2xvcjogYmxhY2s7IGZvbnQtc2l6ZTogMTFweDsgdGV4dC1hbGlnbjogbGVmdDsiDQogICAgICAgY2VsbHBhZGRpbmc9IjEwIiBjZWxsc3BhY2luZz0iMCIgd2lkdGg9IjEwMCUiPg0KICAgIDx0cj4NCiAgICAgICAgPHRkIHN0eWxlPSJmb250LXNpemU6IDE0cHg7Ij48c3Ryb25nPkFDVElPTlMgQlkgRU1BSUw8L3N0cm9uZz48L3RkPg0KICAgIDwvdHI+DQogICAgPHRyPg0KICAgICAgICA8dGQgc3R5bGU9InZlcnRpY2FsLWFsaWduOm1pZGRsZTsiPg0KICAgICAgICAgICAgPGhyPg0KICAgICAgICAgICAgPGJyLz4NCiAgICAgICAgICAgIEAjQUNUSU9OU19CWV9FTUFJTF9FUlJPUl9NRVNTQUdFDQogICAgICAgICAgICA8YnIvPg0KICAgICAgICAgICAgPGJyLz4NCiAgICAgICAgICAgIDxocj4NCiAgICAgICAgICAgIDxzdHJvbmc+VGhpcyBpcyBhbiBhdXRvbWF0ZWQgZW1haWwsIHBsZWFzZSBkbyBub3QgcmVwbGF5IHRvIGl0Ljwvc3Ryb25nPg0KICAgICAgICAgICAgPGJyLz4NCiAgICAgICAgICAgIDxhIGhyZWY9Imh0dHA6Ly93d3cucHJvY2Vzc21ha2VyLmNvbSIgc3R5bGU9ImNvbG9yOiNjNDAwMDA7Ij53d3cucHJvY2Vzc21ha2VyLmNvbTwvYT4NCiAgICAgICAgICAgIDxici8+DQogICAgICAgIDwvdGQ+DQogICAgPC90cj4NCjwvdGFibGU+]]></file_content>
+    </file>
+  </workflow-files>
+</ProcessMaker-Project>

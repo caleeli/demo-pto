@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+  xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd"
+  targetNamespace="http://bpmn.io/schema/bpmn"
+  exporter="ProcessMaker Modeler"
+  exporterVersion="1.0">
+  <!-- Replace 2 with your collection id. Enable signal_create on that collection. -->
+  <bpmn:process id="ProcessId" name="On Customer Created" isExecutable="true">
+    <bpmn:startEvent id="node_signal_start" name="Customer Created">
+      <bpmn:outgoing>flow_to_task</bpmn:outgoing>
+      <bpmn:signalEventDefinition signalRef="collection_2_create" />
+    </bpmn:startEvent>
+    <bpmn:task id="node_task" name="Review New Customer" pm:assignment="requester">
+      <bpmn:incoming>flow_to_task</bpmn:incoming>
+      <bpmn:outgoing>flow_to_end</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="node_end" name="End Event">
+      <bpmn:incoming>flow_to_end</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="flow_to_task" sourceRef="node_signal_start" targetRef="node_task" />
+    <bpmn:sequenceFlow id="flow_to_end" sourceRef="node_task" targetRef="node_end" />
+  </bpmn:process>
+  <bpmn:signal id="collection_2_create" name="Customers create" />
+</bpmn:definitions>

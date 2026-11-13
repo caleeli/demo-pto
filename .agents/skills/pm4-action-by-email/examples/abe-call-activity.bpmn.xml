@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:pm="http://processmaker.com/BPMN/2.0/Schema.xsd" id="Definitions_ABE" targetNamespace="http://bpmn.io/schema/bpmn" exporter="ProcessMaker Modeler" exporterVersion="1.0">
+  <bpmn:process id="ProcessId" name="Approval By Email" isExecutable="true">
+    <bpmn:startEvent id="node_1" name="Start">
+      <bpmn:outgoing>node_1-node_2</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:callActivity id="node_2" name="Request approval" calledElement="ProcessId-SUBPROCESS_ID" pm:config="{&#34;email&#34;:&#34;{{approver_email}}&#34;,&#34;subject&#34;:&#34;Please approve request {{_request_id}}&#34;,&#34;bodyType&#34;:&#34;text&#34;,&#34;body&#34;:&#34;Please choose an action below.&#34;,&#34;screenRef&#34;:&#34;&#34;,&#34;emailServer&#34;:&#34;&#34;,&#34;keyName&#34;:&#34;approval_decision&#34;,&#34;selectedLanguage&#34;:&#34;en&#34;,&#34;options&#34;:[{&#34;content&#34;:&#34;Approve&#34;,&#34;value&#34;:&#34;approved&#34;,&#34;buttonVariant&#34;:&#34;success&#34;},{&#34;content&#34;:&#34;Reject&#34;,&#34;value&#34;:&#34;rejected&#34;,&#34;buttonVariant&#34;:&#34;danger&#34;}],&#34;startEvent&#34;:&#34;subprocess_start&#34;}">
+      <bpmn:incoming>node_1-node_2</bpmn:incoming>
+      <bpmn:outgoing>node_2-node_3</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:endEvent id="node_3" name="End">
+      <bpmn:incoming>node_2-node_3</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="node_1-node_2" sourceRef="node_1" targetRef="node_2" />
+    <bpmn:sequenceFlow id="node_2-node_3" sourceRef="node_2" targetRef="node_3" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="ProcessId">
+      <bpmndi:BPMNShape id="node_1_di" bpmnElement="node_1">
+        <dc:Bounds x="150" y="150" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="node_2_di" bpmnElement="node_2">
+        <dc:Bounds x="250" y="130" width="116" height="76" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="node_3_di" bpmnElement="node_3">
+        <dc:Bounds x="430" y="150" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="node_1-node_2_di" bpmnElement="node_1-node_2">
+        <di:waypoint x="186" y="168" />
+        <di:waypoint x="250" y="168" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="node_2-node_3_di" bpmnElement="node_2-node_3">
+        <di:waypoint x="366" y="168" />
+        <di:waypoint x="430" y="168" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

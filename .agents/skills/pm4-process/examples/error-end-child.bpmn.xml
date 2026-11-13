@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_ErrorChild" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:error id="Error_BusinessRejected" name="Business validation rejected" errorCode="BUSINESS_REJECTED" />
+  <bpmn:process id="ErrorChild" name="ErrorEndingChild" isExecutable="true">
+    <bpmn:startEvent id="error_child_start" name="Validate business outcome"><bpmn:outgoing>error_child_finish</bpmn:outgoing></bpmn:startEvent>
+    <bpmn:endEvent id="error_child_end" name="Reject business outcome"><bpmn:incoming>error_child_finish</bpmn:incoming><bpmn:errorEventDefinition id="error_child_definition" errorRef="Error_BusinessRejected" /></bpmn:endEvent>
+    <bpmn:sequenceFlow id="error_child_finish" sourceRef="error_child_start" targetRef="error_child_end" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_ErrorChild"><bpmndi:BPMNPlane id="Plane_ErrorChild" bpmnElement="ErrorChild">
+    <bpmndi:BPMNShape id="error_child_start_di" bpmnElement="error_child_start"><dc:Bounds x="100" y="140" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNShape id="error_child_end_di" bpmnElement="error_child_end"><dc:Bounds x="320" y="140" width="36" height="36" /></bpmndi:BPMNShape>
+    <bpmndi:BPMNEdge id="error_child_finish_di" bpmnElement="error_child_finish"><di:waypoint x="136" y="158" /><di:waypoint x="320" y="158" /></bpmndi:BPMNEdge>
+  </bpmndi:BPMNPlane></bpmndi:BPMNDiagram>
+</bpmn:definitions>

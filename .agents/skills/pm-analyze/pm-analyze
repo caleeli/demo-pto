@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+# Dispatch to the prebuilt binary for this OS/arch (see repo root: make pm-analyze).
+set -e
+ROOT="$(CDPATH= cd -- "$(dirname "$0")" && pwd)"
+BIN_DIR="$ROOT/bin"
+
+os="$(uname -s)"
+arch="$(uname -m)"
+case "$os-$arch" in
+  Linux-x86_64|Linux-amd64)  rel=linux-amd64/pm-analyze-linux-amd64 ;;
+  Linux-aarch64|Linux-arm64) rel=linux-arm64/pm-analyze-linux-arm64 ;;
+  Darwin-x86_64)             rel=darwin-amd64/pm-analyze-darwin-amd64 ;;
+  Darwin-arm64)              rel=darwin-arm64/pm-analyze-darwin-arm64 ;;
+  *)
+    echo "pm-analyze: no prebuilt binary for $os-$arch" >&2
+    echo "Build from repo root: make pm-analyze" >&2
+    exit 1
+    ;;
+esac
+
+bin="$BIN_DIR/$rel"
+if [ ! -x "$bin" ]; then
+  echo "pm-analyze: missing $bin" >&2
+  echo "Build from repo root: make pm-analyze" >&2
+  exit 1
+fi
+exec "$bin" "$@"
